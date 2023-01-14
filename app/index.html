@@ -2,29 +2,107 @@
 <html lang="ru" class="page">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>MaxGraph New Site</title>
-  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Travel tours</title>
+  <link rel="preload" href="fonts/UbuntuRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <script defer src="js/main.js"></script>
+  <script defer src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+  <script defer src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 </head>
 
 <body class="page__body">
   <div class="site-container">
     <header class="header">
-  <div class="container"></div>
+
+  <div class="header__logo header--mod">
+    <a href="index.html" class="logo">
+      <img src="img/traveler-logo.svg" alt="traveler logo">
+    </a>
+  </div>
+  <div class="container header__container">
+    <nav class="menu nav" title="">
+      <div class="nav__items header--mod">
+
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="img/traveler-logo.svg" alt="traveler logo">
+            </a>
+          </div>
+          <div>
+            <a class="nav__item nav__link--top" href="#">Подобрать тур</a>
+            <a class="nav__item nav__link--top" href="#">О компании</a>
+          </div>
+        </div>
+
+        <div class="header__right account account--nav">
+          <p id="user-city" class="geolocation"></p>
+          <a href="tel:7405999999" class="account__link contact-link contact-link--call">
+            <span class="contact-link__value">8(800) 999-9999</span>
+          </a>
+          <div class="account">
+            <span class="account__link">
+              <svg class="account__icon" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+            </span>
+            <a href="#" class="account__link">
+              <svg class="account__icon" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+            <a href="#" class="account__link">
+              <svg class="account__icon" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#basket"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="nav__items nav__list list-reset">
+        <li class="nav__item">
+          <div class="hover-list">
+            <a href="index.html" class="nav__link">Туры
+              <span class="nav__link--chevron"></span>
+            </a>
+            <div class="tour-wrapper">
+              <div class="tour-sub-menu">
+                <a href="#" class="tour-item tour-sub-menu__link"><span>Все туры</span></a>
+                <a href="#" class="tour-item tour-sub-menu__link"><span>Авто туры</span></a>
+                <a href="#" class="tour-item tour-sub-menu__link"><span>Туры на выходные</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item"><a href="services.html" class="nav__link">Отели</a></li>
+        <li class="nav__item"><a href="work.html" class="nav__link">Авиабилеты</a></li>
+        <li class="nav__item"><a href="news.html" class="nav__link">Акции</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link">По России</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link">Санатории</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link">Горящие туры</a></li>
+      </ul>
+    </nav>
+    <div class="overlay"></div>
+    <a href="tel:7405999999" class="account__link account__link--mobile contact-link contact-link--call">
+      <span class="contact-link__value">8(800) 999-9999</span>
+    </a>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 </header>
 
     <main class="main">
-      <picture>
-        <source srcset="img/art_logo.webp" type="image/webp">
-        <img loading="lazy" src="img/art_logo.jpg" class="image" width="300" height="300" alt="logo art dev">
-      </picture>
+
     </main>
     <footer class="footer">
   <div class="container"></div>

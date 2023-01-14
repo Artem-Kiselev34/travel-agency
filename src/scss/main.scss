@@ -7,10 +7,8 @@
 // подключения компонентов страницы
 @import "./components/header";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+// подключения компонентов страницы (мелкие компоненты)
+@import "./components/header-account";
+@import "./components/nav";
+@import "./components/menu";
+@import "./components/hover-list";

@@ -35,8 +35,13 @@ a {
   overflow: hidden; // если используем на сайте position: sticky - убрать эту настройку
 }
 
+._lock {
+  overflow: hidden;
+}
+
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -105,3 +110,7 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+// .burger {
+//   @include burger;
+// }

@@ -1,0 +1,55 @@
+.header {
+  &__container {
+    @include flex-all-sb;
+
+    padding-bottom: 8px;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__top {
+    border-bottom: 1px solid #dbe0e5;
+  }
+
+  &--mod {
+    display: none;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #dbe0e5;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    width: 100%;
+
+    @include small-tablet {
+      display: block;
+      padding-left: 10px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    @include small-tablet {
+      display: block;
+    }
+  }
+}
+
+.geolocation {
+  margin: 0;
+  margin-right: 24px;
+  padding-left: 22px;
+  color: var(--color-gray);
+  background-image: url("../img/location.svg");
+  background-position: left center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    margin-right: 14px;
+    line-height: 40px;
+    color: var(--color-gray);
+  }
+}
