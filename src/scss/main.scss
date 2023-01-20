@@ -6,9 +6,18 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/search-filtr/button";
+@import "./components/search-filtr/calendar";
+@import "./components/search-filtr/departure";
+@import "./components/search-filtr/filtr";
+@import "./components/search-filtr/nights";
+@import "./components/search-filtr/tourists";
+@import "./components/search-filtr/tourists-child";
+@import "./components/search-filtr/where";
 
 // подключения компонентов страницы (мелкие компоненты)
 @import "./components/header-account";
 @import "./components/nav";
 @import "./components/menu";
 @import "./components/hover-list";
+@import "./components/hero";

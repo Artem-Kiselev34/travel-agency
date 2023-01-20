@@ -8,13 +8,13 @@
 
 .tour-sub-menu {
   position: absolute;
-  bottom: 38px;
+  top: 104px;
   z-index: 102;
   border-radius: 8px;
   padding: 16px 18px;
   width: 270px;
-  box-shadow: 0 0 5px rgb(0 0 0 / 5%),
-    0 10px 10px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 5px rgb(0 0 0 / 5%), 0 10px 10px rgb(0 0 0 / 10%);
+  background-color: var(--color-light);
 
   &__link {
     display: flex;
@@ -22,7 +22,7 @@
     transition: 0.2s;
 
     &:hover {
-      background-color: #edf1fe;
+      background-color: var(--color-violet);
     }
   }
 
