@@ -18,7 +18,7 @@
   }
 
   &__item {
-    padding: 10px 0 10px;
+    padding: 10px 0 0 10px;
   }
 
   &__link {
@@ -26,18 +26,25 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-    color: var(--color-gray);
+    color: var(--color-light);
     transition: color 0.3s ease-in-out;
 
-    @include minidesk {
-      font-size: 16px;
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      border-bottom: 3px solid var(--color-primary);
+      text-decoration: none;
+      transition-duration: 0.3s ease-in-out;
     }
 
     &--top {
       font-weight: 400;
       font-size: 16px;
       line-height: 160%;
-      color: var(--color-gray);
+      color: var(--color-light);
       transition: color 0.3s ease-in-out;
 
       &:not(:last-child) {
@@ -51,17 +58,10 @@
       &:hover {
         color: var(--color-primary);
       }
-    }
 
-    &:focus {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 2px;
-    }
-
-    &:hover {
-      border-bottom: 3px solid var(--color-primary);
-      text-decoration: none;
-      transition-duration: 0.3s ease-in-out;
+      @include small-tablet {
+        color: var(--color-ebony);
+      }
     }
 
     &--current {
@@ -78,6 +78,14 @@
       @include small-tablet {
         display: none;
       }
+    }
+
+    @include small-tablet {
+      color: var(--color-ebony);
+    }
+
+    @include minidesk {
+      font-size: 16px;
     }
   }
 
