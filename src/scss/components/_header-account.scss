@@ -6,6 +6,7 @@
   &__icon {
     width: 24px;
     height: 24px;
+    fill: var(--color-light);
     -o-object-fit: cover;
     object-fit: cover;
     -webkit-transition: fill 0.3s ease-in-out;
@@ -16,24 +17,29 @@
     &:hover {
       fill: var(--color-primary);
     }
+
+    @include small-tablet {
+      fill: var(--color-ebony);
+    }
   }
 
   &__link {
     @include flex-column-start;
 
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
     &--mobile {
       position: absolute;
       right: 48px;
       top: 22px;
+      z-index: -1;
 
       @media (min-width: (769px)) {
         position: absolute;
         top: -60px;
       }
-    }
-
-    &:not(:last-child) {
-      margin-right: 20px;
     }
 
     @include minidesk {
@@ -66,11 +72,22 @@
   &__value {
     font-size: 16px;
     line-height: 150%;
-    color: var(--color-gray);
+    color: var(--color-light);
     transition: color 0.3s ease-in-out;
+
+    &--mod {
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--color-light);
+      transition: color 0.3s ease-in-out;
+    }
 
     @include minidesk {
       font-size: 16px;
+    }
+
+    @include small-tablet {
+      color: var(--color-ebony);
     }
   }
 

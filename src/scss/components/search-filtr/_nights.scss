@@ -1,0 +1,132 @@
+.nights-wrapper {
+  position: relative;
+}
+
+.nights {
+  &__main {
+    border: 1px solid var(--color-rinse);
+    height: 64px;
+    background-color: var(--color-light);
+    transition: 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+      border: 1px solid #7e8389;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    @include tablet {
+      border-radius: 8px 0 0 8px;
+      width: 100%;
+    }
+    // @media (max-width: 996px) {
+    //   border-radius: 8px 0 0 8px;
+    //   width: 100%;
+    // }
+
+    @include mobile {
+      border-radius: 0;
+    }
+    // @media (max-width: 586px) {
+    //   border-radius: 0;
+    // }
+  }
+
+  &__title {
+    position: absolute;
+    left: 16px;
+    top: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-great);
+  }
+
+  &__pinput {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 19px 10px 10px 16px;
+    width: 140px;
+    height: 100%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-ebony);
+    transition: 0.3s;
+  }
+
+  &__body {
+    position: absolute;
+    left: 0;
+    top: 76px;
+    z-index: 100;
+    border-radius: 8px;
+    padding: 18px 20px;
+    width: 244px;
+    height: 136px;
+    box-shadow: 0 8px 22px rgb(0 0 0 / 7%);
+    background-color: var(--color-light);
+  }
+
+  &__elem {
+    @include flex-all-sb;
+
+    width: 100%;
+    min-width: 90px;
+  }
+}
+
+.minus {
+  width: 33px;
+  height: 33px;
+  background: url(../img/minus.svg) no-repeat;
+
+  &:hover {
+    filter: invert(17%) sepia(86%) saturate(4441%) hue-rotate(342deg) brightness(91%) contrast(102%);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+.plus {
+  width: 33px;
+  height: 33px;
+  background: url(../img/plus.svg) no-repeat;
+
+  &:hover {
+    filter: invert(17%) sepia(86%) saturate(4441%) hue-rotate(342deg) brightness(91%) contrast(102%);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+// --------------------------------------
+.counter {
+  display: none;
+}
+
+.night {
+  display: none;
+}
+
+.nights-time {
+  display: none;
+}
+
+.counter-nights-box {
+  display: flex;
+}
+
+.counter-nights-time {
+  display: none;
+}
+
+.counter-nights-time3 {
+  display: none;
+}
