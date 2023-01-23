@@ -71,20 +71,8 @@
   @include tablet {
     width: 100%;
   }
-<<<<<<< HEAD
-=======
-  // @media (max-width: 996px) {
-  //   width: 100%;
-  // }
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
 
   @include mobile {
     border-radius: 0 0 8px 8px;
   }
-<<<<<<< HEAD
-=======
-  // @media (max-width: 586px) {
-  //   border-radius: 0 0 8px 8px;
-  // }
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
 }
