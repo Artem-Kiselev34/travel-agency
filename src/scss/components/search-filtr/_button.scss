@@ -1,0 +1,34 @@
+.search-button {
+  @include flex-all-center;
+
+  flex-grow: 1;
+  margin-left: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 20px;
+  height: 64px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-ebony);
+  background: var(--color-yellow);
+  transition: transform 180ms ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background: #ffe100;
+  }
+
+  &:active {
+    background: var(--color-yellow);
+  }
+
+  @include tablet {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}

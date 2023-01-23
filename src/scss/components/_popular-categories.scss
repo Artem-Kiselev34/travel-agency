@@ -1,0 +1,134 @@
+.popular-categories {
+  padding-bottom: 80px;
+
+  &__list {
+    margin-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-bottom: 40px;
+  }
+}
+
+.popular-list {
+  &__item {
+    grid-column: 1 span;
+
+    @include tablet {
+      grid-column: 2 span;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+.popular-item {
+  @include flex-all-center;
+
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px 10px 30px;
+  border-radius: 8px;
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    fill: var(--color-ebony);
+    object-fit: cover;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-ebony);
+    transition: color 0.3s ease-in-out;
+
+    @include minidesk {
+      font-size: 18px;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &--tours {
+    background: rgba(220, 245, 243, 100%);
+
+    &:hover {
+      background-color: rgba(220, 245, 243, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &--burn {
+    background: rgba(249, 202, 202, 100%);
+
+    &:hover {
+      background-color: rgba(249, 202, 202, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &--impr {
+    background: rgba(220, 228, 253, 100%);
+
+    &:hover {
+      background-color: rgba(220, 228, 253, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &--hotels {
+    background: rgba(255, 249, 207);
+
+    &:hover {
+      background-color: rgba(255, 249, 207, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &--market {
+    background: rgba(249, 202, 202, 100%);
+
+    &:hover {
+      background-color: rgba(249, 202, 202, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &--services {
+    background: rgba(220, 245, 243, 1);
+
+    &:hover {
+      background-color: rgba(220, 245, 243, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &--cruises {
+    background: rgba(255, 249, 207);
+
+    &:hover {
+      background-color: rgba(255, 249, 207, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &--car {
+    background: rgba(220, 228, 253, 100%);
+
+    &:hover {
+      background-color: rgba(220, 228, 253, 55%);
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+}
