@@ -24,25 +24,11 @@
       border-radius: 0 8px 8px 0;
       width: 100%;
     }
-<<<<<<< HEAD
-=======
-    // @media (max-width: 996px) {
-    //   border-radius: 0 8px 8px 0;
-    //   width: 100%;
-    // }
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
 
-    @include mobile {
+   @include mobile {
       margin: 0;
       border-radius: 0;
     }
-<<<<<<< HEAD
-=======
-    // @media (max-width: 586px) {
-    //   margin: 0;
-    //   border-radius: 0;
-    // }
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
   }
 
   &__field-title {
@@ -90,10 +76,4 @@
   @include mobile {
     left: 50px;
   }
-<<<<<<< HEAD
-=======
-  // @media (max-width: 586px) {
-  //   left: 50px;
-  // }
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
 }

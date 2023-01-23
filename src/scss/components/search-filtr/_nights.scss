@@ -23,23 +23,10 @@
       border-radius: 8px 0 0 8px;
       width: 100%;
     }
-<<<<<<< HEAD
-=======
-    // @media (max-width: 996px) {
-    //   border-radius: 8px 0 0 8px;
-    //   width: 100%;
-    // }
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
 
     @include mobile {
       border-radius: 0;
     }
-<<<<<<< HEAD
-=======
-    // @media (max-width: 586px) {
-    //   border-radius: 0;
-    // }
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
   }
 
   &__title {
@@ -112,10 +99,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-// --------------------------------------
->>>>>>> 5ebfb0593bebbe3c00fb1f8b51a8a2fcb30e2aad
 .counter {
   display: none;
 }
