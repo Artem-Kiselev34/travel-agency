@@ -1,12 +1,12 @@
 .hero {
   position: relative;
   z-index: 2;
-  margin-bottom: 500px;
   background-image: url(../img/slider2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
   &__container {
+    margin-bottom: 50px;
     padding: 40px 12px 200px;
 
     @include small-tablet {
