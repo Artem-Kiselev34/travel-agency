@@ -27,15 +27,8 @@
     margin-left: 0;
     width: 100%;
   }
-  // @media (max-width: 996px) {
-  //   margin-left: 0;
-  //   width: 100%;
-  // }
 
-  // @include mobile {
-  //   margin-top: 20px;
-  // }
-  @media (max-width: 586px) {
+  @include mobile {
     margin-top: 20px;
   }
 }

@@ -23,17 +23,10 @@
       border-radius: 8px 0 0 8px;
       width: 100%;
     }
-    // @media (max-width: 996px) {
-    //   border-radius: 8px 0 0 8px;
-    //   width: 100%;
-    // }
 
     @include mobile {
       border-radius: 0;
     }
-    // @media (max-width: 586px) {
-    //   border-radius: 0;
-    // }
   }
 
   &__title {
@@ -105,8 +98,8 @@
     transform: scale(1.05);
   }
 }
+// -------------------------------------
 
-// --------------------------------------
 .counter {
   display: none;
 }

@@ -24,16 +24,10 @@
     @include tablet {
       border-radius: 8px 0 0 8px;
     }
-    // @media (max-width: 996px) {
-    //   border-radius: 8px 0 0 8px;
-    // }
 
     @include mobile {
       border-radius: 8px 8px 0 0;
     }
-    // @media (max-width: 586px) {
-    //   border-radius: 8px 8px 0 0;
-    // }
   }
 
   &__pinput {

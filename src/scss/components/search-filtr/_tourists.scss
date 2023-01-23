@@ -71,14 +71,8 @@
   @include tablet {
     width: 100%;
   }
-  // @media (max-width: 996px) {
-  //   width: 100%;
-  // }
 
   @include mobile {
     border-radius: 0 0 8px 8px;
   }
-  // @media (max-width: 586px) {
-  //   border-radius: 0 0 8px 8px;
-  // }
 }

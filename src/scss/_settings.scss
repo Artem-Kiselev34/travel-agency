@@ -139,6 +139,30 @@ input {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #253861;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: var(--grid-gap);
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: var(--color-ebony);
+}
+
+// font-size: 28px;
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 38px;
 // .burger {
 //   @include burger;
 // }
