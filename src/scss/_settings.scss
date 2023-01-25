@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+// * {
+//   outline: 1px solid red;
+//   }
+
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
@@ -16,7 +20,7 @@ html {
 
 .page__body {
   margin: 0;
-  min-width: 320px;
+  min-width: 316px;
   min-height: 100%;
   font-size: 16px;
 }
@@ -159,10 +163,93 @@ input {
   color: var(--color-ebony);
 }
 
-// font-size: 28px;
-//     font-style: normal;
-//     font-weight: 600;
-//     line-height: 38px;
-// .burger {
-//   @include burger;
-// }
+.btn {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: var(--color-blue);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  &--fill {
+    background-color: var(--color-primary);
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--color-active);
+    }
+
+    &:active {
+      background-color: var(--color-primary);
+    }
+  }
+
+  @include mobile {
+    padding: 10px 30px;
+  }
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: var(--color-ebony);
+
+  &--inter {
+    color: var(--color-light);
+  }
+
+  &--home {
+    color: var(--color-blue);
+  }
+
+  @include small-tablet {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+
+.main-descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-light);
+
+  &--inter {
+    margin-bottom: 56px;
+    color: var(--color-light);
+  }
+
+  &--home {
+    margin-bottom: 56px;
+    color: var(--color-blue);
+
+    @include mobile {
+      color: var(--color-light);
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+    line-height: 120%;
+  }
+}
