@@ -11,16 +11,16 @@
   font-weight: 600;
   font-size: 16px;
   color: var(--color-ebony);
-  background: var(--color-yellow);
+  background: var(--color-primary);
   transition: transform 180ms ease-in;
   cursor: pointer;
 
   &:hover {
-    background: #ffe100;
+    background: var(--color-active);
   }
 
   &:active {
-    background: var(--color-yellow);
+    background: var(--color-primary);
   }
 
   @include tablet {

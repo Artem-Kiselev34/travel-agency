@@ -1,0 +1,113 @@
+.slader-swiper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.swiper-container {
+  overflow: hidden;
+  height: inherit;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-button-prev {
+  left: 14px;
+  top: 4.7%;
+  display: none;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 100%;
+  background-color: var(--color-light);
+  opacity: 0.4;
+
+  @include small-tablet {
+    top: 5%;
+  }
+
+  @include mobile {
+    top: 5.7%;
+    display: none !important;
+  }
+}
+
+.swiper-button-next {
+  right: 14px;
+  top: 4.7%;
+  display: none;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 100%;
+  background-color: var(--color-light);
+  opacity: 0.4;
+
+  @include small-tablet {
+    top: 5%;
+  }
+
+  @include mobile {
+    top: 5.7%;
+    display: none !important;
+  }
+}
+
+/* swiper-bullets styling */
+.swiper-pagination-bullet {
+  margin: 0 15px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 99, 71);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-blue);
+}
+
+.slide {
+  @include bg-cover;
+
+  padding-top: 80px;
+  padding-bottom: 178px;
+  background-color: var(--color-gray);
+
+  &__content {
+    padding-right: 15px;
+    padding-left: 80px;
+
+    @include small-tablet {
+      padding-right: 15px;
+      padding-left: 42px;
+      height: 190px;
+    }
+
+    @include mobile {
+      padding-right: 10px;
+      padding-left: 12px;
+    }
+  }
+
+  &--1 {
+    background-image: url("../img/slider-main/bahrain.jpg");
+  }
+
+  &--2 {
+    background-image: url("../img/slider-main/Istanbul.jpg");
+  }
+
+  &--3 {
+    background-image: url("../img/slider-main/krasnaya-polyana.jpg");
+  }
+
+  @include mobile {
+    padding-bottom: 120px;
+  }
+}

@@ -29,26 +29,26 @@
       margin: 0;
       border-radius: 0;
     }
+  }
 
-    &__field-title {
-      margin-bottom: 2px;
-      font-size: 14px;
-    }
+  &__field-title {
+    margin-bottom: 2px;
+    font-size: 14px;
+  }
 
-    &__field-dates {
-      bottom: 40px;
-      font-size: 16px;
-      color: var(--color-ebony);
-    }
+  &__field-dates {
+    bottom: 40px;
+    font-size: 16px;
+    color: var(--color-ebony);
+  }
 
-    &__field-button {
-      position: absolute;
-      right: 18px;
-      top: 20px;
-      width: 20px;
-      height: 20px;
-      background: url(../img/calendar.svg) no-repeat;
-    }
+  &__field-button {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/calendar.svg) no-repeat;
   }
 }
 
