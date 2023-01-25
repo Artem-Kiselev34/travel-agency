@@ -1,8 +1,7 @@
 .search-form {
+  @include flex-h-center;
+
   position: relative;
-  display: flex;
-  justify-content: center;
-  border-radius: 16px;
   cursor: pointer;
 
   &__item {
@@ -64,7 +63,6 @@
 
   @include tablet {
     flex-wrap: wrap;
-    padding: 0 16px;
   }
 }
 

@@ -4,4 +4,5 @@ import './components/search-filtr/choosing-city-country';
 import './components/search-filtr/duration';
 import './components/search-filtr/tourists';
 import './components/search-filtr/tourists-children';
+import './components/slider';
 
