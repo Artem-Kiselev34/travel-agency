@@ -1,6 +1,10 @@
 .popular-categories {
   &__list {
     margin-bottom: 80px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
 
   @include mobile {

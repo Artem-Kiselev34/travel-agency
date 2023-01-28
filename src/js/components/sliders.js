@@ -31,7 +31,7 @@ const swiper = new Swiper(slider, {
   // 	  });
   // 	}
   //   }
-})
+});
 
 document.getElementsByClassName("swiper-container")[0].addEventListener("mouseover", function () {
   document.querySelector('.swiper-button-prev').style.display = 'block';
@@ -42,3 +42,5 @@ document.getElementsByClassName("swiper-container")[0].addEventListener("mouseou
   document.querySelector('.swiper-button-prev').style.display = 'none';
   document.querySelector('.swiper-button-next').style.display = 'none';
 });
+
+
