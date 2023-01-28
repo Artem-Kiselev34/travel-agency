@@ -49,7 +49,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_search_filtr_tourists__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_search_filtr_tourists__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_search_filtr_tourists_children__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/search-filtr/tourists-children */ "./src/js/components/search-filtr/tourists-children.js");
 /* harmony import */ var _components_search_filtr_tourists_children__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_search_filtr_tourists_children__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
+/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sliders */ "./src/js/components/sliders.js");
 
 
 
@@ -191,6 +191,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_geolocation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/geolocation.js */ "./src/js/vendor/geolocation.js");
 /* harmony import */ var _vendor_geolocation_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_geolocation_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _vendor_air_calendar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/air-calendar.js */ "./src/js/vendor/air-calendar.js");
+/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vendor/js-vanilla-slider.js */ "./src/js/vendor/js-vanilla-slider.js");
+/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -557,10 +560,10 @@ btnPlus.addEventListener('click', function () {
 
 /***/ }),
 
-/***/ "./src/js/components/slider.js":
-/*!*************************************!*\
-  !*** ./src/js/components/slider.js ***!
-  \*************************************/
+/***/ "./src/js/components/sliders.js":
+/*!**************************************!*\
+  !*** ./src/js/components/sliders.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -986,6 +989,27 @@ if (typeof document !== 'undefined') {
 window.onload = function () {
   jQuery("#user-city").text(ymaps.geolocation.city);
 };
+
+/***/ }),
+
+/***/ "./src/js/vendor/js-vanilla-slider.js":
+/*!********************************************!*\
+  !*** ./src/js/vendor/js-vanilla-slider.js ***!
+  \********************************************/
+/***/ (() => {
+
+const sliders = document.querySelectorAll('.small-slider');
+sliders.forEach(el => {
+  let line = el.querySelector(".small-slider__slides");
+  markers = el.querySelector(".slideshow");
+  marker = markers.querySelectorAll(".slideshow__item");
+  marker.forEach(function (mark) {
+    mark.onmousemove = function () {
+      let data = this.dataset.position;
+      line.style.left = `${data}px`;
+    };
+  });
+});
 
 /***/ }),
 
