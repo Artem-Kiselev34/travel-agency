@@ -1,7 +1,11 @@
 .slader-swiper {
   position: relative;
   z-index: 1;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
+
+  @include small-tablet {
+    margin-bottom: 50px;
+  }
 }
 
 .slider-container {
