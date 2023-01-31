@@ -35,23 +35,39 @@
       right: 48px;
       top: 22px;
       z-index: -1;
+      display: none;
 
-      @media (min-width: (769px)) {
-        position: absolute;
-        top: -60px;
-      }
-    }
+      &:hover {
+        .contact-link__value--mod {
+          color: var(--color-primary);
+        }
 
-    @include minidesk {
-      &:not(:last-child) {
-        margin-right: 16px;
+        // @media (min-width: (769px)) {
+        //   position: absolute;
+        //   top: -60px;
+        // }
       }
-    }
 
-    @include tablet {
-      &:not(:last-child) {
-        margin-right: 12px;
+      @include minidesk {
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
       }
+
+      @include tablet {
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+
+      @include small-tablet {
+        display: block;
+      }
+
+      // @media (min-width: (769px)) {
+      //   position: absolute;
+      //   top: -60px;
+      // }
     }
   }
 }
