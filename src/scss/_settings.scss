@@ -69,7 +69,7 @@ input {
   appearance: none;
   border: none;
   border-radius: 0;
-  background-color: #fff;
+  background-color: var(--color-light);
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
@@ -151,9 +151,74 @@ input {
   margin: 0;
   margin-bottom: 40px;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 130%;
   color: var(--color-ebony);
+
+  &--inter {
+    margin: 0;
+    font-size: 42px;
+    line-height: 150%;
+    color: var(--color-light);
+  }
+
+  &--home {
+    margin: 0;
+    font-size: 42px;
+    line-height: 150%;
+    color: var(--color-blue);
+  }
+
+  &--adv {
+    margin-bottom: 10px;
+  }
+
+  @include small-tablet {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  @include mobile {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+.title--center {
+  text-align: center;
+}
+
+.descr {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-ebony);
+
+  &--inter {
+    margin-bottom: 56px;
+    color: var(--color-light);
+  }
+
+  &--home {
+    margin-bottom: 56px;
+    color: var(--color-blue);
+
+    @include mobile {
+      color: var(--color-light);
+    }
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+.descr--center {
+  text-align: center;
 }
 
 .btn {
@@ -201,55 +266,20 @@ input {
 
 .main-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 130%;
   letter-spacing: 1px;
-  color: var(--color-ebony);
-
-  &--inter {
-    color: var(--color-light);
-  }
-
-  &--home {
-    color: var(--color-blue);
-  }
-
-  @include small-tablet {
-    font-size: 32px;
-    line-height: 120%;
-  }
-
-  @include mobile {
-    font-size: 28px;
-    line-height: 120%;
-  }
+  text-shadow: 0 3px 2px rgb(0 0 0 / 30%), 0 6px 8px rgb(0 0 0 / 30%), 0 12px 24px rgb(0 0 0 / 30%);
+  color: var(--color-light);
 }
 
 .main-descr {
   margin: 0;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
+  margin-bottom: 60px;
+  font-size: 26px;
+  line-height: 110%;
+  text-shadow: 0 3px 2px rgb(0 0 0 / 30%), 0 6px 8px rgb(0 0 0 / 30%), 0 12px 24px rgb(0 0 0 / 30%);
   color: var(--color-light);
-
-  &--inter {
-    margin-bottom: 56px;
-    color: var(--color-light);
-  }
-
-  &--home {
-    margin-bottom: 56px;
-    color: var(--color-blue);
-
-    @include mobile {
-      color: var(--color-light);
-    }
-  }
-
-  @include mobile {
-    margin-bottom: 40px;
-    line-height: 120%;
-  }
 }
