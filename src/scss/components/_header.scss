@@ -2,7 +2,7 @@
   position: relative;
   z-index: 10;
   box-shadow: 0 4px 4px var(--color-blueberry);
-  background-color: #0069b5;
+  background-color: var(--color-sapphire);
 
   &__container {
     @include flex-all-sb;
@@ -28,6 +28,8 @@
   }
 
   &--mod {
+    position: relative;
+    z-index: -1;
     display: none;
     border-bottom: 1px solid var(--color-blueberry);
     padding-top: 8px;
@@ -37,6 +39,7 @@
     @include small-tablet {
       display: block;
       padding-left: 10px;
+      background-color: var(--color-sapphire);
     }
   }
 }
