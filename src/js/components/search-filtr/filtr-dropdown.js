@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			let currentBtn = e.currentTarget;
 			let drop = currentBtn.closest('.search-form__item').querySelector('.dropdown');
 			dropsContent.forEach(el => {
-				el.classList.remove('dropdown--deactive');
+				el.classList.remove('dropdown--hide');
 				el.addEventListener('click', () => {
-					el.classList.add('dropdown--deactive')
+					el.classList.add('dropdown--hide')
 
 					drops.forEach(el => {
 						if (el == drop) {
-							el.classList.remove('dropdown--active');
+							el.classList.remove('active');
 						}
 					});
 				});
@@ -24,18 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			drops.forEach(el => {
 				if (el !== drop) {
-					el.classList.remove('dropdown--active');
+					el.classList.remove('active');
 				}
 			});
 
-			drop.classList.toggle('dropdown--active');
+			drop.classList.toggle('active');
 		});
 	});
 
 	document.addEventListener('click', (e) => {
 		if (!e.target.closest('.search-form') || e.target.closest('.search-button')) {
 			drops.forEach(el => {
-				el.classList.remove('dropdown--active');
+				el.classList.remove('active');
 			});
 		}
 	});

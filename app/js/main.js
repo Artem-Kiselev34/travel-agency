@@ -208,15 +208,23 @@ __webpack_require__.r(__webpack_exports__);
 
 const burger = document.querySelector('.burger');
 const isMenu = document.querySelector('.menu');
+const mobileMenu = document.querySelector('.mobile-menu__container');
 const body = document.body;
 const overlay = document.querySelector('.overlay');
 let openMenu = function () {
   burger.classList.toggle('_active');
   isMenu.classList.toggle('_active');
+  // mobileMenu.classList.toggle('is-hidden');
   body.classList.toggle('_lock');
   overlay.classList.toggle('_active');
 };
+
+// let mobileMenu = function() {
+
+// }
+
 burger.addEventListener('click', openMenu, true);
+// burger.addEventListener('click', mobileMenu, true);
 overlay.addEventListener('click', openMenu, true);
 
 /***/ }),
@@ -404,28 +412,28 @@ document.addEventListener('DOMContentLoaded', () => {
       let currentBtn = e.currentTarget;
       let drop = currentBtn.closest('.search-form__item').querySelector('.dropdown');
       dropsContent.forEach(el => {
-        el.classList.remove('dropdown--deactive');
+        el.classList.remove('dropdown--hide');
         el.addEventListener('click', () => {
-          el.classList.add('dropdown--deactive');
+          el.classList.add('dropdown--hide');
           drops.forEach(el => {
             if (el == drop) {
-              el.classList.remove('dropdown--active');
+              el.classList.remove('active');
             }
           });
         });
       });
       drops.forEach(el => {
         if (el !== drop) {
-          el.classList.remove('dropdown--active');
+          el.classList.remove('active');
         }
       });
-      drop.classList.toggle('dropdown--active');
+      drop.classList.toggle('active');
     });
   });
   document.addEventListener('click', e => {
     if (!e.target.closest('.search-form') || e.target.closest('.search-button')) {
       drops.forEach(el => {
-        el.classList.remove('dropdown--active');
+        el.classList.remove('active');
       });
     }
   });
@@ -987,7 +995,9 @@ if (typeof document !== 'undefined') {
 
 // ------------------------------ geolocation ------------------------------------
 window.onload = function () {
+  // let user = document.querySelectorAll("#")
   jQuery("#user-city").text(ymaps.geolocation.city);
+  jQuery("#user-city-mobile").text(ymaps.geolocation.city);
 };
 
 /***/ }),
