@@ -3,6 +3,14 @@
 
   flex-wrap: wrap;
 
+  &__link {
+    @include flex-column-start;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
   &__icon {
     width: 24px;
     height: 24px;
@@ -18,71 +26,41 @@
       fill: var(--color-primary);
     }
 
-    @include small-tablet {
-      fill: var(--color-ebony);
-    }
-  }
-
-  &__link {
-    @include flex-column-start;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-
-    &--mobile {
-      position: absolute;
-      right: 48px;
-      top: 22px;
-      z-index: -1;
-      display: none;
-
-      &:hover {
-        .contact-link__value--mod {
-          color: var(--color-primary);
-        }
-
-        // @media (min-width: (769px)) {
-        //   position: absolute;
-        //   top: -60px;
-        // }
-      }
-
-      @include minidesk {
-        &:not(:last-child) {
-          margin-right: 16px;
-        }
-      }
-
-      @include tablet {
-        &:not(:last-child) {
-          margin-right: 12px;
-        }
-      }
-
-      @include small-tablet {
-        display: block;
-      }
-
-      // @media (min-width: (769px)) {
-      //   position: absolute;
-      //   top: -60px;
-      // }
-    }
+    // @include small-tablet {
+    //   fill: var(--color-ebony);
+    // }
   }
 }
 
 .contact-link {
+  margin-right: 20px;
   padding-left: 28px;
   background-position: left center;
   background-size: 20px 20px;
   background-repeat: no-repeat;
 
-  &__caption {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--color-gray);
+  &__mobile {
+    position: absolute;
+    right: 48px;
+    top: 22px;
+    z-index: 0;
+    display: none;
+
+    @include minidesk {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+
+    @include small-tablet {
+      display: block;
+    }
   }
 
   &__value {
@@ -91,19 +69,12 @@
     color: var(--color-light);
     transition: color 0.3s ease-in-out;
 
-    &--mod {
-      font-size: 16px;
-      line-height: 150%;
-      color: var(--color-light);
-      transition: color 0.3s ease-in-out;
+    &--mobile {
+      color: var(--color-ebony);
     }
 
     @include minidesk {
       font-size: 16px;
-    }
-
-    @include small-tablet {
-      color: var(--color-ebony);
     }
   }
 
@@ -115,6 +86,10 @@
   &:hover {
     .contact-link__value {
       color: var(--color-primary);
+
+      &--mobile {
+        color: var(--color-sapphire);
+      }
     }
   }
 
