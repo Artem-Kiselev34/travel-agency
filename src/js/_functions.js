@@ -8,7 +8,7 @@ console.log(mobileCheck())
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
 // if (isDesktop()) {
-//   console.log('...')
+  // console.log('...')
 // }
 
 // Троттлинг функции (для ресайза, ввода в инпут, скролла и т.д.)
