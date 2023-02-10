@@ -16,8 +16,9 @@
 @import "./components/search-filtr/where";
 @import "./components/popular-categories";
 @import "./components/slider-main";
-@import "./components/tour-selection";
 @import "./components/advantages";
+@import "./components/tour-selection";
+@import "./components/help-form";
 
 // подключения компонентов страницы (мелкие компоненты)
 @import "./components/header-account";
@@ -26,3 +27,4 @@
 @import "./components/mobile-menu";
 @import "./components/tours";
 @import "./components/hero";
+@import "./components/form-field";
