@@ -209,10 +209,10 @@
        <!----------- From ------------>
       <div class="search-form__item">
         <div class="search-form__inner">
-          <div class="departure departure__main">
-            <div class="departure__pinput">
+          <div class="departure">
+            <div class="departure__input">
+              <span class="departure__title">Откуда</span>
               <input type="text" class="departure-input" readonly value="Москва" />
-              <div class="departure__title">Откуда</div>
             </div>
           </div>
         </div>
@@ -248,10 +248,8 @@
         <div class="search-form__inner">
           <div class="where">
             <div class="where__input">
-              <div class="input__name">Куда</div>
-              <div class="where__input-wrap">
+              <span class="where__title">Куда</span>
                 <input type="text" class="where-input" readonly value="Тайланд" />
-              </div>
             </div>
           </div>
         </div>
@@ -285,10 +283,9 @@
       <!---------- Calendar ----------->
       <div class="search-form__item search-form__item--calendar">
         <div class="search-form__inner">
-          <!-- <div class="dropdown"></div> -->
           <div class="calendar">
             <div class="calendar__field">
-              <div class="calendar__field-title">Дата вылета</div>
+              <span class="calendar__field-title">Дата вылета</ы>
               <div class="calendar__field-dates">
                 <div class="air-datepicker-global-container">
                   <span id="dateField"></span>
@@ -306,7 +303,7 @@
         <div class="search-form__inner">
           <div class="nights-wrapper">
             <div class="nights__main pointer">
-              <div class="nights__title">Длительность</div>
+              <span class="nights__title">Длительность</span>
               <div class="nights__pinput">
                 <span data-counter2>7</span> 
                 <span class="counter"><span>-</span> <span data-counter4>7</span></span>
@@ -344,7 +341,7 @@
       <div class="counter-wrapper search-form__item search-form__item--tourists">
         <div class="search-form__inner">
           <div class="tourists pointer">
-            <div class="tourists__title">Туристы</div>
+            <span class="tourists__title">Туристы</span>
             <div class="tourists__pinput">
               <span data-counter="1">2</span>  
               <span class="counter-text-1" data-text="1">взрослый</span>
@@ -404,10 +401,8 @@
           </div>
         </div>
       </div>
-
       <button class="search-button">Найти</button>
     </section>
-
   </div>
 </section>
 
@@ -483,7 +478,7 @@
   </div>
 </section>
 
-      <section class="slader-swiper">
+      <section class="slader-swiper section-offset">
   <div class="container slider-container">
     <div class="swiper-container">
       <div class="swiper-wrapper hero-slider">
@@ -533,7 +528,7 @@
   </div>
 </section>
 
-      <section class="advantages">
+      <section class="advantages section-offset">
   <div class="container">
     <h2 class="title title--adv title--center">Преимущества бронирования онлайн</h2>
     <p class="descr descr--center">Экономьте время и деньги, выбирая лучшее</p>
@@ -583,7 +578,7 @@
   </div>
 </section>
 
-      <section class="tour-selection">
+      <section class="tour-selection section-offset">
   <div class="container">
     <h2 class="title">Подбор тура по направлениям</h2>
   <ul class="list-reset sliders">
@@ -994,6 +989,342 @@
       </form>
   </div>
 </div>
+</section>
+
+      <section class="best-fares section-offset">
+  <div class="container">
+    <div class="best-fares__top">
+      <h2 class="title best-fares__title">Лучшие предложения</h2>
+      <div class="slider-nav">
+        <button class="btn-reset slider-nav__btn best-fares__prev slider-btn" aria-label="Перейти к предыдущему слайду">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#left-arrow"></use>
+          </svg>
+        </button>
+        <button class="btn-reset slider-nav__btn best-fares__next slider-btn" aria-label="Перейти к следующему слайду">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#right-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="swiper best-fares__items">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/zvenigorod.jpg" alt="img" />
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">
+                    Отель «Zvenigorod» («Гелиопарк Талассо»)
+                  </div>
+                  <div class="best-fares-item__subtitle">
+                    Россия, Московская область
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>3 900 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/Psou.jpg"" alt=" img">
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">Дом отдыха «Псоу»</div>
+                  <div class="best-fares-item__subtitle">
+                    Абхазия, Гагрский район, Цандрипш
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>3 900 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/dominica.jpg" alt="img" />
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">
+                    Гостевой дом «Доминика»
+                  </div>
+                  <div class="best-fares-item__subtitle">
+                    Россия, Крым, Феодосия, Береговое
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>700 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/aitar.jpg" alt="img" />
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">Пансионат «Айтар»</div>
+                  <div class="best-fares-item__subtitle">
+                    Абхазия, Сухумский район, Сухум
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>600 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/Promitei.jpg" alt="img" />
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">
+                    Отель «Промитей Клуб»
+                  </div>
+                  <div class="best-fares-item__subtitle">
+                    Россия, Краснодарский край, Сочи, Лазаревское
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>700 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/Odissea.jpg" alt="img" />
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">Пансионат «Одиссея»</div>
+                  <div class="best-fares-item__subtitle">
+                    России, Краснодарский край, Анапа
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>2 200 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/litfound.jpg" alt="img" />
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">Пансионат «Литфонд»</div>
+                  <div class="best-fares-item__subtitle">
+                    Абхазия, Гагрский район, Пицунда
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>2 800 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrapper">
+          <div class="best-fares__slide">
+            <a href="#" class="best-fares-item">
+              <div class="best-fares-item__image scale">
+                <img src="../img/picunda.jpg" alt="img" />
+              </div>
+              <div class="best-fares-item__content">
+                <div class="best-fares-item__rating">
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon-star" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="best-fares-item__descr">
+                  <div class="title best-fares-item__title">
+                    Пансионат «Курорт Пицунда»
+                  </div>
+                  <div class="best-fares-item__subtitle">
+                    Абхазия, Гагрский район, Пицунда
+                  </div>
+                </div>
+                <div class="best-fares-item__bottom">
+                  <div class="best-fares-item__price">
+                    от <span>1 600 ₽</span>
+                  </div>
+
+                  <div class="best-fares-item__price-descr">
+                    <div class="best-fares-item__price-text">на человека</div>
+                    <div class="best-fares-item__price-text">за ночь</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
     </main>
