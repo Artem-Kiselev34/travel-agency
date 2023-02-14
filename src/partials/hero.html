@@ -11,10 +11,10 @@
        <!----------- From ------------>
       <div class="search-form__item">
         <div class="search-form__inner">
-          <div class="departure departure__main">
-            <div class="departure__pinput">
+          <div class="departure">
+            <div class="departure__input">
+              <span class="departure__title">Откуда</span>
               <input type="text" class="departure-input" readonly value="Москва" />
-              <div class="departure__title">Откуда</div>
             </div>
           </div>
         </div>
@@ -50,10 +50,8 @@
         <div class="search-form__inner">
           <div class="where">
             <div class="where__input">
-              <div class="input__name">Куда</div>
-              <div class="where__input-wrap">
+              <span class="where__title">Куда</span>
                 <input type="text" class="where-input" readonly value="Тайланд" />
-              </div>
             </div>
           </div>
         </div>
@@ -87,10 +85,9 @@
       <!---------- Calendar ----------->
       <div class="search-form__item search-form__item--calendar">
         <div class="search-form__inner">
-          <!-- <div class="dropdown"></div> -->
           <div class="calendar">
             <div class="calendar__field">
-              <div class="calendar__field-title">Дата вылета</div>
+              <span class="calendar__field-title">Дата вылета</ы>
               <div class="calendar__field-dates">
                 <div class="air-datepicker-global-container">
                   <span id="dateField"></span>
@@ -108,7 +105,7 @@
         <div class="search-form__inner">
           <div class="nights-wrapper">
             <div class="nights__main pointer">
-              <div class="nights__title">Длительность</div>
+              <span class="nights__title">Длительность</span>
               <div class="nights__pinput">
                 <span data-counter2>7</span>&nbsp;
                 <span class="counter"><span>-</span> <span data-counter4>7</span></span>
@@ -146,7 +143,7 @@
       <div class="counter-wrapper search-form__item search-form__item--tourists">
         <div class="search-form__inner">
           <div class="tourists pointer">
-            <div class="tourists__title">Туристы</div>
+            <span class="tourists__title">Туристы</span>
             <div class="tourists__pinput">
               <span data-counter="1">2</span> &nbsp;
               <span class="counter-text-1" data-text="1">взрослый</span>
@@ -206,9 +203,7 @@
           </div>
         </div>
       </div>
-
       <button class="search-button">Найти</button>
     </section>
-
   </div>
 </section>

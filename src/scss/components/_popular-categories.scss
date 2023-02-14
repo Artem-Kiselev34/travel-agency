@@ -1,14 +1,8 @@
 .popular-categories {
+  padding-top: 60px;
+
   &__list {
-    margin-bottom: 80px;
-
-    @include tablet {
-      margin-bottom: 40px;
-    }
-  }
-
-  @include mobile {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 }
 

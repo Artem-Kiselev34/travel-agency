@@ -4,6 +4,9 @@ Swiper.use([Navigation, Pagination, Autoplay]);
 
 
 const slider = document.querySelector('.swiper-container');
+const bestFares = document.querySelector('.best-fares__items');
+
+// ---------------------------------------------------------------------------
 
 const swiper = new Swiper(slider, {
   slidesPerView: 1,
@@ -43,4 +46,24 @@ document.getElementsByClassName("swiper-container")[0].addEventListener("mouseou
   document.querySelector('.swiper-button-next').style.display = 'none';
 });
 
+// --------------------------------------------------------------------------------
 
+const bestfaresSlider = new Swiper(bestFares, {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.best-fares__next ',
+    prevEl: '.best-fares__prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  }
+});

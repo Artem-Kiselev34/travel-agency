@@ -1,14 +1,13 @@
 .advantages {
-  margin-bottom: 100px;
-  padding: 30px 0;
   background-image: url(../img/advantages-line.svg);
-  background-position: 50% 47%;
+  background-position: 50% 56%;
   background-repeat: no-repeat;
 
   &__list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-bottom: 30px;
 
     @include small-tablet {
       flex-direction: column;
@@ -117,13 +116,13 @@
   }
 
   @include tablet {
-    background-position: 50% 45%;
+    background-position: 50% 53%;
   }
 
   @include small-tablet {
     position: relative;
     background-image: url(../img/advantages-line-mobile.svg);
-    background-position-y: 70%;
+    background-position-y: 78%;
     background-size: 240px;
 
     &:before {
@@ -147,12 +146,8 @@
     }
   }
 
-  @include small-tablet {
-    margin-bottom: 60px;
-  }
-
   @include mobile {
-    background-position-y: 70%;
-    background-size: 230px;
+    background-position-y: 75%;
+    background-size: 235px;
   }
 }

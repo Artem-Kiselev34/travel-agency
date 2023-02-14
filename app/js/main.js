@@ -52,7 +52,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sliders */ "./src/js/components/sliders.js");
 /* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/inputmask */ "./src/js/components/inputmask.js");
 /* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_inputmask__WEBPACK_IMPORTED_MODULE_7__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './components/just-validate'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 
@@ -61,7 +60,7 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 
 
 
-
+// import './components/just-validate';
 
 /***/ }),
 
@@ -648,6 +647,10 @@ __webpack_require__.r(__webpack_exports__);
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
 const slider = document.querySelector('.swiper-container');
+const bestFares = document.querySelector('.best-fares__items');
+
+// ---------------------------------------------------------------------------
+
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
   slidesPerView: 1,
   loop: true,
@@ -683,6 +686,28 @@ document.getElementsByClassName("swiper-container")[0].addEventListener("mouseov
 document.getElementsByClassName("swiper-container")[0].addEventListener("mouseout", function () {
   document.querySelector('.swiper-button-prev').style.display = 'none';
   document.querySelector('.swiper-button-next').style.display = 'none';
+});
+
+// --------------------------------------------------------------------------------
+
+const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestFares, {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.best-fares__next ',
+    prevEl: '.best-fares__prev'
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    1024: {
+      slidesPerView: 4
+    }
+  }
 });
 
 /***/ }),
