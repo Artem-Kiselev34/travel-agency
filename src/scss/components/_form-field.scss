@@ -1,7 +1,11 @@
 .form-field {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 82px;
+  font-size: 14px;
+
   &__input {
     margin-top: 8px;
-    margin-bottom: 20px;
     border: 1px solid #d7dadd;
     border-radius: 4px;
     padding-left: 15px;
@@ -10,10 +14,6 @@
     line-height: 150%;
     background-color: var(--color-light);
     box-shadow: inset 20px 20px 20px 20px var(--color-light);
-
-    &::placeholder {
-      color: #9a9ca5;
-    }
 
     &:focus {
       outline: 2px solid var(--color-primary);

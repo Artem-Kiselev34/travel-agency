@@ -972,23 +972,26 @@
 
       <section class="section-help-form section-offset">
   <div class="container">
-  <div class="section-help-form__container">
+    <div class="section-help-form__container">
       <h2 class="title title--help-form">Подберите тур с менеджером</h2>
       <p class="descr descr--help-form">Нужна помощь? Теперь не нужно идти в офис продаж</p>
-      <form action="#" class="help-form form" method="POST" enctype="multipart/form-data">
-          <label class="help-form__field form-field">
-            <input class="form-field__input input" type="text" data-validate-field="name" name="Имя" placeholder="Ваше имя">
-          </label>
-          <label class="help-form__field form-field">
-            <input class="form-field__input input" type="tel" data-validate-field="tel" name="Телефон" placeholder="Номер телефона">
-          </label>
-          <label class="help-form__field form-field">
-            <input class="form-field__input input" type="email" data-validate-field="email" name="Email" placeholder="Ваш email">
-          </label>
-          <button class="help-form__btn btn-reset btn btn--fill button">Отправить</button>
+      <form action="#" class="help-form" method="POST" enctype="multipart/form-data">
+        <label class="form-field">
+          <input class="help-form__input form-field__input" type="text" data-validate-field="name" name="Имя"
+            placeholder="Ваше имя">
+        </label>
+        <label class="form-field">
+          <input class="help-form__input form-field__input" type="tel" data-validate-field="tel" name="Телефон"
+            placeholder="Номер телефона">
+        </label>
+        <label class="form-field">
+          <input class="help-form__input form-field__input" type="email" data-validate-field="email" name="Email"
+            placeholder="Ваш email">
+        </label>
+        <button class="help-form__btn btn-reset btn btn--fill" type="submit">Отправить</button>
       </form>
+    </div>
   </div>
-</div>
 </section>
 
       <section class="best-fares section-offset">
@@ -1323,6 +1326,29 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+      <section class="subscription section-offset">
+  <div class="container">
+    <div class="subscription__container">
+      <form action="#" class="subscribe-form" method="POST" enctype="multipart/form-data">
+        <h2 class="subscribe-form__title">Будьте в курсе лучшего!</h2>
+        <p class="subscribe-form__text">Подпишитесь на рассылку и первыми получайте лучшие предложения</p>
+        <div class="subscribe-form__content">
+          <label class="subscribe-form__field form-field">
+            <input class="subscribe-form__input form-field__input" type="email" data-validate-field="email" name="Email" placeholder="Ваш email">
+          </label>
+          <button class="subscribe-form__btn btn-reset btn btn--fill" type="submit">Подписаться</button>
+        </div>
+        <div class="subscribe-form__bottom-text">
+          <span class="icon-info"></span>
+          <p>Нажимая «Подписаться», я даю согласие на
+            <a href="#" target="_blank">обработку персональных данных.</a>
+          </p>
+        </div>
+      </form>
     </div>
   </div>
 </section>

@@ -248,11 +248,11 @@ overlay.addEventListener('click', openMenu, true);
 console.log('Init!');
 
 // inputmask
-const form = document.querySelector('.form');
+const form = document.querySelector('.help-form');
 const telSelector = form.querySelector('input[type="tel"]');
 const inputMask = new Inputmask('+7 (999) 999-99-99');
 inputMask.mask(telSelector);
-new window.JustValidate('.form', {
+new window.JustValidate('.help-form', {
   rules: {
     tel: {
       required: true,
@@ -267,7 +267,7 @@ new window.JustValidate('.form', {
     name: {
       required: 'Введите имя',
       minLength: 'Введите 3 и более символов',
-      maxLength: 'Запрещено вводить более 15 символов'
+      maxLength: 'Не более 15 символов'
     },
     email: {
       email: 'Введите корректный email',
@@ -276,6 +276,29 @@ new window.JustValidate('.form', {
     tel: {
       required: 'Введите телефон',
       function: 'Введите номер полностью'
+    }
+  },
+  submitHandler: function (thisForm) {
+    let formData = new FormData(thisForm);
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log('Отправлено');
+        }
+      }
+    };
+    xhr.open('POST', 'mail.php', true);
+    xhr.send(formData);
+    thisForm.reset();
+  }
+});
+new window.JustValidate('.subscribe-form', {
+  colorWrong: '#ff0f0f',
+  messages: {
+    email: {
+      email: 'Введите корректный email',
+      required: 'Введите email'
     }
   },
   submitHandler: function (thisForm) {
@@ -479,9 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let currentBtn = e.currentTarget;
       let drop = currentBtn.closest('.search-form__item').querySelector('.dropdown');
       dropsContent.forEach(el => {
-        el.classList.remove('dropdown--hide');
         el.addEventListener('click', () => {
-          el.classList.add('dropdown--hide');
           drops.forEach(el => {
             if (el == drop) {
               el.classList.remove('active');
