@@ -10,10 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			let currentBtn = e.currentTarget;
 			let drop = currentBtn.closest('.search-form__item').querySelector('.dropdown');
 			dropsContent.forEach(el => {
-				el.classList.remove('dropdown--hide');
 				el.addEventListener('click', () => {
-					el.classList.add('dropdown--hide')
-
 					drops.forEach(el => {
 						if (el == drop) {
 							el.classList.remove('active');
