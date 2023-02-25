@@ -52,6 +52,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sliders */ "./src/js/components/sliders.js");
 /* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/inputmask */ "./src/js/components/inputmask.js");
 /* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_inputmask__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_scroll_top__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/scroll-top */ "./src/js/components/scroll-top.js");
+/* harmony import */ var _components_scroll_top__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_scroll_top__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -315,6 +318,57 @@ new window.JustValidate('.subscribe-form', {
     xhr.send(formData);
     thisForm.reset();
   }
+});
+
+/***/ }),
+
+/***/ "./src/js/components/scroll-top.js":
+/*!*****************************************!*\
+  !*** ./src/js/components/scroll-top.js ***!
+  \*****************************************/
+/***/ (() => {
+
+function scrollTo(to) {
+  let duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 700;
+  const element = document.scrollingElement || document.documentElement,
+    start = element.scrollTop,
+    change = to - start,
+    startDate = +new Date(),
+    // t = current time
+    // b = start value
+    // c = change in value
+    // d = duration
+    easeInOutQuad = function (t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    },
+    animateScroll = function () {
+      const currentDate = +new Date();
+      const currentTime = currentDate - startDate;
+      element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+      if (currentTime < duration) {
+        requestAnimationFrame(animateScroll);
+      } else {
+        element.scrollTop = to;
+      }
+    };
+  animateScroll();
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollBtn = document.querySelector(".to-top");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 4000) {
+      scrollBtn.classList.add("to-top--active");
+    } else if (window.scrollY < 4000) {
+      scrollBtn.classList.remove("to-top--active");
+    }
+  });
+  scrollBtn.onclick = function (click) {
+    click.preventDefault();
+    scrollTo(0, 900);
+  };
 });
 
 /***/ }),

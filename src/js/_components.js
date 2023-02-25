@@ -6,6 +6,7 @@ import './components/search-filtr/tourists';
 import './components/search-filtr/tourists-children';
 import './components/sliders';
 import './components/inputmask';
+import './components/scroll-top';
 // import './components/just-validate';
 
 

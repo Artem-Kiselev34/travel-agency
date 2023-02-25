@@ -99,34 +99,23 @@
   &__dots {
     position: absolute;
     display: none;
+    width: 0;
     color: var(--color-light);
     cursor: pointer;
 
     @include minidesk {
       display: block;
-    }
-  }
 
-  &__wrapper {
-    position: absolute;
-    display: none;
-    width: 25px;
-    height: 40px;
-    cursor: pointer;
-
-    &:hover .more__menu {
-      display: block;
-    }
-
-    @include minidesk {
-      display: block;
+      &:hover .more__menu {
+        display: block;
+      }
     }
   }
 
   &__menu {
     position: relative;
     right: 118px;
-    top: 39px;
+    top: 18px;
     z-index: 0;
     display: none;
     border-radius: 8px;

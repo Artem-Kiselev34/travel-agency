@@ -41,18 +41,6 @@
       transition-duration: 0.3s ease-in-out;
     }
 
-    &--chevron {
-      padding-right: 20px;
-      background-image: url("../img/chevron.svg");
-      background-position: right center;
-      background-size: 16px 21px;
-      background-repeat: no-repeat;
-
-      @include small-tablet {
-        display: none;
-      }
-    }
-
     @include minidesk {
       font-size: 16px;
     }
