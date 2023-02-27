@@ -12,10 +12,6 @@ let openMenu = function() {
 		overlay.classList.toggle('_active');
 }
 
-// let mobileMenu = function() {
-
-// }
-
 	burger.addEventListener('click', openMenu, true);
   // burger.addEventListener('click', mobileMenu, true);
 	overlay.addEventListener('click', openMenu, true);

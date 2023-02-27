@@ -183,7 +183,7 @@ input {
   }
 
   &--help-form {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 
     @include mobile {
       padding: 0 15px;
@@ -239,7 +239,7 @@ input {
   }
 
   &--help-form {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 
     @include mobile {
       padding: 0 15px;
@@ -396,5 +396,86 @@ input {
   @include big-desktop {
     right: 20px;
     bottom: 20px;
+  }
+}
+
+.site-modal {
+  border-radius: 4px;
+  width: 600px;
+
+  .modal__close {
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/close-modal.svg");
+  }
+
+  &__title {
+    display: flex;
+    margin: 0;
+    border-radius: 4px 4px 0 0;
+    padding: 22px 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-ebony);
+    background-color: var(--color-violet);
+
+    @include mobile {
+      padding: 20px 20px;
+    }
+  }
+
+  &__form {
+    padding: 40px 24px;
+  }
+
+  &__field {
+    margin-bottom: 28px;
+  }
+
+  &__btn {
+    padding: 10px 40px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+    padding: 16px;
+    background-color: var(--color-sand);
+  }
+
+  &__link {
+    display: flex;
+    border-radius: 4px;
+    padding: 0 8px;
+    height: 36px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-rinse);
+    }
+
+    &:last-child {
+      margin-left: 8px;
+    }
+
+    & span {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+
+  @include small-tablet {
+    width: 80%;
+  }
+
+  @include mobile {
+    width: 90%;
   }
 }

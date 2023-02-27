@@ -81,3 +81,18 @@ new window.JustValidate('.subscribe-form', {
     thisForm.reset();
   }
 });
+
+new window.JustValidate('.site-modal__form', {
+  colorWrong: '#ff0f0f',
+  messages: {
+    email: {
+      email: 'Введите корректный email',
+      required: 'Введите email'
+    },
+    password: {
+      password: 'Введите корректный пароль',
+      required: 'Введите пароль',
+      minLength: 'Введите не менее 4 символов'
+    }
+  },
+});
