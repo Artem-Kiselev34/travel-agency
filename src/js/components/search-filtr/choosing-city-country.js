@@ -12,7 +12,6 @@ whereList.addEventListener('click', dropSelectWhere);
 
 function dropSelectDeparture(e){
   departureInput.value = e.target.textContent
-
 }
 function dropSelectWhere(e){
   whereInput.value = e.target.textContent

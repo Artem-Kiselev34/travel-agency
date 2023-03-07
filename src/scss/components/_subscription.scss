@@ -84,27 +84,4 @@
       width: 100%;
     }
   }
-
-  &__bottom-text {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: var(--color-great);
-
-    a {
-      text-decoration: underline;
-      color: var(--color-great);
-    }
-  }
-}
-
-.icon-info {
-  margin-right: 6px;
-  padding-right: 16px;
-  width: 16px;
-  height: 16px;
-  background-image: url(../img/info.svg);
-  background-repeat: no-repeat;
 }

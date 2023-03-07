@@ -28,7 +28,7 @@
           </a>
         </div>
         <nav class="header__nav">
-          <a class="header__nav-link" href="#">Подобрать тур</a>
+          <a class="header__nav-link" href="#" data-graph-animation="custom" data-graph-path="second">Подобрать тур</a>
           <a class="header__nav-link" href="#">О компании</a>
 
           <div class="more">
@@ -1330,8 +1330,8 @@
           </label>
           <button class="subscribe-form__btn btn-reset btn btn--fill" type="submit">Подписаться</button>
         </div>
-        <div class="subscribe-form__bottom-text">
-          <span class="icon-info"></span>
+        <div class="user-agreement">
+          <span class="user-agreement__icon-info"></span>
           <p>Нажимая «Подписаться», я даю согласие на
             <a href="#" target="_blank">обработку персональных данных.</a>
           </p>
@@ -1348,11 +1348,13 @@
       <h2 class="site-modal__title">Вход в личный кабинет</h2>
       <form action="#" class="site-modal__form form-1">
         <label class="form-field form-field--gray site-modal__field">
-          <input type="email" name="email" required placeholder="Ваш email" class="form-field__input" data-validate-field="email">
+          <input type="email" name="email" required placeholder="Ваш email" class="form-field__input"
+            data-validate-field="email">
         </label>
 
         <label class="form-field form-field--gray site-modal__field">
-          <input type="password" name="password" placeholder="Пароль" class="form-field__input" data-validate-field="password">
+          <input type="password" name="password" placeholder="Пароль" class="form-field__input"
+            data-validate-field="password">
         </label>
 
         <button class="site-modal__btn btn btn-reset btn--fill" type="submit">Войти</button>
@@ -1361,6 +1363,86 @@
         <a href="#" target="_blank" class="site-modal__link"><span>Регистрация</span></a>
         <a href="#" target="_blank" class="site-modal__link"><span>Напомнить пароль</span></a>
       </div>
+    </div>
+  </div>
+
+  <div class="modal__container site-modal" role="dialog" aria-modal="true" data-graph-target="second">
+    <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal-content">
+      <h2 class="site-modal__title">Мы поможем подобрать тур</h2>
+      <form action="#" class="site-modal__form form-1">
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="from" required placeholder="Откуда" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="where" required placeholder="Куда" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="date" required placeholder="Дата начала" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="name" required placeholder="Имя" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="email" name="email" required placeholder="Email" class="form-field__input">
+        </label>
+
+        <div class="site-modal__group">
+            <div class="select">
+              <span class="select__text">Россия +7</span>
+              <svg class="select__icon" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#chevron-down"></use>
+              </svg>
+            </div>
+            <ul class="options list-reset">
+              <li class="option">
+                <span class="option__text option__text--by">Беларусь +375</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--ee">Эстония +372</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--lv">Латвия +371</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--lt">Литва + 370</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--ru">Россия +7</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--ua">Украина +380</span>
+              </li>
+            </ul>
+
+          <label class="form-field form-field--w site-modal__field">
+            <input type="tel" name="phone" required placeholder="Телефон" class="form-field__input">
+          </label>
+        </div>
+
+        <div class="contact-type">
+          <span class="contact-type__label">Желаемый способ связи</span>
+          <div class="contact-type__group">
+            <div class="contact-type__radio">
+              <input value="callback" type="radio" id="callback" name="communication">
+              <label for="callback">Телефон</label>
+            </div>
+            <div class="contact-type__radio">
+              <input type="radio" id="messenger" name="communication">
+              <label for="messenger">WhatsApp</label>
+            </div>
+          </div>
+        </div>
+
+        <button class="site-modal__btn btn btn--fill" type="submit">Отправить</button>
+
+        <div class="user-agreement">
+          <span class="user-agreement__icon-info"></span>
+          <p>Нажимая «Подписаться», я даю согласие на
+            <a href="#" target="_blank">обработку персональных данных.</a>
+          </p>
+        </div>
+      </form>
     </div>
   </div>
 </div>

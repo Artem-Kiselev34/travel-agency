@@ -8,6 +8,7 @@ import './components/sliders';
 import './components/inputmask';
 import './components/scroll-top';
 import './components/modals';
+import './components/select-menu';
 // import './components/just-validate';
 
 

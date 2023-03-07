@@ -127,6 +127,7 @@ input {
   position: relative;
 }
 
+
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
   width: 4px;
@@ -399,83 +400,25 @@ input {
   }
 }
 
-.site-modal {
-  border-radius: 4px;
-  width: 600px;
+.user-agreement {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-great);
 
-  .modal__close {
-    right: 24px;
-    top: 24px;
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/close-modal.svg");
+  &__icon-info {
+    margin-right: 6px;
+    padding-right: 16px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/info.svg);
+    background-repeat: no-repeat;
   }
 
-  &__title {
-    display: flex;
-    margin: 0;
-    border-radius: 4px 4px 0 0;
-    padding: 22px 24px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--color-ebony);
-    background-color: var(--color-violet);
-
-    @include mobile {
-      padding: 20px 20px;
-    }
-  }
-
-  &__form {
-    padding: 40px 24px;
-  }
-
-  &__field {
-    margin-bottom: 28px;
-  }
-
-  &__btn {
-    padding: 10px 40px;
-  }
-
-  &__footer {
-    display: flex;
-    align-items: center;
-    border-radius: 0 0 4px 4px;
-    padding: 16px;
-    background-color: var(--color-sand);
-  }
-
-  &__link {
-    display: flex;
-    border-radius: 4px;
-    padding: 0 8px;
-    height: 36px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: var(--color-rinse);
-    }
-
-    &:last-child {
-      margin-left: 8px;
-    }
-
-    & span {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      line-height: normal;
-    }
-  }
-
-  @include small-tablet {
-    width: 80%;
-  }
-
-  @include mobile {
-    width: 90%;
+  a {
+    text-decoration: underline;
+    color: var(--color-great);
   }
 }

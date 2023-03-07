@@ -56,6 +56,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_scroll_top__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_scroll_top__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/modals */ "./src/js/components/modals.js");
 /* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_modals__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/select-menu */ "./src/js/components/select-menu.js");
+/* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_select_menu__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 
@@ -730,6 +733,38 @@ btnPlus.addEventListener('click', function () {
       text2.style.display = 'none';
       touristsHidden2.style.display = 'block';
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/js/components/select-menu.js":
+/*!******************************************!*\
+  !*** ./src/js/components/select-menu.js ***!
+  \******************************************/
+/***/ (() => {
+
+const select = document.querySelector('.select');
+const selectIcon = document.querySelector('.select__icon');
+const options = document.querySelector('.options');
+const option = document.querySelectorAll('.option');
+const selectText = document.querySelector('.select__text');
+select.addEventListener('click', () => {
+  options.classList.toggle('active');
+  selectIcon.classList.toggle('rotate');
+});
+option.forEach(el => {
+  el.addEventListener('click', e => {
+    options.classList.remove('active');
+    selectIcon.classList.remove('rotate');
+    selectText.innerHTML = e.target.innerHTML;
+    selectText.classList.remove('select__text');
+  });
+});
+document.addEventListener('click', e => {
+  if (!e.target.closest('.select')) {
+    options.classList.remove('active');
+    selectIcon.classList.remove('rotate');
   }
 });
 
