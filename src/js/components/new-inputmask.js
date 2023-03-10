@@ -1,4 +1,4 @@
-console.log('Init!');
+// console.log('Init!');
 
 // inputmask
 const form = document.querySelector('.form');

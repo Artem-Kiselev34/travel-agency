@@ -252,91 +252,96 @@ overlay.addEventListener('click', openMenu, true);
   \****************************************/
 /***/ (() => {
 
-console.log('Init!');
-
 // inputmask
-const form = document.querySelector('.help-form');
-const telSelector = form.querySelector('input[type="tel"]');
-const inputMask = new Inputmask('+7 (999) 999-99-99');
-inputMask.mask(telSelector);
-new window.JustValidate('.help-form', {
-  rules: {
-    tel: {
-      required: true,
-      function: () => {
-        const phone = telSelector.inputmask.unmaskedvalue();
-        return Number(phone) && phone.length === 10;
-      }
-    }
-  },
-  colorWrong: '#ff0f0f',
-  messages: {
-    name: {
-      required: 'Введите имя',
-      minLength: 'Введите 3 и более символов',
-      maxLength: 'Не более 15 символов'
-    },
-    email: {
-      email: 'Введите корректный email',
-      required: 'Введите email'
-    },
-    tel: {
-      required: 'Введите телефон',
-      function: 'Введите номер полностью'
-    }
-  },
-  submitHandler: function (thisForm) {
-    let formData = new FormData(thisForm);
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          console.log('Отправлено');
+
+const form = document.querySelector(".help-form");
+if (document.querySelector(".help-form") !== null) {
+  const telSelector = form.querySelector('input[type="tel"]');
+  const inputMask = new Inputmask("+7 (999) 999-99-99");
+  inputMask.mask(telSelector);
+  new window.JustValidate(".help-form", {
+    rules: {
+      tel: {
+        required: true,
+        function: () => {
+          const phone = telSelector.inputmask.unmaskedvalue();
+          return Number(phone) && phone.length === 10;
         }
       }
-    };
-    xhr.open('POST', 'mail.php', true);
-    xhr.send(formData);
-    thisForm.reset();
-  }
-});
-new window.JustValidate('.subscribe-form', {
-  colorWrong: '#ff0f0f',
-  messages: {
-    email: {
-      email: 'Введите корректный email',
-      required: 'Введите email'
-    }
-  },
-  submitHandler: function (thisForm) {
-    let formData = new FormData(thisForm);
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          console.log('Отправлено');
-        }
-      }
-    };
-    xhr.open('POST', 'mail.php', true);
-    xhr.send(formData);
-    thisForm.reset();
-  }
-});
-new window.JustValidate('.site-modal__form', {
-  colorWrong: '#ff0f0f',
-  messages: {
-    email: {
-      email: 'Введите корректный email',
-      required: 'Введите email'
     },
-    password: {
-      password: 'Введите корректный пароль',
-      required: 'Введите пароль',
-      minLength: 'Введите не менее 4 символов'
+    colorWrong: "#ff0f0f",
+    messages: {
+      name: {
+        required: "Введите имя",
+        minLength: "Введите 3 и более символов",
+        maxLength: "Не более 15 символов"
+      },
+      email: {
+        email: "Введите корректный email",
+        required: "Введите email"
+      },
+      tel: {
+        required: "Введите телефон",
+        function: "Введите номер полностью"
+      }
+    },
+    submitHandler: function (thisForm) {
+      let formData = new FormData(thisForm);
+      let xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log("Отправлено");
+          }
+        }
+      };
+      xhr.open("POST", "mail.php", true);
+      xhr.send(formData);
+      thisForm.reset();
     }
-  }
-});
+  });
+}
+if (document.querySelector(".subscribe-form") !== null) {
+  new window.JustValidate(".subscribe-form", {
+    colorWrong: "#ff0f0f",
+    messages: {
+      email: {
+        email: "Введите корректный email",
+        required: "Введите email"
+      }
+    },
+    submitHandler: function (thisForm) {
+      let formData = new FormData(thisForm);
+      let xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log("Отправлено");
+          }
+        }
+      };
+      xhr.open("POST", "mail.php", true);
+      xhr.send(formData);
+      thisForm.reset();
+    }
+  });
+}
+if (document.querySelector(".site-modal__form") !== null) {
+  new window.JustValidate(".site-modal__form", {
+    colorWrong: "#ff0f0f",
+    messages: {
+      email: {
+        email: "Введите корректный email",
+        required: "Введите email"
+      },
+      password: {
+        password: "Введите корректный пароль",
+        required: "Введите пароль",
+        minLength: "Введите не менее 4 символов"
+      }
+    }
+  });
+}
 
 /***/ }),
 
@@ -413,8 +418,12 @@ const departureList = document.querySelector('.departure-drop');
 const whereList = document.querySelector('.where-drop');
 const departureInput = document.querySelector('.departure-input');
 const whereInput = document.querySelector('.where-input');
-departureList.addEventListener('click', dropSelectDeparture);
-whereList.addEventListener('click', dropSelectWhere);
+if (document.querySelector(".departure-drop") !== null) {
+  departureList.addEventListener('click', dropSelectDeparture);
+}
+if (document.querySelector(".where-drop") !== null) {
+  whereList.addEventListener('click', dropSelectWhere);
+}
 function dropSelectDeparture(e) {
   departureInput.value = e.target.textContent;
 }
@@ -619,10 +628,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const addChild = document.querySelector(".tourists-add-child");
 const wrapContainer = document.querySelector(".children-wrap");
-addChild.addEventListener("click", function () {
-  wrapContainer.classList.toggle("is-hidden");
-});
-
+if (document.querySelector(".tourists-add-child") !== null) {
+  addChild.addEventListener("click", function () {
+    wrapContainer.classList.toggle("is-hidden");
+  });
+}
+;
 // ------------------------ adding and removing children --------------------------
 
 const tourBody = document.querySelector(".tourists__body");
@@ -702,39 +713,45 @@ const text = document.querySelector('[data-text="1"]');
 const text2 = document.querySelector('[data-text="3"]');
 
 // Отслеживаем клик на кнопку btnMinus
-btnMinus.addEventListener('click', function () {
-  if (parseInt(counters.innerText) > 1) {
-    counters.innerText = --counters.innerText;
-    if (parseInt(counters.innerText) == 1) {
-      touristsHidden.style.display = 'none';
-      text.style.display = 'block';
+if (document.querySelector('[data-action="minus2"]') !== null) {
+  btnMinus.addEventListener('click', function () {
+    if (parseInt(counters.innerText) > 1) {
+      counters.innerText = --counters.innerText;
+      if (parseInt(counters.innerText) == 1) {
+        touristsHidden.style.display = 'none';
+        text.style.display = 'block';
+      }
     }
-  }
-  if (parseInt(counters2.innerText) > 1) {
-    counters2.innerText = --counters2.innerText;
-    if (parseInt(counters.innerText) == 1) {
-      touristsHidden2.style.display = 'none';
-      text2.style.display = 'block';
+    if (parseInt(counters2.innerText) > 1) {
+      counters2.innerText = --counters2.innerText;
+      if (parseInt(counters.innerText) == 1) {
+        touristsHidden2.style.display = 'none';
+        text2.style.display = 'block';
+      }
     }
-  }
-});
+  });
+}
+;
 // Отслеживаем клик на кнопку btnPlus
-btnPlus.addEventListener('click', function () {
-  if (parseInt(counters.innerText) < 4) {
-    counters.innerText = ++counters.innerText;
-    if (parseInt(counters.innerText) > 1) {
-      text.style.display = 'none';
-      touristsHidden.style.display = 'block';
+if (document.querySelector('[data-action="plus2"]') !== null) {
+  btnPlus.addEventListener('click', function () {
+    if (parseInt(counters.innerText) < 4) {
+      counters.innerText = ++counters.innerText;
+      if (parseInt(counters.innerText) > 1) {
+        text.style.display = 'none';
+        touristsHidden.style.display = 'block';
+      }
     }
-  }
-  if (parseInt(counters2.innerText) < 4) {
-    counters2.innerText = ++counters2.innerText;
-    if (parseInt(counters.innerText) > 1) {
-      text2.style.display = 'none';
-      touristsHidden2.style.display = 'block';
+    if (parseInt(counters2.innerText) < 4) {
+      counters2.innerText = ++counters2.innerText;
+      if (parseInt(counters.innerText) > 1) {
+        text2.style.display = 'none';
+        touristsHidden2.style.display = 'block';
+      }
     }
-  }
-});
+  });
+}
+;
 
 /***/ }),
 
@@ -785,44 +802,44 @@ const slider = document.querySelector('.swiper-container');
 const bestFares = document.querySelector('.best-fares__items');
 
 // ---------------------------------------------------------------------------
+if (document.querySelector(".swiper-container") !== null) {
+  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    speed: 1500,
+    // autoplay: {
+    // 	delay: 3000,
+    // },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+    // on: {
+    // 	init() {
+    // 	  this.el.addEventListener('mouseover', () => {
+    // 		this.autoplay.stop();
+    // 	  });
 
-const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
-  slidesPerView: 1,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  speed: 1500,
-  // autoplay: {
-  // 	delay: 3000,
-  // },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-  // on: {
-  // 	init() {
-  // 	  this.el.addEventListener('mouseover', () => {
-  // 		this.autoplay.stop();
-  // 	  });
+    // 	  this.el.addEventListener('mouseout', () => {
+    // 		this.autoplay.start();
+    // 	  });
+    // 	}
+    //   }
+  });
 
-  // 	  this.el.addEventListener('mouseout', () => {
-  // 		this.autoplay.start();
-  // 	  });
-  // 	}
-  //   }
-});
-
-document.getElementsByClassName("swiper-container")[0].addEventListener("mouseover", function () {
-  document.querySelector('.swiper-button-prev').style.display = 'block';
-  document.querySelector('.swiper-button-next').style.display = 'block';
-});
-document.getElementsByClassName("swiper-container")[0].addEventListener("mouseout", function () {
-  document.querySelector('.swiper-button-prev').style.display = 'none';
-  document.querySelector('.swiper-button-next').style.display = 'none';
-});
-
+  document.getElementsByClassName("swiper-container")[0].addEventListener("mouseover", function () {
+    document.querySelector('.swiper-button-prev').style.display = 'block';
+    document.querySelector('.swiper-button-next').style.display = 'block';
+  });
+  document.getElementsByClassName("swiper-container")[0].addEventListener("mouseout", function () {
+    document.querySelector('.swiper-button-prev').style.display = 'none';
+    document.querySelector('.swiper-button-next').style.display = 'none';
+  });
+}
 // --------------------------------------------------------------------------------
 
 const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestFares, {
@@ -885,45 +902,47 @@ const mobileCheck = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/index.es.js");
 
-new air_datepicker__WEBPACK_IMPORTED_MODULE_0__["default"]('#airdatepicker', {
-  range: true,
-  multipleDatesSeparator: ' - ',
-  dateFormat: 'd.MM',
-  position: 'bottom center',
-  offset: 24,
-  autoClose: true,
-  minDate: new Date(),
-  startDate: new Date()
-});
-const formControl = document.querySelector('.form-control');
-const dataField = document.querySelector('.dataField');
-const dateField = document.getElementById("dateField");
-const calendarFocus = document.querySelector('.calendar__field');
-calendarFocus.addEventListener('click', function (_event) {
-  dateField.style.display = 'none';
-  dataField.style.display = 'block';
-  formControl.style.opacity = 1;
-  document.getElementById('airdatepicker').focus();
-  return false;
-});
+if (document.querySelector("#airdatepicker") !== null) {
+  new air_datepicker__WEBPACK_IMPORTED_MODULE_0__["default"]('#airdatepicker', {
+    range: true,
+    multipleDatesSeparator: ' - ',
+    dateFormat: 'd.MM',
+    position: 'bottom center',
+    offset: 24,
+    autoClose: true,
+    minDate: new Date(),
+    startDate: new Date()
+  });
+  const formControl = document.querySelector('.form-control');
+  const dataField = document.querySelector('.dataField');
+  const dateField = document.getElementById("dateField");
+  const calendarFocus = document.querySelector('.calendar__field');
+  calendarFocus.addEventListener('click', function (_event) {
+    dateField.style.display = 'none';
+    dataField.style.display = 'block';
+    formControl.style.opacity = 1;
+    document.getElementById('airdatepicker').focus();
+    return false;
+  });
 
-// ------------------------------- calendar сurrent data -----------------------------------
+  // ------------------------------- calendar сurrent data -----------------------------------
 
-function my_curr_date() {
-  let currentDate = new Date();
-  let day = currentDate.getDate();
-  let day2 = currentDate.getDate() + 2;
-  let month = currentDate.getMonth() + 1;
-  if (month < 10) month = '0' + month;
-  let my_date = day + "." + month;
-  let my_date2 = day2 + "." + month;
+  function my_curr_date() {
+    let currentDate = new Date();
+    let day = currentDate.getDate();
+    let day2 = currentDate.getDate() + 2;
+    let month = currentDate.getMonth() + 1;
+    if (month < 10) month = '0' + month;
+    let my_date = day + "." + month;
+    let my_date2 = day2 + "." + month;
 
-  // dateField.innerText ='с '+ my_date +' по '+ my_date2;
-  dateField.innerText = my_date + ' - ' + my_date2;
-  // dateField.innerText = my_date;
+    // dateField.innerText ='с '+ my_date +' по '+ my_date2;
+    dateField.innerText = my_date + ' - ' + my_date2;
+    // dateField.innerText = my_date;
+  }
+
+  my_curr_date();
 }
-
-my_curr_date();
 
 /***/ }),
 
@@ -4426,8 +4445,10 @@ sliders.forEach(el => {
   \********************************************/
 /***/ ((module) => {
 
-console.log('just');
 "use strict";
+// console.log('just')
+
+
 function _defineProperty(e, t, i) {
   return t in e ? Object.defineProperty(e, t, {
     value: i,

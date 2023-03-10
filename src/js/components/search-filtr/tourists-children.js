@@ -1,10 +1,12 @@
 const addChild = document.querySelector(".tourists-add-child");
 const wrapContainer = document.querySelector(".children-wrap");
 
+if (document.querySelector(".tourists-add-child") !== null) {
+
 addChild.addEventListener("click", function () {
   wrapContainer.classList.toggle("is-hidden");
 });
-
+};
 // ------------------------ adding and removing children --------------------------
 
 const tourBody = document.querySelector(".tourists__body");
