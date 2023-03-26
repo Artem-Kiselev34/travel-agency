@@ -9,6 +9,9 @@ import './components/inputmask';
 import './components/scroll-top';
 import './components/modals';
 import './components/select-menu';
+import './components/geolocation';
+import './components/ymap';
+import './components/filter-offices';
 // import './components/just-validate';
 
 

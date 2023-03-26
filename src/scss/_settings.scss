@@ -50,6 +50,15 @@ input {
   overflow: hidden; // если используем на сайте position: sticky - убрать эту настройку
 }
 
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rotate {
+  transform: rotate(180deg) translateY(50%);
+}
+
 ._lock {
   overflow: hidden;
 }

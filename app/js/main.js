@@ -58,6 +58,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_modals__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/select-menu */ "./src/js/components/select-menu.js");
 /* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_select_menu__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_geolocation__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/geolocation */ "./src/js/components/geolocation.js");
+/* harmony import */ var _components_geolocation__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_geolocation__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_ymap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/ymap */ "./src/js/components/ymap.js");
+/* harmony import */ var _components_ymap__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_ymap__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _components_filter_offices__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/filter-offices */ "./src/js/components/filter-offices.js");
+/* harmony import */ var _components_filter_offices__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_filter_offices__WEBPACK_IMPORTED_MODULE_13__);
+
+
+
 
 
 
@@ -201,18 +210,15 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _vendor_geolocation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/geolocation.js */ "./src/js/vendor/geolocation.js");
-/* harmony import */ var _vendor_geolocation_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_geolocation_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _vendor_air_calendar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/air-calendar.js */ "./src/js/vendor/air-calendar.js");
-/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vendor/js-vanilla-slider.js */ "./src/js/vendor/js-vanilla-slider.js");
-/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vendor/inputmask.min.js */ "./src/js/vendor/inputmask.min.js");
-/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./vendor/just-validate.min.js */ "./src/js/vendor/just-validate.min.js");
-/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./vendor/modals.min.js */ "./src/js/vendor/modals.min.js");
-/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_6__);
-
+/* harmony import */ var _vendor_air_calendar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/air-calendar.js */ "./src/js/vendor/air-calendar.js");
+/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/js-vanilla-slider.js */ "./src/js/vendor/js-vanilla-slider.js");
+/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vendor/inputmask.min.js */ "./src/js/vendor/inputmask.min.js");
+/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vendor/just-validate.min.js */ "./src/js/vendor/just-validate.min.js");
+/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./vendor/modals.min.js */ "./src/js/vendor/modals.min.js");
+/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -243,6 +249,82 @@ let openMenu = function () {
 burger.addEventListener('click', openMenu, true);
 // burger.addEventListener('click', mobileMenu, true);
 overlay.addEventListener('click', openMenu, true);
+
+/***/ }),
+
+/***/ "./src/js/components/filter-offices.js":
+/*!*********************************************!*\
+  !*** ./src/js/components/filter-offices.js ***!
+  \*********************************************/
+/***/ (() => {
+
+const select = document.querySelector('.filter');
+const selectIcon = document.querySelector('.filter__icon');
+const options = document.querySelector('.city-list');
+const option = document.querySelectorAll('.city-list__item');
+const selectText = document.querySelector('.filter__text');
+if (document.querySelector(".filter") !== null) {
+  select.addEventListener('click', () => {
+    options.classList.toggle('active');
+    selectIcon.classList.toggle('rotate');
+  });
+  option.forEach(el => {
+    el.addEventListener('click', e => {
+      options.classList.remove('active');
+      selectIcon.classList.remove('rotate');
+      selectText.innerHTML = e.target.innerHTML;
+      selectText.classList.remove('filter__text');
+    });
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.filter')) {
+      options.classList.remove('active');
+      selectIcon.classList.remove('rotate');
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./src/js/components/geolocation.js":
+/*!******************************************!*\
+  !*** ./src/js/components/geolocation.js ***!
+  \******************************************/
+/***/ (() => {
+
+function getUserCity() {
+  return new Promise((resolve, reject) => {
+    fetch('https://api.ipify.org?format=json').then(res => res.json()).then(_ref => {
+      let {
+        ip
+      } = _ref;
+      fetch(`https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=${ip}&token=2c1b7cc702379e2372b140b0403fd53bbe385662`).then(res => res.json()).then(json => {
+        if ({}.hasOwnProperty.call(json, 'family') && json.family.toLowerCase().indexOf('err')) {
+          return reject(json);
+        }
+        const {
+          location: {
+            data: {
+              city
+            }
+          }
+        } = json;
+        resolve({
+          city
+        });
+      });
+    });
+  });
+}
+let output = document.querySelector('.geolocation');
+getUserCity().then(_ref2 => {
+  let {
+    city
+  } = _ref2;
+  output.innerHTML = city;
+}).catch(err => {
+  console.log(err);
+});
 
 /***/ }),
 
@@ -864,6 +946,376 @@ const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestF
 
 /***/ }),
 
+/***/ "./src/js/components/ymap.js":
+/*!***********************************!*\
+  !*** ./src/js/components/ymap.js ***!
+  \***********************************/
+/***/ (() => {
+
+let center = [48.707930140656586, 44.50946858474039];
+let catalog = document.querySelector('.catalog');
+const catalogList = [{
+  msk: `
+    <ul class="catalog__wrap list-reset">
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Добрынинская</div>
+          <div class="catalog__address">Москва, ул.Валовая, д.35</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler 1905 года</div>
+          <div class="catalog__address">Москва, Шмитовский проезд, 10/7</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Бауманская</div>
+          <div class="catalog__address">Москва, Ладожская улица, 1</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Курская</div>
+          <div class="catalog__address">Москва, улица Земляной Вал, 33</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Фрунзенская</div>
+          <div class="catalog__address">Москва, Комсомольский проспект, 32к2</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Марьина Роща</div>
+          <div class="catalog__address">Москва, Шереметьевская улица, 6к1</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Автозаводская</div>
+          <div class="catalog__address">Москва, улица Ленинская Слобода, 26кА</div>
+        </a>
+      </li>
+    </ul
+  `
+}, {
+  spb: `
+    <ul class="catalog__wrap list-reset">
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Новочеркасская</div>
+          <div class="catalog__address">Санкт-Петербург, ул.Свердловская набережная, д.60</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Маяковская</div>
+          <div class="catalog__address">Санкт-Петербург, ул. Марата, д.5</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Приморская</div>
+          <div class="catalog__address">Санкт-Петербург, Малый проспект Васильевского острова, д.88, корп.2</div>
+        </a>
+      </li>
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Московские ворота</div>
+          <div class="catalog__address">Санкт-Петербург, Лиговский проспект, д.266с1</div>
+        </a>
+      </li>
+    </ul>
+  `
+}, {
+  kzn: `
+    <ul class="catalog__wrap list-reset">
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Площадь Тукая</div>
+          <div class="catalog__address">Казань, ул.Петербургская, д.1</div>
+        </a>
+      </li>
+    </ul>
+  `
+}, {
+  vlg: `
+    <ul class="catalog__wrap list-reset">
+      <li class="catalog__item" title="Подробнее">
+        <a href="#" target="_blank">
+          <div class="catalog__title">Traveler Волгоград</div>
+          <div class="catalog__address">Волгоград, ул.Краснознаменская, д.9</div>
+        </a>
+      </li>
+    </ul>
+  `
+}];
+let msk = catalogList[0].msk;
+let spb = catalogList[1].spb;
+let kzn = catalogList[2].kzn;
+let vlg = catalogList[3].vlg;
+if (document.querySelector(".catalog") !== null) {
+  catalog.innerHTML = msk;
+}
+;
+// -------------------------------------------------------
+
+const groups = [{
+  name: "Москва",
+  items: [{
+    id: 1,
+    center: [55.72953619381542, 37.62608949143217],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Добрынинская</div>
+          <div class="balloon__address">Адрес: Москва, ул.Валовая, д.35</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Москва",
+  items: [{
+    id: 1,
+    center: [55.75919104005139, 37.55270194281979],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler 1905 года</div>
+          <div class="balloon__address">Адрес: Москва, Шмитовский проезд, 10/7</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Москва",
+  items: [{
+    id: 1,
+    center: [55.77154464938837, 37.679140111729865],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Бауманская</div>
+          <div class="balloon__address">Адрес: Москва, Ладожская улица, 1</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Москва",
+  items: [{
+    id: 1,
+    center: [55.75736607513555, 37.65909864597057],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Курская</div>
+          <div class="balloon__address">Адрес: Москва, улица Земляной Вал, 33</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Москва",
+  items: [{
+    id: 1,
+    center: [55.726044783858846, 37.57826759509778],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Фрунзенская</div>
+          <div class="balloon__address">Адрес: Москва, Комсомольский проспект, 32к2</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Москва",
+  items: [{
+    id: 1,
+    center: [55.79545018775852, 37.61695577792858],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Марьина Роща</div>
+          <div class="balloon__address">Адрес: Москва, Шереметьевская улица, 6к1</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Москва",
+  items: [{
+    id: 1,
+    center: [55.70937776797371, 37.65303685359693],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Автозаводская</div>
+          <div class="balloon__address">Адрес: Москва, улица Ленинская Слобода, 26кА</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Санкт-Петербург",
+  items: [{
+    id: 2,
+    center: [59.95425645703236, 30.408565671691843],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Новочеркасская</div>
+          <div class="balloon__address">Адрес: Санкт-Петербург, ул.Свердловская набережная, д.60</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Санкт-Петербург",
+  items: [{
+    id: 2,
+    center: [59.93029791739945, 30.353913415640402],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Маяковская</div>
+          <div class="balloon__address">Адрес: Санкт-Петербург, ул. Марата, д.5</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Санкт-Петербург",
+  items: [{
+    id: 2,
+    center: [59.939899127413966, 30.228432013907153],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Приморская</div>
+          <div class="balloon__address">Адрес: Санкт-Петербург, Малый проспект Васильевского острова, д.88, корп.2</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Санкт-Петербург",
+  items: [{
+    // id: 2,
+    center: [59.8945565745232, 30.33270557157011],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Московские ворота</div>
+          <div class="balloon__address">Адрес: Санкт-Петербург, Лиговский проспект, д.266с1</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Казань",
+  items: [{
+    id: 3,
+    center: [55.78613343268177, 49.12529891396084],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Площадь Тукая</div>
+          <div class="balloon__address">Адрес: Казань, ул.Петербургская, д.1</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}, {
+  name: "Волгоград",
+  items: [{
+    id: 4,
+    center: [48.704410304591775, 44.50972551343156],
+    name: `
+        <div class="balloon">
+          <div class="balloon__title">Traveler Волгоград</div>
+          <div class="balloon__address">Адрес: Волгоград, ул.Краснознаменская, д.9</div>
+          <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
+          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+        </div>
+      `
+  }]
+}];
+if (document.querySelector(".map") !== null) {
+  ymaps.ready(init);
+  function init() {
+    const myMap = new ymaps.Map('map', {
+      center: [55.72953619381542, 37.62608949143217],
+      //Центрирование карты. Поскольку у нас есть метки с собственным центрированием, то можно не указывать
+      zoom: 11,
+      controls: ['zoomControl']
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
+    const placemarks = [];
+    for (let i = 0, l = groups.length; i < l; i++) {
+      createMenuGroup(groups[i]);
+    }
+    function createMenuGroup(group) {
+      const collection = new ymaps.GeoObjectCollection(null, {
+        preset: group.style
+      });
+      myMap.geoObjects.add(collection);
+      for (let j = 0, m = group.items.length; j < m; j++) {
+        createSubMenu(group.items[j], collection, j);
+      }
+    }
+    function createSubMenu(item, collection, j) {
+      const placemark = new ymaps.Placemark(item.center, {
+        balloonContent: item.name
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: '../img/marker.svg',
+        iconImageSize: [20, 30]
+      });
+      collection.add(placemark);
+      placemarks[item.id] = placemark;
+      placemark.events.add('mouseenter', function (e) {
+        e.get('target').balloon.open();
+      });
+    }
+    function clickGoto(e) {
+      const pos = [parseFloat(this.getAttribute('data-n')), parseFloat(this.getAttribute('data-s'))],
+        baloonId = this.getAttribute('data-key');
+      myMap.panTo(pos, {
+        flying: 1
+      }).then(function (e) {
+        placemarks[baloonId].balloon.open();
+        if (baloonId == 1) {
+          catalog.innerHTML = msk;
+        }
+        if (baloonId == 2) {
+          catalog.innerHTML = spb;
+        }
+        if (baloonId == 3) {
+          catalog.innerHTML = kzn;
+        }
+        if (baloonId == 4) {
+          catalog.innerHTML = vlg;
+        }
+      });
+      return false;
+    }
+    const col = document.getElementsByClassName('city-list__item');
+    for (let i = 0, n = col.length; i < n; ++i) {
+      col[i].onclick = clickGoto;
+    }
+  }
+  ;
+}
+
+/***/ }),
+
 /***/ "./src/js/functions/mobile-check.js":
 /*!******************************************!*\
   !*** ./src/js/functions/mobile-check.js ***!
@@ -1231,21 +1683,6 @@ if (typeof document !== 'undefined') {
   // coordination is required to use the polyfill in the top-level document:
   applyFocusVisiblePolyfill(document);
 }
-
-/***/ }),
-
-/***/ "./src/js/vendor/geolocation.js":
-/*!**************************************!*\
-  !*** ./src/js/vendor/geolocation.js ***!
-  \**************************************/
-/***/ (() => {
-
-// ------------------------------ geolocation ------------------------------------
-window.onload = function () {
-  // let user = document.querySelectorAll("#")
-  jQuery("#user-city").text(ymaps.geolocation.city);
-  jQuery("#user-city-mobile").text(ymaps.geolocation.city);
-};
 
 /***/ }),
 

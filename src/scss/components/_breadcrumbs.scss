@@ -1,0 +1,49 @@
+.breadcrumbs {
+  @include flex-v-center;
+
+  margin-bottom: 20px;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+
+      &::after {
+        content: "/";
+        position: absolute;
+        right: -14px;
+        top: 1px;
+        color: #9a9ca5;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-gray);
+    transition: color 0.3s ease-in-out;
+
+    &:not([href]) {
+      color: #9a9ca5;
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-blueberry);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
+  }
+
+  @include small-tablet {
+    flex-wrap: wrap;
+  }
+}

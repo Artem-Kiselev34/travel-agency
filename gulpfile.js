@@ -1,3 +1,5 @@
+
+
 const {
   src,
   dest,
@@ -10,6 +12,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const sass = require('sass');
 const gulpSass = require('gulp-sass');
+const stylelint = require('stylelint');
 const svgSprite = require('gulp-svg-sprite');
 const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');

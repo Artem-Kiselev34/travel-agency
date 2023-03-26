@@ -184,15 +184,44 @@
 </header>
 
     <main class="main">
-      <section class="about">
+      <section class="sales-offices">
   <div class="container">
-    <div class="about__wrapper">
-      <div class="about__content">
-        <h1 class="about__title title">О компании</h1>
-        <p class="about__text descr">Ttaveler делает для вас сервис удобных путешествий.
-          Мы дарим вам комфорт, скорость и целый мир новых
-          возможностей.С нами подготовка к отпуску — сплошное удовольствие!</p>
-        <p class="about__text descr"><b>Мы всегда на связи!</b></p>
+    <ul class="list-reset breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link">Офисы продаж</a>
+      </li>
+    </ul>
+    <div class="sales-offices__container">
+      <div class="sales-offices__left">
+        <h2 class="title">Россия</h2>
+        <div class="filter">
+          <span class="filter__text">Москва</span>
+          <svg class="filter__icon" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#chevron-down"></use>
+          </svg>
+        </div>
+        <ul class="city-list list-reset">
+          <li class="city-list__item" data-n="55.72953619381542" data-s="37.62608949143217" data-key="1">
+            Москва
+          </li>
+          <li class="city-list__item" data-n="59.95425645703236" data-s="30.408565671691843" data-key="2">
+            Санкт-Петербург
+          </li>
+          <li class="city-list__item" data-n="55.78613343268177" data-s="49.12529891396084" data-key="3">
+            Казань
+          </li>
+          <li class="city-list__item" data-n="48.704410304591775" data-s="44.50972551343156" data-key="4">
+            Волгоград
+          </li>
+        </ul>
+        <div class="catalog"></div>
+      </div>
+
+      <div class="sales-offices__rigth">
+        <div id="map" class="map"></div>
       </div>
     </div>
   </div>
