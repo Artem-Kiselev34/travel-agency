@@ -6,43 +6,43 @@ const catalogList = [
     msk: `
     <ul class="catalog__wrap list-reset">
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="msk-dobryninskaya.html" target="_blank">
           <div class="catalog__title">Traveler Добрынинская</div>
           <div class="catalog__address">Москва, ул.Валовая, д.35</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="msk-1905.html" target="_blank">
           <div class="catalog__title">Traveler 1905 года</div>
           <div class="catalog__address">Москва, Шмитовский проезд, 10/7</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="msk-baumanskaya.html" target="_blank">
           <div class="catalog__title">Traveler Бауманская</div>
           <div class="catalog__address">Москва, Ладожская улица, 1</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="msk-kurskaya.html" target="_blank">
           <div class="catalog__title">Traveler Курская</div>
           <div class="catalog__address">Москва, улица Земляной Вал, 33</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="msk-frunzenskaya.html" target="_blank">
           <div class="catalog__title">Traveler Фрунзенская</div>
           <div class="catalog__address">Москва, Комсомольский проспект, 32к2</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="msk-maryina.html" target="_blank">
           <div class="catalog__title">Traveler Марьина Роща</div>
           <div class="catalog__address">Москва, Шереметьевская улица, 6к1</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="msk-avtozavodskaya.html" target="_blank">
           <div class="catalog__title">Traveler Автозаводская</div>
           <div class="catalog__address">Москва, улица Ленинская Слобода, 26кА</div>
         </a>
@@ -53,25 +53,25 @@ const catalogList = [
     spb: `
     <ul class="catalog__wrap list-reset">
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="spb-novocherkasskaya.html" target="_blank">
           <div class="catalog__title">Traveler Новочеркасская</div>
           <div class="catalog__address">Санкт-Петербург, ул.Свердловская набережная, д.60</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="spb-mayakovskaya.html" target="_blank">
           <div class="catalog__title">Traveler Маяковская</div>
           <div class="catalog__address">Санкт-Петербург, ул. Марата, д.5</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="spb-primorskaya.html" target="_blank">
           <div class="catalog__title">Traveler Приморская</div>
           <div class="catalog__address">Санкт-Петербург, Малый проспект Васильевского острова, д.88, корп.2</div>
         </a>
       </li>
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="spb-moskovskie_vorota.html" target="_blank">
           <div class="catalog__title">Traveler Московские ворота</div>
           <div class="catalog__address">Санкт-Петербург, Лиговский проспект, д.266с1</div>
         </a>
@@ -82,7 +82,7 @@ const catalogList = [
     kzn: `
     <ul class="catalog__wrap list-reset">
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="kzn-tukai.html" target="_blank">
           <div class="catalog__title">Traveler Площадь Тукая</div>
           <div class="catalog__address">Казань, ул.Петербургская, д.1</div>
         </a>
@@ -93,7 +93,7 @@ const catalogList = [
     vlg: `
     <ul class="catalog__wrap list-reset">
       <li class="catalog__item" title="Подробнее">
-        <a href="#" target="_blank">
+        <a href="vlg-krasnoznamenskaya.html" target="_blank">
           <div class="catalog__title">Traveler Волгоград</div>
           <div class="catalog__address">Волгоград, ул.Краснознаменская, д.9</div>
         </a>
@@ -125,7 +125,7 @@ const groups = [
           <div class="balloon__title">Traveler Добрынинская</div>
           <div class="balloon__address">Адрес: Москва, ул.Валовая, д.35</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="msk-dobryninskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -141,7 +141,7 @@ const groups = [
           <div class="balloon__title">Traveler 1905 года</div>
           <div class="balloon__address">Адрес: Москва, Шмитовский проезд, 10/7</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="msk-1905.html">Подробнее</a>
         </div>
       `
       }
@@ -157,7 +157,7 @@ const groups = [
           <div class="balloon__title">Traveler Бауманская</div>
           <div class="balloon__address">Адрес: Москва, Ладожская улица, 1</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="msk-baumanskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -173,7 +173,7 @@ const groups = [
           <div class="balloon__title">Traveler Курская</div>
           <div class="balloon__address">Адрес: Москва, улица Земляной Вал, 33</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="msk-kurskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -189,7 +189,7 @@ const groups = [
           <div class="balloon__title">Traveler Фрунзенская</div>
           <div class="balloon__address">Адрес: Москва, Комсомольский проспект, 32к2</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="msk-frunzenskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -205,7 +205,7 @@ const groups = [
           <div class="balloon__title">Traveler Марьина Роща</div>
           <div class="balloon__address">Адрес: Москва, Шереметьевская улица, 6к1</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="msk-maryina.html">Подробнее</a>
         </div>
       `
       }
@@ -221,7 +221,7 @@ const groups = [
           <div class="balloon__title">Traveler Автозаводская</div>
           <div class="balloon__address">Адрес: Москва, улица Ленинская Слобода, 26кА</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="msk-avtozavodskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -238,7 +238,7 @@ const groups = [
           <div class="balloon__title">Traveler Новочеркасская</div>
           <div class="balloon__address">Адрес: Санкт-Петербург, ул.Свердловская набережная, д.60</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="spb-novocherkasskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -254,7 +254,7 @@ const groups = [
           <div class="balloon__title">Traveler Маяковская</div>
           <div class="balloon__address">Адрес: Санкт-Петербург, ул. Марата, д.5</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="spb-mayakovskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -270,7 +270,7 @@ const groups = [
           <div class="balloon__title">Traveler Приморская</div>
           <div class="balloon__address">Адрес: Санкт-Петербург, Малый проспект Васильевского острова, д.88, корп.2</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="spb-primorskaya.html">Подробнее</a>
         </div>
       `
       }
@@ -286,7 +286,7 @@ const groups = [
           <div class="balloon__title">Traveler Московские ворота</div>
           <div class="balloon__address">Адрес: Санкт-Петербург, Лиговский проспект, д.266с1</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="spb-moskovskie_vorota.html">Подробнее</a>
         </div>
       `
       }
@@ -303,7 +303,7 @@ const groups = [
           <div class="balloon__title">Traveler Площадь Тукая</div>
           <div class="balloon__address">Адрес: Казань, ул.Петербургская, д.1</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="kzn-tukai.html">Подробнее</a>
         </div>
       `
       }
@@ -319,21 +319,28 @@ const groups = [
           <div class="balloon__title">Traveler Волгоград</div>
           <div class="balloon__address">Адрес: Волгоград, ул.Краснознаменская, д.9</div>
           <div class="balloon__work-time">Режим работы: пн-пт: 10:00-21:00,<br> сб: 10:00-21:00 вс: 10:00-21:00</div>
-          <a class="balloon__link btn--fill" href="#">Подробнее</a>
+          <a class="balloon__link btn--fill" href="vlg-krasnoznamenskaya.html">Подробнее</a>
         </div>
       `
       }
     ]
   },
 ];
-if (document.querySelector(".map") !== null) {
-  ymaps.ready(init);
 
   function init() {
+    if (document.querySelector(".map") !== null) {
     const myMap = new ymaps.Map('map', {
-      center: [55.72953619381542, 37.62608949143217], //Центрирование карты. Поскольку у нас есть метки с собственным центрированием, то можно не указывать
+      center: [55.72953619381542, 37.62608949143217],
       zoom: 11,
-      controls: ['zoomControl'],
+      controls: [
+        'zoomControl',
+        new ymaps.control.SearchControl({
+          options: {
+            size: 'Normal',
+            provider: 'yandex#search'
+          }
+        })
+      ],
     }, {
       searchControlProvider: 'yandex#search'
     });
@@ -358,7 +365,7 @@ if (document.querySelector(".map") !== null) {
       const placemark = new ymaps.Placemark(item.center, { balloonContent: item.name }, {
         iconLayout: 'default#image',
         iconImageHref: '../img/marker.svg',
-        iconImageSize: [20, 30],
+        iconImageSize: [30, 40],
       });
 
       collection.add(placemark);
@@ -398,5 +405,7 @@ if (document.querySelector(".map") !== null) {
     for (let i = 0, n = col.length; i < n; ++i) {
       col[i].onclick = clickGoto;
     }
+    };
   };
-}
+
+  ymaps.ready(init);
