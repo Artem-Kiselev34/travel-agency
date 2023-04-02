@@ -3713,6 +3713,8 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.breadcrumbs--mb {
   margin-bottom: 20px;
 }
 .breadcrumbs__item {

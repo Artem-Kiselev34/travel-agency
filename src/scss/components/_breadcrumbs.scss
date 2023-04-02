@@ -1,7 +1,9 @@
 .breadcrumbs {
   @include flex-v-center;
 
-  margin-bottom: 20px;
+  &--mb {
+    margin-bottom: 20px;
+  }
 
   &__item {
     position: relative;
