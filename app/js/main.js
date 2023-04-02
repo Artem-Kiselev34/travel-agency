@@ -50,22 +50,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_search_filtr_tourists_children__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/search-filtr/tourists-children */ "./src/js/components/search-filtr/tourists-children.js");
 /* harmony import */ var _components_search_filtr_tourists_children__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_search_filtr_tourists_children__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sliders */ "./src/js/components/sliders.js");
-/* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/inputmask */ "./src/js/components/inputmask.js");
-/* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_inputmask__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_scroll_top__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/scroll-top */ "./src/js/components/scroll-top.js");
-/* harmony import */ var _components_scroll_top__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_scroll_top__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/modals */ "./src/js/components/modals.js");
-/* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_modals__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/select-menu */ "./src/js/components/select-menu.js");
-/* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_select_menu__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_geolocation__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/geolocation */ "./src/js/components/geolocation.js");
-/* harmony import */ var _components_geolocation__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_geolocation__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_ymap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/ymap */ "./src/js/components/ymap.js");
-/* harmony import */ var _components_ymap__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_ymap__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _components_filter_offices__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/filter-offices */ "./src/js/components/filter-offices.js");
-/* harmony import */ var _components_filter_offices__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_filter_offices__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _components_maps__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/maps */ "./src/js/components/maps.js");
-/* harmony import */ var _components_maps__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_maps__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _components_tour_selection__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/tour-selection */ "./src/js/components/tour-selection.js");
+/* harmony import */ var _components_tour_selection__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_tour_selection__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/inputmask */ "./src/js/components/inputmask.js");
+/* harmony import */ var _components_inputmask__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_inputmask__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_scroll_top__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/scroll-top */ "./src/js/components/scroll-top.js");
+/* harmony import */ var _components_scroll_top__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_scroll_top__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/modals */ "./src/js/components/modals.js");
+/* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_modals__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/select-menu */ "./src/js/components/select-menu.js");
+/* harmony import */ var _components_select_menu__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_select_menu__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_geolocation__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/geolocation */ "./src/js/components/geolocation.js");
+/* harmony import */ var _components_geolocation__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_geolocation__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _components_ymap__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/ymap */ "./src/js/components/ymap.js");
+/* harmony import */ var _components_ymap__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_ymap__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _components_filter_offices__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/filter-offices */ "./src/js/components/filter-offices.js");
+/* harmony import */ var _components_filter_offices__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_filter_offices__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _components_maps__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/maps */ "./src/js/components/maps.js");
+/* harmony import */ var _components_maps__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_components_maps__WEBPACK_IMPORTED_MODULE_15__);
+
 
 
 
@@ -214,15 +217,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _vendor_air_calendar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/air-calendar.js */ "./src/js/vendor/air-calendar.js");
-/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/js-vanilla-slider.js */ "./src/js/vendor/js-vanilla-slider.js");
-/* harmony import */ var _vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_js_vanilla_slider_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vendor/inputmask.min.js */ "./src/js/vendor/inputmask.min.js");
-/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vendor/just-validate.min.js */ "./src/js/vendor/just-validate.min.js");
-/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./vendor/modals.min.js */ "./src/js/vendor/modals.min.js");
-/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_5__);
-
+/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/inputmask.min.js */ "./src/js/vendor/inputmask.min.js");
+/* harmony import */ var _vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_inputmask_min_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vendor/just-validate.min.js */ "./src/js/vendor/just-validate.min.js");
+/* harmony import */ var _vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_just_validate_min_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vendor/modals.min.js */ "./src/js/vendor/modals.min.js");
+/* harmony import */ var _vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_vendor_modals_min_js__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -1217,6 +1217,85 @@ const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestF
     }
   }
 });
+
+/***/ }),
+
+/***/ "./src/js/components/tour-selection.js":
+/*!*********************************************!*\
+  !*** ./src/js/components/tour-selection.js ***!
+  \*********************************************/
+/***/ (() => {
+
+const products = document.querySelector(".products");
+const loadMore = document.querySelector(".products__more");
+let quantityProducts = 8;
+let dataLength = "";
+if (products) {
+  const fetchProducts = function () {
+    let quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 8;
+    fetch("../product-cards.json").then(response => {
+      return response.json();
+    }).then(data => {
+      console.log(data);
+      dataLength = data.length;
+      products.innerHTML = "";
+      for (let i = 0; i < data.length; i++) {
+        if (i < quantity) {
+          products.innerHTML += `
+        <li class="product-card">
+        <div class="product-card__slider">
+          <div class="product-card__slides">
+            <div>
+              <img class="product-card__img" src="${data[i].image}" alt="${data[i].title}">
+            </div>
+            <div>
+              <img class="product-card__img" src="${data[i].image2}" alt="${data[i].title}">
+            </div>
+            <div>
+              <img class="product-card__img" src="${data[i].image3}" alt="${data[i].title}">
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="slideshow__item" data-position="0"></div>
+            <div class="slideshow__item" data-position="-290"></div>
+            <div class="slideshow__item" data-position="-580"></div>
+          </div>
+        </div>
+        <div class="product-card__footer">
+          <div class="product-card__foofer-inner">
+            <span class="product-card__title">${data[i].title}</span>
+            <a class="btn-product-card btn btn-reset" href="#">Туры</a>
+          </div>
+        </div>
+      </li>
+        `;
+        }
+        const sliders = document.querySelectorAll(".product-card__slider");
+        sliders.forEach(el => {
+          let line = el.querySelector(".product-card__slides");
+          markers = el.querySelector(".slideshow");
+          marker = markers.querySelectorAll(".slideshow__item");
+          marker.forEach(function (mark) {
+            mark.onmousemove = function () {
+              let data = this.dataset.position;
+              line.style.left = `${data}px`;
+            };
+          });
+        });
+      }
+    });
+  };
+  fetchProducts(quantityProducts);
+  loadMore.addEventListener('click', e => {
+    quantityProducts = quantityProducts + 4;
+    fetchProducts(quantityProducts);
+    if (quantityProducts == dataLength) {
+      loadMore.style.display = 'none';
+    } else {
+      loadMore.style.display = 'inline-flex';
+    }
+  });
+}
 
 /***/ }),
 
@@ -5130,27 +5209,6 @@ if (typeof document !== 'undefined') {
       t.default = n;
     }(), a;
   }();
-});
-
-/***/ }),
-
-/***/ "./src/js/vendor/js-vanilla-slider.js":
-/*!********************************************!*\
-  !*** ./src/js/vendor/js-vanilla-slider.js ***!
-  \********************************************/
-/***/ (() => {
-
-const sliders = document.querySelectorAll('.small-slider');
-sliders.forEach(el => {
-  let line = el.querySelector(".small-slider__slides");
-  markers = el.querySelector(".slideshow");
-  marker = markers.querySelectorAll(".slideshow__item");
-  marker.forEach(function (mark) {
-    mark.onmousemove = function () {
-      let data = this.dataset.position;
-      line.style.left = `${data}px`;
-    };
-  });
 });
 
 /***/ }),

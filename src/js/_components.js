@@ -5,6 +5,7 @@ import './components/search-filtr/duration';
 import './components/search-filtr/tourists';
 import './components/search-filtr/tourists-children';
 import './components/sliders';
+import './components/tour-selection';
 import './components/inputmask';
 import './components/scroll-top';
 import './components/modals';
