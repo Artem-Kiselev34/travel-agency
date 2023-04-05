@@ -1,35 +1,63 @@
 .sales-offices {
-  padding: 40px 0;
+  &__left {
+    position: relative;
+  }
 
   &__rigth {
     width: 60%;
     overflow: hidden;
+
+    @include for-desktop {
+      display: block !important;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
     height: 610px;
+
+    @include tablet {
+      flex-direction: column;
+      padding: 0 15px;
+      height: auto;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
   }
 }
 
-.map {
-  width: 100%;
-  height: 600px;
-  background-color: #d8f1c2;
-}
-
 .filter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid var(--color-rinse);
-  border-radius: 4px;
-  padding: 15px;
-  width: 350px;
-  height: 44px;
-  background-color: var(--color-light);
-  cursor: pointer;
+  margin-bottom: 15px;
+  padding: 22px 15px;
+  background: var(--color-aliceblue);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--color-rinse);
+    border-radius: 4px;
+    padding: 15px;
+    height: 44px;
+    background-color: var(--color-light);
+    cursor: pointer;
+
+    @include tablet {
+      width: auto;
+    }
+
+    &:hover {
+      border: 1px solid var(--color-great);
+    }
+  }
 
   &__icon {
     position: relative;
@@ -39,29 +67,29 @@
     transform: translateY(-50%);
     transition: transform 0.25s linear 0s;
   }
-
-  &:hover {
-    border: 1px solid var(--color-great);
-  }
-
-  @include mobile {
-    margin-right: 0;
-    margin-bottom: 25px;
-  }
 }
 
 .city-list {
-  position: relative;
+  position: absolute;
+  top: 68px;
+  left: 15px;
   z-index: 1;
   margin: 0;
   border: 1px solid var(--color-rinse);
   border-radius: 4px;
   padding: 0;
+  width: 320px;
   max-height: 170px;
   background-color: var(--color-light);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .05), 0 10px 10px rgba(0, 0, 0, .1);
+
+  @include tablet {
+    left: 0;
+    width: 100%;
+  }
 
   &__item {
     display: flex;
@@ -75,24 +103,28 @@
     &:hover {
       background-color: var(--color-violet);
     }
-  }
 
-  @include mobile {
-    width: 236px;
+    @include tablet {
+      padding: 0 30px;
+    }
   }
-}
-
-.balloon__link {
-  border-radius: 3px;
-  padding: 3px 6px;
 }
 
 .catalog {
   position: relative;
-  bottom: 126px;
   width: 350px;
 
+  @include for-desktop {
+    display: block !important;
+  }
+
+  @include tablet {
+    display: none;
+    width: 100%;
+  }
+
   &__wrap {
+    // display: none;
     border: 1px solid var(--color-rinse);
     padding: 24px 20px;
     max-height: 432px;
@@ -119,6 +151,36 @@
     line-height: 120%;
     color: var(--color-ebony);
   }
+}
+
+.tab {
+  display: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-rinse);
+
+  &__cart {
+    margin-right: 20px;
+    padding: 12px 0;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__list {
+    padding: 12px 0;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.tab-active {
+  border-bottom: 2px solid var(--color-sapphire);
+  border-radius: 0;
+  border-style: inherit;
+  color: var(--color-sapphire);
 }
 
 .active {

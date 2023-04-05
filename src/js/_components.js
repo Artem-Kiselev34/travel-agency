@@ -14,6 +14,7 @@ import './components/geolocation';
 import './components/ymap';
 import './components/filter-offices';
 import './components/maps';
+import './components/offices-mobile';
 // import './components/just-validate';
 
 

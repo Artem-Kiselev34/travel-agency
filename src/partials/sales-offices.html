@@ -1,6 +1,6 @@
 <section class="sales-offices">
   <div class="container">
-    <ul class="list-reset breadcrumbs breadcrumbs--mb">
+    <ul class="list-reset breadcrumbs">
       <li class="breadcrumbs__item">
         <a href="index.html" class="breadcrumbs__link">Главная</a>
       </li>
@@ -8,36 +8,47 @@
         <a class="breadcrumbs__link">Офисы продаж</a>
       </li>
     </ul>
+    <h2 class="title title--rus">Россия</h2>
+
     <div class="sales-offices__container">
+
       <div class="sales-offices__left">
-        <h2 class="title">Россия</h2>
-        <div class="filter">
-          <span class="filter__text">Москва</span>
-          <svg class="filter__icon" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#chevron-down"></use>
-          </svg>
+          <div class="filter">
+            <div class="filter__container">
+              <span class="filter__text">Москва</span>
+              <svg class="filter__icon" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+
+          <ul class="city-list list-reset">
+            <li class="city-list__item" data-n="55.72953619381542" data-s="37.62608949143217" data-key="1">
+              Москва
+            </li>
+            <li class="city-list__item" data-n="59.95425645703236" data-s="30.408565671691843" data-key="2">
+              Санкт-Петербург
+            </li>
+            <li class="city-list__item" data-n="55.78613343268177" data-s="49.12529891396084" data-key="3">
+              Казань
+            </li>
+            <li class="city-list__item" data-n="48.704410304591775" data-s="44.50972551343156" data-key="4">
+              Волгоград
+            </li>
+          </ul>
+
+        <div class="tab">
+          <button class="btn-reset tab-active tab__cart">На карте</button>
+          <button class="btn-reset tab__list">Списком</button>
         </div>
-        <ul class="city-list list-reset">
-          <li class="city-list__item" data-n="55.72953619381542" data-s="37.62608949143217" data-key="1">
-            Москва
-          </li>
-          <li class="city-list__item" data-n="59.95425645703236" data-s="30.408565671691843" data-key="2">
-            Санкт-Петербург
-          </li>
-          <li class="city-list__item" data-n="55.78613343268177" data-s="49.12529891396084" data-key="3">
-            Казань
-          </li>
-          <li class="city-list__item" data-n="48.704410304591775" data-s="44.50972551343156" data-key="4">
-            Волгоград
-          </li>
-        </ul>
         <div class="catalog"></div>
       </div>
 
       <div class="sales-offices__rigth">
         <div id="map" class="map"></div>
       </div>
+
     </div>
+
   </div>
 </section>
-

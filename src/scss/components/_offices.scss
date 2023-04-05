@@ -1,13 +1,27 @@
 .offices {
-  padding: 30px 0;
+  margin-bottom: 15px;
 
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
   }
 
   &__info {
     width: 350px;
+
+    @include tablet {
+      margin-bottom: 20px;
+      width: auto;
+    }
   }
 
   &__title {
@@ -77,6 +91,11 @@
 }
 
 .office-hours {
+
+  @include mobile {
+    width: 240px;
+  }
+
   &__title {
     position: relative;
     margin-bottom: 12px;

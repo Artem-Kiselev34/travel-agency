@@ -68,6 +68,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_filter_offices__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_filter_offices__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _components_maps__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/maps */ "./src/js/components/maps.js");
 /* harmony import */ var _components_maps__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_components_maps__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _components_offices_mobile__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/offices-mobile */ "./src/js/components/offices-mobile.js");
+/* harmony import */ var _components_offices_mobile__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_components_offices_mobile__WEBPACK_IMPORTED_MODULE_16__);
+
 
 
 
@@ -261,28 +264,28 @@ overlay.addEventListener('click', openMenu, true);
   \*********************************************/
 /***/ (() => {
 
-const select = document.querySelector('.filter');
-const selectIcon = document.querySelector('.filter__icon');
-const options = document.querySelector('.city-list');
-const option = document.querySelectorAll('.city-list__item');
-const selectText = document.querySelector('.filter__text');
-if (document.querySelector(".filter") !== null) {
-  select.addEventListener('click', () => {
-    options.classList.toggle('active');
-    selectIcon.classList.toggle('rotate');
+const filter = document.querySelector('.filter__container');
+const filterIcon = document.querySelector('.filter__icon');
+const cities = document.querySelector('.city-list');
+const city = document.querySelectorAll('.city-list__item');
+const filterText = document.querySelector('.filter__text');
+if (document.querySelector(".filter__container") !== null) {
+  filter.addEventListener('click', () => {
+    cities.classList.toggle('active');
+    filterIcon.classList.toggle('rotate');
   });
-  option.forEach(el => {
+  city.forEach(el => {
     el.addEventListener('click', e => {
-      options.classList.remove('active');
-      selectIcon.classList.remove('rotate');
-      selectText.innerHTML = e.target.innerHTML;
-      selectText.classList.remove('filter__text');
+      cities.classList.remove('active');
+      filterIcon.classList.remove('rotate');
+      filterText.innerHTML = e.target.innerHTML;
+      filterText.classList.remove('filter__text');
     });
   });
   document.addEventListener('click', e => {
-    if (!e.target.closest('.filter')) {
-      options.classList.remove('active');
-      selectIcon.classList.remove('rotate');
+    if (!e.target.closest('.filter__container')) {
+      cities.classList.remove('active');
+      filterIcon.classList.remove('rotate');
     }
   });
 }
@@ -708,6 +711,32 @@ ymaps.ready(init);
 /***/ (() => {
 
 const modal = new GraphModal();
+
+/***/ }),
+
+/***/ "./src/js/components/offices-mobile.js":
+/*!*********************************************!*\
+  !*** ./src/js/components/offices-mobile.js ***!
+  \*********************************************/
+/***/ (() => {
+
+const cart = document.querySelector('.tab__cart');
+const list = document.querySelector('.tab__list');
+const btnActive = document.querySelector('.tab-active');
+const catalog = document.querySelector('.catalog');
+const salesOfficesRigth = document.querySelector('.sales-offices__rigth');
+cart.addEventListener('click', () => {
+  catalog.style.display = 'none';
+  salesOfficesRigth.style.display = 'block';
+  cart.classList.add('tab-active');
+  list.classList.remove('tab-active');
+});
+list.addEventListener('click', () => {
+  catalog.style.display = 'block';
+  salesOfficesRigth.style.display = 'none';
+  cart.classList.remove('tab-active');
+  list.classList.add('tab-active');
+});
 
 /***/ }),
 

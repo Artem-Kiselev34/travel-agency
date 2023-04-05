@@ -200,6 +200,11 @@ input {
     }
   }
 
+  &--rus {
+    margin-bottom: 22px;
+    font-weight: 500;
+  }
+
   @include small-tablet {
     font-size: 28px;
     line-height: 120%;
