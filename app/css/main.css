@@ -257,6 +257,17 @@ input {
   margin-bottom: 22px;
   font-weight: 500;
 }
+.title--agencies {
+  margin: 0 !important;
+  padding: 30px 0 30px;
+  font-weight: 400;
+}
+.title--benefits {
+  margin-bottom: 10px !important;
+  font-size: 20px !important;
+  text-decoration: underline;
+  color: var(--color-sapphire);
+}
 @media (max-width: 768px) {
   .title {
     font-size: 28px;
@@ -3307,6 +3318,120 @@ input {
 
 [class*=copyrights-pane] {
   display: none !important;
+}
+
+.title-wrap {
+  background-color: var(--color-aliceblue);
+}
+
+.agencies-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 30px 0 30px;
+}
+
+.info {
+  padding-right: 15px;
+  width: 70%;
+  line-height: 150%;
+}
+.info__descr {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .info {
+    width: 100%;
+  }
+}
+
+.info-span {
+  font-size: large;
+  color: var(--color-sapphire);
+}
+
+.sidebar {
+  border-radius: 4px;
+  overflow: auto;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+.sidebar__list {
+  position: relative;
+  top: 42px;
+}
+.sidebar__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 34px;
+  background-color: var(--color-light);
+  cursor: pointer;
+}
+.sidebar__list-item a {
+  margin-left: 12px;
+  font-size: 16px;
+  color: var(--color-ebony);
+}
+.sidebar__list-item:hover {
+  background-color: var(--color-aliceblue);
+}
+.sidebar__list-item--title {
+  position: absolute;
+  top: -42px;
+  width: 100%;
+  height: 42px;
+  background-color: var(--color-blueberry);
+  color: var(--color-light);
+  pointer-events: none;
+}
+.sidebar__list-item--br {
+  border-radius: 0;
+}
+
+.sidebar-menu {
+  display: none;
+  height: 0;
+}
+.sidebar-menu__icon {
+  position: relative;
+  bottom: 25px;
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  cursor: pointer;
+}
+.sidebar-menu__icon:hover {
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+@media (max-width: 768px) {
+  .sidebar-menu {
+    display: inline-block;
+  }
+}
+
+.sidebar-modal {
+  display: block;
+}
+
+.benefits__item span {
+  margin-right: 10px;
+  color: var(--color-primary);
 }
 
 .account {
