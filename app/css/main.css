@@ -3434,6 +3434,15 @@ input {
   color: var(--color-primary);
 }
 
+.favorite-data {
+  padding: 100px 0 40px;
+  text-align: center;
+}
+
+.booking {
+  padding: 100px 0 40px;
+}
+
 .account {
   display: -webkit-box;
   display: -ms-flexbox;
