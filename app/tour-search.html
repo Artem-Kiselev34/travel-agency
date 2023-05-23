@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Travel tours</title>
+  <link rel="preload" href="fonts/UbuntuRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="http://api-maps.yandex.ru/2.1/?apikey=d109db13-e2a8-4c5a-bcb3-30d19aeb16d5&lang=ru-RU" type="text/javascript"></script>
+  <script defer src="js/main.js"></script>
+
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="header__container">
+    <div class="header__top">
+      <div class="header__left">
+        <div class="header__logo">
+          <a href="index.html" class="logo">
+            <img src="img/traveler-logo.svg" alt="traveler logo" />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <a class="header__nav-link" href="#" data-graph-animation="custom" data-graph-path="second">Подобрать тур</a>
+          <a class="header__nav-link" href="about.html">О компании</a>
+
+          <div class="more">
+            <div class="more__dots touch-area">…
+              <div class="more__menu">
+                <a href="sales-offices.html" class="more__menu-link"><span>Офисы продаж</span></a>
+                <a href="agencies.html" class="more__menu-link"><span>Агентствам</span></a>
+              </div>
+            </div>
+          </div>
+
+          <a class="header__nav-link header__nav-link-cover" href="sales-offices.html">Офисы продаж</a>
+          <a class="header__nav-link header__nav-link-cover" href="agencies.html">Агентствам</a>
+        </nav>
+      </div>
+
+      <a href="tel:7405999999" class="contact-link contact-link--call contact-link__mobile">
+        <span class="contact-link__value">8(800) 999-9999</span>
+      </a>
+
+      <div class="header__right">
+        <span class="geolocation"></span>
+        <a href="tel:7405999999" class="contact-link contact-link--call">
+          <span class="contact-link__value">8(800) 999-9999</span>
+        </a>
+        <div class="account">
+          <span class="account__link" data-graph-animation="custom" data-graph-path="first">
+            <svg class="account__icon" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </span>
+          <a href="favorite.html" class="account__link">
+            <svg class="account__icon" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <a href="basket.html" class="account__link">
+            <svg class="account__icon" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__items nav__list list-reset">
+        <li class="nav__item">
+            <a href="tour-search.html" class="nav__link">Туры</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Отели</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Авиабилеты</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Акции</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">По России</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Санатории</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Горящие туры</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="menu mobile-menu">
+      <div class="mobile-menu__container mobile-menu__container-top">
+        <div class="header__logo">
+          <a href="index.html" class="logo">
+            <img src="img/traveler-logo.svg" alt="traveler logo" />
+          </a>
+        </div>
+        <div class="account">
+          <span class="account__link" data-graph-animation="custom" data-graph-path="first">
+            <svg class="account__icon" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </span>
+          <a href="#" class="account__link">
+            <svg class="account__icon" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <a href="#" class="account__link">
+            <svg class="account__icon" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__nav list-reset">
+          <li class="mobile-menu__item">
+            <a href="tour-search.html" class="mobile-menu__nav-link">Туры</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__nav-link">Отели</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__nav-link">Авиабилеты</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__nav-link">Акции</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__nav-link">По России</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__nav-link">Санатории</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__nav-link">Горящие туры</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu__tel">
+        <p id="user-city-mobile" class="geolocation"></p>
+        <a href="tel:7405999999" class="contact-link contact-link--call">
+          <span class="contact-link__value contact-link__value--mobile">8(800) 999-9999</span>
+        </a>
+      </div>
+      <ul class="mobile-menu__nav list-reset">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__nav-link" href="#" data-graph-animation="custom" data-graph-path="second">Подобрать тур</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__nav-link" href="about.html">О компании</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__nav-link" href="sales-offices.html">Офисы продаж</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__nav-link" href="agencies.html">Агентствам</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section id="filters" class="tour-search">
+  <section class="container">
+    <form class="search-form">
+      <!----------- From -------------->
+      <div class="search-form__item">
+        <div class="search-form__inner">
+          <div class="departure">
+            <div class="departure__input">
+              <span class="departure__title">Откуда</span>
+              <input id="city" type="text" class="departure-input" readonly/>
+            </div>
+          </div>
+        </div>
+          <div class="dropdown dropdown-content">
+            <div class="departure-body">
+              <ul class="departure-drop">
+                <li class="departure-drop__item">Москва</li>
+                <li class="departure-drop__item">Санкт-петербург</li>
+                <li class="departure-drop__item">Анапа</li>
+                <li class="departure-drop__item">Архангельск</li>
+                <li class="departure-drop__item">Астрахань</li>
+                <li class="departure-drop__item">Барнаул</li>
+                <li class="departure-drop__item">Белгород</li>
+                <li class="departure-drop__item">Благовещенск</li>
+                <li class="departure-drop__item">Брянск</li>
+                <li class="departure-drop__item">Владивосток</li>
+                <li class="departure-drop__item">Владикавказ</li>
+                <li class="departure-drop__item">Волгоград</li>
+                <li class="departure-drop__item">Воронеж</li>
+                <li class="departure-drop__item">Горно-Алтайск</li>
+                <li class="departure-drop__item">Грозный</li>
+                <li class="departure-drop__item">Екатеринбург</li>
+                <li class="departure-drop__item">Иваново</li>
+                <li class="departure-drop__item">Иркутск</li>
+                <li class="departure-drop__item">Казань</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <!----------- Where ------------->
+      <div class="search-form__item">
+        <div class="search-form__inner">
+          <div class="where">
+            <div class="where__input  country">
+              <span class="where__title">Куда</span>
+                <input id="country" type="text"   class="where-input" readonly/>
+            </div>
+          </div>
+        </div>
+          <div class="dropdown dropdown-content">
+            <div class="where-body">
+              <ul class="where-drop">
+                <li class="where-drop__item">Турция</li>
+                <li class="where-drop__item">Тайланд</li>
+                <li class="where-drop__item">Египет</li>
+                <li class="where-drop__item">Индия</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <!---------- Calendar ----------->
+      <div class="search-form__item search-form__item--calendar">
+          <div class="calendar">
+            <div class="calendar__field">
+              <span class="calendar__field-title">Дата вылета</span>
+              <div class="calendar__field-dates">
+                <div class="air-datepicker-global-container">
+                  <span class="dataField"></span>   
+                  <input id="airdatepicker" type="text" class="form-control" autocomplete="off" readonly/>
+                </div>
+              </div>
+              <div class="calendar__field-button"></div>
+            </div>
+          </div>
+      </div>
+      <!---------- Duration ----------->
+      <div class="counter-wrapper search-form__item search-form__item--nights">
+        <div class="search-form__inner">
+          <div class="nights-wrapper">
+            <div class="nights-main">
+              <span class="nights-title">Длительность</span>
+              <div class="nights-pinput">
+                <span data-counter="2">7</span> 
+                <span data-digit class="is-hidden"><span>-</span> <span data-counter="4">7</span></span>
+                <span data-nights> ночей</span>
+                <span data-night class="is-hidden"> ночь</span>
+                <span data-nights2 class="is-hidden"> ночи</span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="nights-body dropdown">
+            <div class="nights-elem">
+              <span data-action="minus" class="minus"></span>
+              <div>
+                от  <span data-counter="1">7</span>
+                <span data-nights3>ночей</span>
+                <span data-nights4 class="is-hidden">ночи</span>
+              </div>
+              <span data-action="plus" class="plus opacity"></span>
+            </div>
+
+            <div class="nights-elem">
+              <span data-action="minus2" class="minus opacity"></span>
+              <div>
+                до  <span data-counter="3">7</span>
+                <span data-nights5>ночей</span>
+                <span data-nights6 class="is-hidden">ночи</span>
+              </div>
+              <span data-action="plus2" class="plus"></span>
+            </div>
+          </div>
+      </div>
+      <!---------- Tourists ----------->
+      <div class="counter-wrapper search-form__item search-form__item--tourists">
+        <div class="search-form__inner">
+          <div class="tourists">
+            <span class="tourists__title">Туристы</span>
+            <div class="tourists__pinput">
+              <span data-counter1>2</span>  
+              <span class="is-hidden" data-text="1">взрослый</span>
+              <span data-text="2">взрослых</span>
+              <span class="child-counter is-hidden">
+                <span>
+                 , <span data-count>1</span> 
+                  <span class="kid">ребёнок</span>
+                </span>
+              </span>
+              <span class="kids is-hidden">ребёнка</span>
+            </div>
+          </div>
+        </div>
+          <div class="tourists-body dropdown">
+            <div class="tourists-elem">
+              <span data-action="btn-minus" class="minus"></span>
+              <div>
+                <div class="tourists-item-adults">
+                  <span data-counter2>2</span>&nbsp
+                  <span class="is-hidden" data-text="3">взрослый</span>
+                  <span data-text="4">взрослых</span>
+                </div>
+              </div>
+              <span data-action="btn-plus" class="plus"></span>
+            </div>
+
+            <div class="wrapper-children"></div>
+            <div class="tourists-add-child">
+              Добавить ребёнка
+              <span class="tourists-add-child__chevron"></span>
+            </div>
+
+            <div class="children-wrap is-hidden">
+              <div class="children-container">
+
+                <ul class="children-ages-list">
+                  <li class="children-ages-list__item">
+                    до 2-х лет
+                  </li>
+                  <li class="children-ages-list__item">2 года</li>
+                  <li class="children-ages-list__item">3 года</li>
+                  <li class="children-ages-list__item">4 года</li>
+                  <li class="children-ages-list__item">5 лет</li>
+                  <li class="children-ages-list__item">6 лет</li>
+                  <li class="children-ages-list__item">7 лет</li>
+                  <li class="children-ages-list__item">8 лет</li>
+                  <li class="children-ages-list__item">9 лет</li>
+                  <li class="children-ages-list__item">10 лет</li>
+                  <li class="children-ages-list__item">11 лет</li>
+                  <li class="children-ages-list__item">12 лет</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <button id="search-btn" class="search-button">Найти</button>
+    </form>
+  </section>
+  <section class="filter-content">
+    <div class="container">
+     <button id="mobile-filter" class="btn btn-filters"><span>Фильтры</span></button>
+      <div class="tour-filtration">
+        <div class="tour-filtration__container">
+          <div class="cost-range">
+            <h3 class="cost-range__title">Стоимость</h3>
+            <div class="price-block">
+              <div class="price-block__input">
+                <input placeholder="50000" class="price-block__item" type="text" value="" id="input-min">
+                <span class="rub">₽</span>
+              </div>
+              <div class="price-block__input">
+                <input placeholder="99900" class="price-block__item" type="text" value="" id="input-max">
+                <span class="rub">₽</span>
+              </div>
+            </div>
+
+            <div class="range-slider"></div>
+            <div class="range-input">
+              <input type="range" class="range-min" min="50000" max="99999" value="0" step="100">
+              <input type="range" class="range-max" min="50000" max="99999" value="99999" step="100">
+            </div>
+          </div>
+
+          <div id="stars" class="tour-filtration__checkboxes">
+          <h3 class="tour-filtration__title">Категория отеля</h3>
+            <div class="checkbox-wrapp"><label class=" tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="st5"><span class="custom-label"></span></label><span class="st5"></span></div>
+            <div class="checkbox-wrapp"><label class=" tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="st4"><span class="custom-label"></span></label><span class="st4"></span></div>
+            <div class="checkbox-wrapp"><label class=" tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="st3"><span class="custom-label"></span></label><span class="st3"></span></div>
+            <div class="checkbox-wrapp"><label class=" tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="st2"><span class="custom-label"></span></label><span class="st2"></span></div>
+          </div>
+
+          <div id="meal" class="tour-filtration__checkboxes">
+          <h3 class="tour-filtration__title">Питание</h3>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="all-inclusive"><span class="custom-label">Всё включено</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="three-meals"><span class="custom-label">Завтрак, обед и ужин</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="two-meals"><span class="custom-label">Завтрак и ужин</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="single-meal"><span class="custom-label">Только завтрак</span></label>
+          </div>
+
+          <div id="holiday" class="tour-filtration__checkboxes">
+          <h3 class="tour-filtration__title">Тип отдыха</h3>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="beach"><span class="custom-label">Пляжный</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="excursion"><span class="custom-label">Экскурсионный</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="healing"><span class="custom-label">Лечебный</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="ski"><span class="custom-label">Горнолыжный</span></label>
+          </div>
+
+          <div id="distance" class="tour-filtration__checkboxes">
+          <h3 class="tour-filtration__title">Расстояние до моря</h3>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="1st-line"><span class="custom-label">1-я линия</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="2st-line"><span class="custom-label">2-я линия</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="3st-line"><span class="custom-label">3-я линия</span></label>
+          </div>
+
+          <div id="beach" class="tour-filtration__checkboxes">
+          <h3 class="tour-filtration__title">Пляж</h3>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="sandy"><span class="custom-label">Песчаный</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="pebble"><span class="custom-label">Галечный</span></label>
+            <label class="tour-filtration__checkbox custom-checkbox"><input type="checkbox" class="custom-input" value="sand-pebble"><span class="custom-label">Песчано-галечный</span></label>
+          </div>
+
+        </div>
+
+        <div>
+          <div class="content" id="product"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+      <div class="modal">
+  <div class="modal__container site-modal" role="dialog" aria-modal="true" data-graph-target="first">
+    <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal-content">
+      <h2 class="site-modal__title">Вход в личный кабинет</h2>
+      <form action="#" class="site-modal__form form-1">
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="email" name="email" required placeholder="Ваш email" class="form-field__input"
+            data-validate-field="email">
+        </label>
+
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="password" name="password" placeholder="Пароль" class="form-field__input"
+            data-validate-field="password">
+        </label>
+
+        <button class="site-modal__btn btn btn-reset btn--fill" type="submit">Войти</button>
+      </form>
+      <div class="site-modal__footer">
+        <a href="#" target="_blank" class="site-modal__link"><span>Регистрация</span></a>
+        <a href="#" target="_blank" class="site-modal__link"><span>Напомнить пароль</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container site-modal" role="dialog" aria-modal="true" data-graph-target="second">
+    <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal-content">
+      <h2 class="site-modal__title">Мы поможем подобрать тур</h2>
+      <form action="#" class="site-modal__form form-1">
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="from" required placeholder="Откуда" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="where" required placeholder="Куда" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="date" required placeholder="Дата начала" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="text" name="name" required placeholder="Имя" class="form-field__input">
+        </label>
+        <label class="form-field form-field--gray site-modal__field">
+          <input type="email" name="email" required placeholder="Email" class="form-field__input">
+        </label>
+
+        <div class="site-modal__group">
+            <div class="select">
+              <span class="select__text">Россия +7</span>
+              <svg class="select__icon" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#chevron-down"></use>
+              </svg>
+            </div>
+            <ul class="options list-reset">
+              <li class="option">
+                <span class="option__text option__text--by">Беларусь +375</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--ee">Эстония +372</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--lv">Латвия +371</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--lt">Литва + 370</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--ru">Россия +7</span>
+              </li>
+              <li class="option">
+                <span class="option__text option__text--ua">Украина +380</span>
+              </li>
+            </ul>
+
+          <label class="form-field form-field--w site-modal__field">
+            <input type="tel" name="phone" required placeholder="Телефон" class="form-field__input">
+          </label>
+        </div>
+
+        <div class="contact-type">
+          <span class="contact-type__label">Желаемый способ связи</span>
+          <div class="contact-type__group">
+            <div class="contact-type__radio">
+              <input value="callback" type="radio" id="callback" name="communication">
+              <label for="callback">Телефон</label>
+            </div>
+            <div class="contact-type__radio">
+              <input type="radio" id="messenger" name="communication">
+              <label for="messenger">WhatsApp</label>
+            </div>
+          </div>
+        </div>
+
+        <button class="site-modal__btn btn btn--fill" type="submit">Отправить</button>
+
+        <div class="user-agreement">
+          <span class="user-agreement__icon-info"></span>
+          <p>Нажимая «Подписаться», я даю согласие на
+            <a href="#" target="_blank">обработку персональных данных.</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal__container site-modal" role="dialog" aria-modal="true" data-graph-target="sidebar">
+    <button class="btn-reset modal__close modal__close2" aria-label="Закрыть модальное окно"></button>
+    <div class="modal-content">
+      <div class="sidebar sidebar-modal">
+        <ul class="list-reset sidebar__list">
+          <li class="sidebar__list-item sidebar__list-item--title sidebar__list-item--br">Агенствам</li>
+          <li class="sidebar__list-item"><a href="#">Как начать сотрудничество?</a></li>
+          <li class="sidebar__list-item"><a href="#">Личный кабинет</a></li>
+          <li class="sidebar__list-item"><a href="#">Как оплатить</a></li>
+          <li class="sidebar__list-item"><a href="#">Документы для работы</a></li>
+          <li class="sidebar__list-item"><a href="#">Поиск на вашем сайте</a></li>
+          <li class="sidebar__list-item"><a href="#">Ваша комиссия</a></li>
+          <li class="sidebar__list-item"><a href="#">Обратная связь</a></li>
+          <li class="sidebar__list-item"><a href="#">Финансовые гарантии</a></li>
+          <li class="sidebar__list-item"><a href="#">Техническая документация</a></li>
+          <li class="sidebar__list-item"><a href="#">Страхование путешествующих</a></li>
+          <li class="sidebar__list-item"><a href="#">Подписка на новости</a></li>
+          <li class="sidebar__list-item"><a href="#">Раннее бронирование 2023</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    <footer class="footer">
+  <a href="#page" class="to-top">
+    <span class="to-top__icon">
+      <svg>
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </span>
+    <span class="to-top__text">вверх</span>
+  </a>
+  <div class="container">
+    <div class="footer-top">
+      <span class="footer-top__link">
+        <a href="#">Агенствам
+          <svg class="footer-top__link-icon" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#link"></use>
+          </svg>
+        </a>
+      </span>
+      <span class="footer-top__account" data-graph-animation="custom" data-graph-path="first">
+        <svg class="footer-top__user-icon" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+        <span class="footer-top__caption">Личный кабинет</span>
+      </span>
+    </div>
+
+    <nav class="footer__menu">
+      <div class="footer-info">
+
+        <div class="footer-info__block">
+          <h3 class="footer-info__title">Каталог путешествий</h3>
+          <ul class="list-reset">
+            <li class="footer-info__item"><a href="#">Отели</a></li>
+            <li class="footer-info__item"><a href="#">Экскурсии</a></li>
+            <li class="footer-info__item"><a href="#">Санатории</a></li>
+            <li class="footer-info__item"><a href="#">Круизы</a></li>
+            <li class="footer-info__item"><a href="#">Авиабилеты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info__block">
+          <h3 class="footer-info__title">Информация</h3>
+          <ul class="list-reset">
+            <li class="footer-info__item"><a href="#">Проверка статуса заказа</a></li>
+            <li class="footer-info__item"><a href="#">Как оплатить тур</a></li>
+            <li class="footer-info__item"><a href="#">Страхование</a></li>
+            <li class="footer-info__item"><a href="#">Документы</a></li>
+            <li class="footer-info__item"><a href="#">Виза</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info__block footer-info__block--width">
+          <h3 class="footer-info__title">О компании</h3>
+          <ul class="list-reset">
+            <li class="footer-info__item"><a href="#">Общая информация</a></li>
+            <li class="footer-info__item"><a href="#">Контакты</a></li>
+            <li class="footer-info__item"><a href="#">Наши награды</a></li>
+            <li class="footer-info__item"><a href="#">Отзывы</a></li>
+            <li class="footer-info__item"><a href="#">Вакансии</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info__block">
+          <div class="footer-info__contact">
+            <h3 class="footer-info__title">Контакты</h3>
+            <a href="tel:78007755000">8 800 475 50 00</a>
+            <a href="tel:78007755000">8 800 475 50 10</a>
+          </div>
+          <div class="footer-info__social">
+            <h3 class="footer-info__title">Мы в соцсетях</h3>
+            <ul class="footer-social list-reset">
+              <li><a class="footer-social__icon footer-social__icon--vk" href="#"></a></li>
+              <li><a class="footer-social__icon footer-social__icon--tg" href="#"></a></li>
+              <li><a class="footer-social__icon footer-social__icon--zen" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <div class="footer-bottom__partner">
+        <ul class="icon-partner list-reset">
+          <li class="icon-partner__atr icon-atr"></li>
+          <li class="icon-partner__rst icon-rst"></li>
+        </ul>
+        <ul class="icon-partner list-reset">
+          <li class="icon-partner__rustourism icon-rustourism"></li>
+          <li>
+            <ul class="list-reset">
+              <li>Мы в реестре туроператоров</li>
+              <li>ООО Тревелер <br> РТО 038486</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <small class="footer__copyrite">© 2023 Traveler | Все права защищены.</small>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

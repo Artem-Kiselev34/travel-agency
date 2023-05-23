@@ -7,14 +7,14 @@
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/modals";
-@import "./components/search-filtr/button";
-@import "./components/search-filtr/calendar";
-@import "./components/search-filtr/departure";
-@import "./components/search-filtr/filtr";
-@import "./components/search-filtr/nights";
-@import "./components/search-filtr/tourists";
-@import "./components/search-filtr/tourists-child";
-@import "./components/search-filtr/where";
+@import "./components/search-filter/button";
+@import "./components/search-filter/calendar";
+@import "./components/search-filter/departure";
+@import "./components/search-filter/filter";
+@import "./components/search-filter/nights";
+@import "./components/search-filter/tourists";
+@import "./components/search-filter/tourists-child";
+@import "./components/search-filter/where";
 @import "./components/popular-categories";
 @import "./components/slider-main";
 @import "./components/advantages";
@@ -31,14 +31,17 @@
 @import "./components/agencies";
 @import "./components/favorite";
 @import "./components/basket";
+@import "./components/tour-search";
+@import "./components/card";
+
 
 // подключения компонентов страницы (мелкие компоненты)
 @import "./components/header-account";
 @import "./components/nav";
 @import "./components/menu";
 @import "./components/mobile-menu";
-@import "./components/tours";
 @import "./components/hero";
 @import "./components/slider-nav";
 @import "./components/catalog";
 @import "./components/breadcrumbs";
+@import "./components/custom-checkbox";

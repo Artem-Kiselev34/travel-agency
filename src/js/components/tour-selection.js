@@ -10,39 +10,38 @@ if (products) {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         dataLength = data.length;
         products.innerHTML = "";
         for (let i = 0; i < data.length; i++) {
           if (i < quantity) {
             products.innerHTML += `
-        <li class="product-card">
-        <div class="product-card__slider">
-          <div class="product-card__slides">
-            <div>
-              <img class="product-card__img" src="${data[i].image}" alt="${data[i].title}">
-            </div>
-            <div>
-              <img class="product-card__img" src="${data[i].image2}" alt="${data[i].title}">
-            </div>
-            <div>
-              <img class="product-card__img" src="${data[i].image3}" alt="${data[i].title}">
-            </div>
-          </div>
-          <div class="slideshow">
-            <div class="slideshow__item" data-position="0"></div>
-            <div class="slideshow__item" data-position="-290"></div>
-            <div class="slideshow__item" data-position="-580"></div>
-          </div>
-        </div>
-        <div class="product-card__footer">
-          <div class="product-card__foofer-inner">
-            <span class="product-card__title">${data[i].title}</span>
-            <a class="btn-product-card btn btn-reset" href="#">Туры</a>
-          </div>
-        </div>
-      </li>
-        `;
+              <li class="product-card">
+                <div class="product-card__slider">
+                  <div class="product-card__slides">
+                    <div>
+                      <img class="product-card__img" src="${data[i].image}" alt="${data[i].title}">
+                    </div>
+                    <div>
+                      <img class="product-card__img" src="${data[i].image2}" alt="${data[i].title}">
+                    </div>
+                    <div>
+                      <img class="product-card__img" src="${data[i].image3}" alt="${data[i].title}">
+                    </div>
+                  </div>
+                <div class="slideshow">
+                  <div class="slideshow__item" data-position="0"></div>
+                  <div class="slideshow__item" data-position="-290"></div>
+                  <div class="slideshow__item" data-position="-580"></div>
+                </div>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__foofer-inner">
+                    <span class="product-card__title">${data[i].title}</span>
+                    <a class="btn-product-card btn btn-reset" href="#">Туры</a>
+                  </div>
+                </div>
+              </li>
+           `;
           }
 
           const sliders = document.querySelectorAll(".product-card__slider");

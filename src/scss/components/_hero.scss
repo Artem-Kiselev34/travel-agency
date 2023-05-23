@@ -7,15 +7,15 @@
   background-repeat: no-repeat;
 
   &__container {
-    padding: 40px 82px 200px;
+    padding: 40px 0 200px;
 
     @include tablet {
       flex-wrap: wrap;
-      padding: 40px 112px 130px;
+      padding: 40px 35px 130px;
     }
 
     @include small-tablet {
-      padding: 40px 32px 130px;
+      padding: 40px 0 130px;
     }
 
     @include mobile {

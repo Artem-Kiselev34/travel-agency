@@ -4,6 +4,7 @@ const btnActive = document.querySelector('.tab-active');
 const catalog = document.querySelector('.catalog');
 const salesOfficesRigth = document.querySelector('.sales-offices__rigth');
 
+if (document.querySelector(".sales-offices") !== null) {
 cart.addEventListener('click', ()=> {
   catalog.style.display = 'none';
   salesOfficesRigth.style.display = 'block';
@@ -16,3 +17,4 @@ list.addEventListener('click', ()=> {
   cart.classList.remove('tab-active');
   list.classList.add('tab-active');
 })
+}

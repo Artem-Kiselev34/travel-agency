@@ -1,0 +1,98 @@
+.search-form {
+  @include flex-h-center;
+
+  position: relative;
+  padding: 20px 15px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: var(--color-aliceblue);
+  cursor: pointer;
+
+  &--mod {
+    background-color: transparent;
+  }
+
+  &__item {
+    position: relative;
+    z-index: auto;
+    flex-grow: 1;
+    max-width: 210px;
+
+    &--calendar {
+      max-width: 190px;
+
+      @include tablet {
+        width: 33%;
+        max-width: 100% !important;
+      }
+    }
+
+    &--nights {
+      max-width: 190px;
+
+      @include tablet {
+        width: 50%;
+        max-width: 100% !important;
+      }
+
+      @include mobile {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    &--tourists {
+      @include tablet {
+        width: 50%;
+        max-width: 100%;
+      }
+
+      @include mobile {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    @include tablet {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      width: 33%;
+      max-width: 100% !important;
+    }
+
+    @include mobile {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 76px;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 16px 6px 16px 0;
+  box-shadow: 0 8px 22px rgb(0 0 0 / 7%);
+  background: var(--color-light);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  box-shadow: 0 0 16px rgb(0 0 0/8%), 0 4px 16px rgb(0 0 0/8%) !important;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown__link {
+  display: block;
+  padding: 10px 0 0 10px;
+  width: 100%;
+  color: var(--color-light);
+}
