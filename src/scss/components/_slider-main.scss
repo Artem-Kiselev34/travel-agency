@@ -9,6 +9,7 @@
 
 .slider-container {
   position: relative;
+  height: 500px;
 }
 
 .swiper-container {
@@ -78,13 +79,10 @@
 .slide {
   @include bg-cover;
 
-  padding-top: 80px;
-  padding-bottom: 178px;
   background-color: var(--color-gray);
 
   &__content {
-    padding-right: 15px;
-    padding-left: 80px;
+      padding: 110px 15px 0 80px;
 
     @include small-tablet {
       padding-right: 15px;

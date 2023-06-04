@@ -15,6 +15,7 @@
   }
 
   &__image {
+    height: 100%;
     overflow: hidden;
     border-radius: 3px 3px 0 0;
   }
@@ -78,38 +79,4 @@
 
 .btn-card {
   padding: 10px 16px;
-}
-
-.st5 {
-  display: block;
-  background: url(../img/5stars.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 16px;
-  width: 100%;
-}
-
-.st4 {
-  display: block;
-  background: url(../img/4stars.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 16px;
-  width: 100%;
-}
-
-.st3 {
-  background: url(../img/3stars.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 16px;
-  width: 100%;
-}
-
-.st2 {
-  background: url(../img/2stars.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 16px;
-  width: 100%;
 }

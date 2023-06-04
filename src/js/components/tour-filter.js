@@ -45,7 +45,7 @@ if (document.querySelector("#product") !== null) {
                 <div class="card__place">${n.place}</div>
             </div>
               <div class="card__bottom">
-                <a href="" class="btn-card btn btn--fill">
+                <a href="${n.href}" class="btn-card btn btn--fill">
                   <div class="price">от ${n.price}<span>&nbsp;₽</span></div>
                 </a>
                 <div class="more-info">

@@ -1,11 +1,12 @@
-import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+import { auto } from '@popperjs/core';
+import Swiper, { Navigation, Thumbs, Pagination, Autoplay } from 'swiper';
 
-Swiper.use([Navigation, Pagination, Autoplay]);
+Swiper.use([Navigation, Thumbs, Pagination, Autoplay]);
 
 const slider = document.querySelector('.swiper-container');
 const bestFares = document.querySelector('.best-fares__items');
 
-// ---------------------------------------------------------------------------
+// ----------------------- Swiper main page ------------------------
 if (document.querySelector(".swiper-container") !== null) {
   const swiper = new Swiper(slider, {
     slidesPerView: 1,
@@ -15,24 +16,24 @@ if (document.querySelector(".swiper-container") !== null) {
       clickable: true,
     },
     speed: 1500,
-    // autoplay: {
-    // 	delay: 3000,
-    // },
+    autoplay: {
+    	delay: 3000,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // on: {
-    // 	init() {
-    // 	  this.el.addEventListener('mouseover', () => {
-    // 		this.autoplay.stop();
-    // 	  });
+    on: {
+    	init() {
+    	  this.el.addEventListener('mouseover', () => {
+    		this.autoplay.stop();
+    	  });
 
-    // 	  this.el.addEventListener('mouseout', () => {
-    // 		this.autoplay.start();
-    // 	  });
-    // 	}
-    //   }
+    	  this.el.addEventListener('mouseout', () => {
+    		this.autoplay.start();
+    	  });
+    	}
+      }
   });
 
 document.getElementsByClassName("swiper-container")[0].addEventListener("mouseover", function () {
@@ -45,8 +46,8 @@ document.getElementsByClassName("swiper-container")[0].addEventListener("mouseou
   document.querySelector('.swiper-button-next').style.display = 'none';
 });
 }
-// --------------------------------------------------------------------------------
 
+// ----------------------- Section Best Fares ----------------------
 const bestfaresSlider = new Swiper(bestFares, {
   slidesPerView: 1,
   loop: true,
@@ -64,5 +65,28 @@ const bestfaresSlider = new Swiper(bestFares, {
     1024: {
       slidesPerView: 4,
     }
+  }
+});
+
+//--------------------- Hotel Gallery --------------------------
+const thumbsGallery = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+const hotelGallery = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  zoom: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+  thumbs: {
+    swiper: thumbsGallery,
   }
 });

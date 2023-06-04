@@ -27,8 +27,7 @@ html {
 }
 
 img {
-  height: auto;
-  // max-width: 100%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -498,4 +497,38 @@ input[type="range"]::-moz-range-thumb{
     text-decoration: underline;
     color: var(--color-great);
   }
+}
+
+.st5 {
+  display: block;
+  background: url(../img/5stars.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 100%;
+}
+
+.st4 {
+  display: block;
+  background: url(../img/4stars.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 100%;
+}
+
+.st3 {
+  background: url(../img/3stars.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 100%;
+}
+
+.st2 {
+  background: url(../img/2stars.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 100%;
 }

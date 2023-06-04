@@ -74,6 +74,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_offices_mobile__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/offices-mobile */ "./src/js/components/offices-mobile.js");
 /* harmony import */ var _components_offices_mobile__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_components_offices_mobile__WEBPACK_IMPORTED_MODULE_18__);
 /* harmony import */ var _components_tour_filter__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/tour-filter */ "./src/js/components/tour-filter.js");
+/* harmony import */ var _components_hotel_tour__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/hotel-tour */ "./src/js/components/hotel-tour.js");
+/* harmony import */ var _components_hotel_tour__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_components_hotel_tour__WEBPACK_IMPORTED_MODULE_20__);
+
 
 
 
@@ -282,7 +285,7 @@ __webpack_require__.r(__webpack_exports__);
 const cardsData = [{
   id: 1,
   class: "card",
-  img: '<img src="../img/hotels/Utopia-World.jpg" alt="hotel Utopia World"/>',
+  img: '<img src="https://i.yapx.ru/WGg8W.jpg" alt="Utopia World Hotel"/>',
   country: "Турция",
   rating: "st5",
   title: "Utopia World",
@@ -291,111 +294,190 @@ const cardsData = [{
   holiday: "beach",
   distance: "1st-line",
   beach: "pebble",
-  price: "99 700"
+  price: "99 700",
+  href: "hotel-tour.html?id=1"
 }, {
   id: 2,
   class: "card",
-  img: '<img src="../img/hotels/Artemis-Princess.jpg" alt="hotel Artemis Princess"/>',
+  img: '<img src="https://i.yapx.ru/WGoXd.jpg" alt="Club Hotel Anjeliq"/>',
   country: "Турция",
   rating: "st4",
-  title: "Artemis Princess",
-  place: "Алания",
+  title: "Club Hotel Anjeliq",
+  place: "Кестель в Алании",
   meal: "all-inclusive",
   holiday: "beach",
   distance: "1st-line",
   beach: "sand-pebble",
-  price: "97 500"
+  price: "72 800",
+  href: "hotel-tour.html?id=2"
 }, {
   id: 3,
   class: "card",
-  img: '<img src="../img/hotels/Blue-Bay-Platinum.jpg" alt="hotel Blue Bay Platinum"/>',
+  img: '<img src="https://i.yapx.ru/WGyvw.jpg" alt="Rubi Hotel"/>',
   country: "Турция",
   rating: "st5",
-  title: "Blue Bay Platinum",
-  place: "Мармарис",
+  title: "Rubi Hotel",
+  place: "Авсаллар в Алании",
   meal: "three-meals",
   holiday: "beach",
   distance: "1st-line",
   beach: "sand-pebble",
-  price: "95 600"
+  price: "71 600",
+  href: "hotel-tour.html?id=3"
 }, {
   id: 4,
   class: "card",
-  img: '<img src="../img/hotels/Ideal-Panorama.jpg" alt="hotel Ideal Panorama Holiday Village"/>',
+  img: '<img src="https://i.yapx.ru/WGyZu.jpg" alt="Hotel Throne Beach Resort & Spa"/>',
   country: "Турция",
-  rating: "st4",
-  title: "Ideal Panorama Holiday Village",
+  rating: "st5",
+  title: "Throne Beach Resort & Spa",
   meal: "three-meals",
   holiday: "excursion",
-  distance: "1st-line",
+  distance: "2st-line",
   beach: "sand-pebble",
-  place: "Сителер в Мармарисе",
-  price: "96 400"
+  place: "Карабурун в Алании",
+  price: "80 400",
+  href: "hotel-tour.html?id=4"
 }, {
   id: 5,
   class: "card",
-  img: '<img src="../img/hotels/Casa&Blanca.jpg" alt="Casa & Blanca Beach Hotel"/>',
+  img: '<img src="https://i.yapx.ru/WGod1.jpg" alt="Kleopatra Smile"/>',
   country: "Турция",
-  rating: "st4",
-  title: "Casa & Blanca Beach Hotel",
+  rating: "st3",
+  title: "Kleopatra Smile",
   meal: "three-meals",
   holiday: "beach",
   distance: "1st-line",
-  beach: "sand-pebble",
-  place: "Ичмелер в Мармарисе",
-  price: "97 300"
+  beach: "sandy",
+  place: "Алания",
+  price: "55 900",
+  href: "hotel-tour.html?id=5"
 }, {
   id: 6,
   class: "card",
-  img: '<img src="../img/hotels/Aegean-Park.jpg" alt="hotel Aegean Park"/>',
+  img: '<img src="https://i.yapx.ru/WGyCf.jpg" alt="Asena Hotel"/>',
   country: "Турция",
   rating: "st3",
-  title: "Aegean Park",
+  title: "Asena Hotel",
   meal: "two-meals",
   holiday: "beach",
   distance: "2st-line",
-  beach: "sand-pebble",
-  place: "Мармарис",
-  price: "84 400"
+  beach: "sandy",
+  place: "Кушадасы",
+  price: "57 400",
+  href: "hotel-tour.html?id=6"
 }, {
   id: 7,
   class: "card",
-  img: '<img src="../img/hotels/Hotel-Sinatra.jpg" alt="Hotel Sinatra"/>',
+  img: '<img src="https://i.yapx.ru/WGorS.jpg" alt="Hotel Belport Beach"/>',
   country: "Турция",
   rating: "st4",
-  title: "Hotel Sinatra",
+  title: "Belport Beach",
   meal: "all-inclusive",
   holiday: "beach",
   distance: "1st-line",
   beach: "sand-pebble",
-  place: "Чамьюва в Кемере",
-  price: "89 000"
+  place: "Бельдиби в Кемере",
+  price: "62 000",
+  href: "hotel-tour.html?id=7"
 }, {
   id: 8,
   class: "card",
-  img: '<img src="../img/hotels/Sonnen-Hotel.jpg" alt="Sonnen Hotel"/>',
+  img: '<img src="https://i.yapx.ru/WGw0F.jpg" alt="Holiday Garden Resort"/>',
   country: "Турция",
-  rating: "st3",
-  title: "Sonnen Hotel",
+  rating: "st5",
+  title: "Holiday Garden Resort",
   meal: "three-meals",
   holiday: "beach",
-  distance: "2st-line",
+  distance: "1st-line",
   beach: "sand-pebble",
-  place: "Мармарис ",
-  price: "87 400"
+  place: "Окурджалар в Алании",
+  price: "69 700",
+  href: "hotel-tour.html?id=8"
 }, {
   id: 9,
   class: "card",
-  img: '<img src="../img/hotels/Kaliptus.jpg" alt="hotel Kaliptus"/>',
+  img: '<img src="https://i.yapx.ru/WGgiZ.jpg" alt="hotel Kaliptus"/>',
   country: "Турция",
   rating: "st2",
   title: "Kaliptus",
   meal: "single-meal",
   holiday: "beach",
   distance: "3st-line",
+  beach: "pebble",
+  place: "город Кемер в Кемере",
+  price: "55 700",
+  href: "hotel-tour.html?id=9"
+}, {
+  id: 10,
+  class: "card",
+  img: '<img src="https://i.yapx.ru/WGqij.jpg" alt="Kata Sea Breeze Resort"/>',
+  country: "Тайланд",
+  rating: "st3",
+  title: "Kata Sea Breeze Resort",
+  meal: "three-meals",
+  holiday: "beach",
+  distance: "2st-line",
   beach: "sandy",
-  place: "Кемер",
-  price: "82 000"
+  place: "Ката на Пхукете",
+  price: "95 700",
+  href: "hotel-tour.html?id=10"
+}, {
+  id: 11,
+  class: "card",
+  img: '<img src="https://i.yapx.ru/WGzVz.jpg" alt="Faraana Heights Resort"/>',
+  country: "Египет",
+  rating: "st4",
+  title: "Faraana Heights Resort",
+  meal: "three-meals",
+  holiday: "beach",
+  distance: "2st-line",
+  beach: "sandy",
+  place: "Набк-Бей в Шарм-эль-Шейхе",
+  price: "90 700",
+  href: "hotel-tour.html?id=11"
+}, {
+  id: 12,
+  class: "card",
+  img: '<img src="https://i.yapx.ru/WHHgO.jpg" alt="Fujairah Rotana Resort And Spa"/>',
+  country: "ОАЭ",
+  rating: "st5",
+  title: "Fujairah Rotana Resort And Spa",
+  meal: "three-meals",
+  holiday: "beach",
+  distance: "1st-line",
+  beach: "sandy",
+  place: "Фуджейра",
+  price: "90 700",
+  href: "hotel-tour.html?id=12"
+}, {
+  id: 13,
+  class: "card",
+  img: '<img src="https://i.yapx.ru/WHIN1.jpg" alt="Ibis Phuket Patong"/>',
+  country: "Тайланд",
+  rating: "st3",
+  title: "Ibis Phuket Patong",
+  meal: "three-meals",
+  holiday: "beach",
+  distance: "3st-line",
+  beach: "sandy",
+  place: "Патонг на Пхукете",
+  price: "96 900",
+  href: "hotel-tour.html?id=13"
+}, {
+  id: 14,
+  class: "card",
+  img: '<img src="https://i.yapx.ru/WHIqf.jpg" alt="Naithonburi Beach Resort"/>',
+  country: "Тайланд",
+  rating: "st4",
+  title: "Naithonburi Beach Resort",
+  meal: "three-meals",
+  holiday: "beach",
+  distance: "2st-line",
+  beach: "sandy",
+  place: "Найтон на Пхукете",
+  price: "98 700",
+  href: "hotel-tour.html?id=14"
 }];
 
 /***/ }),
@@ -473,6 +555,63 @@ getUserCity().then(_ref2 => {
 }).catch(err => {
   console.log(err);
 });
+
+/***/ }),
+
+/***/ "./src/js/components/hotel-tour.js":
+/*!*****************************************!*\
+  !*** ./src/js/components/hotel-tour.js ***!
+  \*****************************************/
+/***/ (() => {
+
+if (document.querySelector(".hotel-tour") !== null) {
+  (async () => {
+    const searchPrams = new URLSearchParams(location.search);
+    const id = searchPrams.get("id");
+    let response = await fetch("../data.json");
+    if (response.ok) {
+      // получаем ответ в формате JSON и сохраняем его в data
+      let data = await response.json();
+      const hotel = document.querySelector("#hotel");
+      const gallery = document.querySelector("#gallery");
+      const thumbsGallery = document.querySelector("#thumbs-gallery");
+
+      // ------------------------------- Hotel cards ------------------------------------
+      hotel.innerHTML += `
+        <section class="hotel-descr">
+          <div class="hotel-descr__rating ${data[id].rating}"></div>
+          <h2 class="hotel-descr__title">${data[id].title}</h2>
+          <div class="hotel-descr__place">${data[id].place}</div>
+        </section>
+        <section class="hotel-preview" data-graph-animation="custom" data-graph-path="hotel">
+         <div class="preview">
+           <div class="preview__item preview__item--grid"><img class="preview__img" src="${data[id].img1}" alt="${data[id].alt}"></div>
+           <div class="preview__item"><img class="preview__img" src="${data[id].img2}" alt="${data[id].alt}"></div>
+           <div class="preview__item"><img class="preview__img" src="${data[id].img3}" alt="${data[id].alt}"></div>
+           <div class="preview__item"><img class="preview__img" src="${data[id].img4}" alt="${data[id].alt}"></div>
+           <div class="preview__item"><img class="preview__img" src="${data[id].img5}" alt="${data[id].alt}"></div>
+         </div>
+        </section>
+        `;
+      // ------------------------------- Modal swiper image ------------------------------------
+      gallery.innerHTML += `
+       <div class="swiper-slide"><img src="${data[id].img1}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img2}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img3}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img4}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img5}" alt="${data[id].alt}"></div>
+       `;
+      thumbsGallery.innerHTML += `
+       <div class="swiper-slide"><img src="${data[id].img1}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img2}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img3}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img4}" alt="${data[id].alt}"></div>
+       <div class="swiper-slide"><img src="${data[id].img5}" alt="${data[id].alt}"></div>
+       `;
+    }
+  })();
+}
+;
 
 /***/ }),
 
@@ -1418,11 +1557,12 @@ document.addEventListener('click', e => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
 const slider = document.querySelector('.swiper-container');
 const bestFares = document.querySelector('.best-fares__items');
 
-// ---------------------------------------------------------------------------
+// ----------------------- Swiper main page ------------------------
 if (document.querySelector(".swiper-container") !== null) {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
     slidesPerView: 1,
@@ -1432,26 +1572,24 @@ if (document.querySelector(".swiper-container") !== null) {
       clickable: true
     },
     speed: 1500,
-    // autoplay: {
-    // 	delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+    },
+    on: {
+      init() {
+        this.el.addEventListener('mouseover', () => {
+          this.autoplay.stop();
+        });
+        this.el.addEventListener('mouseout', () => {
+          this.autoplay.start();
+        });
+      }
     }
-    // on: {
-    // 	init() {
-    // 	  this.el.addEventListener('mouseover', () => {
-    // 		this.autoplay.stop();
-    // 	  });
-
-    // 	  this.el.addEventListener('mouseout', () => {
-    // 		this.autoplay.start();
-    // 	  });
-    // 	}
-    //   }
   });
-
   document.getElementsByClassName("swiper-container")[0].addEventListener("mouseover", function () {
     document.querySelector('.swiper-button-prev').style.display = 'block';
     document.querySelector('.swiper-button-next').style.display = 'block';
@@ -1461,8 +1599,8 @@ if (document.querySelector(".swiper-container") !== null) {
     document.querySelector('.swiper-button-next').style.display = 'none';
   });
 }
-// --------------------------------------------------------------------------------
 
+// ----------------------- Section Best Fares ----------------------
 const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestFares, {
   slidesPerView: 1,
   loop: true,
@@ -1480,6 +1618,29 @@ const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestF
     1024: {
       slidesPerView: 4
     }
+  }
+});
+
+//--------------------- Hotel Gallery --------------------------
+const thumbsGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true
+});
+const hotelGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper2", {
+  spaceBetween: 10,
+  zoom: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction"
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev"
+  },
+  thumbs: {
+    swiper: thumbsGallery
   }
 });
 
@@ -1525,7 +1686,7 @@ if (document.querySelector("#product") !== null) {
                 <div class="card__place">${n.place}</div>
             </div>
               <div class="card__bottom">
-                <a href="" class="btn-card btn btn--fill">
+                <a href="${n.href}" class="btn-card btn btn--fill">
                   <div class="price">от ${n.price}<span>&nbsp;₽</span></div>
                 </a>
                 <div class="more-info">
