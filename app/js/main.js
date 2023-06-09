@@ -76,6 +76,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_tour_filter__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/tour-filter */ "./src/js/components/tour-filter.js");
 /* harmony import */ var _components_hotel_tour__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/hotel-tour */ "./src/js/components/hotel-tour.js");
 /* harmony import */ var _components_hotel_tour__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_components_hotel_tour__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _components_btn_info__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/btn-info */ "./src/js/components/btn-info.js");
+/* harmony import */ var _components_btn_info__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_components_btn_info__WEBPACK_IMPORTED_MODULE_21__);
+
 
 
 
@@ -244,6 +247,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+/***/ }),
+
+/***/ "./src/js/components/btn-info.js":
+/*!***************************************!*\
+  !*** ./src/js/components/btn-info.js ***!
+  \***************************************/
+/***/ (() => {
+
+if (document.querySelector(".positioning__info") !== null) {
+  const btnInfo = document.querySelector('.positioning__info');
+  const popup = document.querySelector('.popup');
+  const popupClose = document.querySelector('.popup__close');
+  btnInfo.addEventListener('click', () => {
+    popup.classList.toggle('active');
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.positioning__info')) {
+      popup.classList.remove('active');
+    }
+    if (e.target.closest('.popup__container')) {
+      popup.classList.add('active');
+    }
+    if (e.target.closest('.popup__close')) {
+      popup.classList.remove('active');
+    }
+  });
+}
+;
 
 /***/ }),
 
@@ -575,6 +607,11 @@ if (document.querySelector(".hotel-tour") !== null) {
       const hotel = document.querySelector("#hotel");
       const gallery = document.querySelector("#gallery");
       const thumbsGallery = document.querySelector("#thumbs-gallery");
+      const roomsPreview = document.querySelector("#rooms-preview");
+      const roomsPreview2 = document.querySelector("#rooms-preview2");
+      const roomsPreview3 = document.querySelector("#rooms-preview3");
+      const roomSlider = document.querySelector("#room-slider");
+      const thumbsRoom = document.querySelector("#thumbs-room");
 
       // ------------------------------- Hotel cards ------------------------------------
       hotel.innerHTML += `
@@ -593,7 +630,7 @@ if (document.querySelector(".hotel-tour") !== null) {
          </div>
         </section>
         `;
-      // ------------------------------- Modal swiper image ------------------------------------
+      // ---------------------------- Modal swiper image --------------------------------
       gallery.innerHTML += `
        <div class="swiper-slide"><img src="${data[id].img1}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img2}" alt="${data[id].alt}"></div>
@@ -608,6 +645,44 @@ if (document.querySelector(".hotel-tour") !== null) {
        <div class="swiper-slide"><img src="${data[id].img4}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img5}" alt="${data[id].alt}"></div>
        `;
+      // -------------------------------- Room Slider Preview ------------------------------
+      roomsPreview.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+      roomsPreview2.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+      roomsPreview3.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+      `;
+      //------------------------- Room Slider Modal --------------------------
+      roomSlider.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+      //------------------------- Room Slider thumbs Modal --------------------------
+      thumbsRoom.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
     }
   })();
 }
@@ -1559,8 +1634,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
-const slider = document.querySelector('.swiper-container');
-const bestFares = document.querySelector('.best-fares__items');
+const slider = document.querySelector(".swiper-container");
+const bestFares = document.querySelector(".best-fares__items");
 
 // ----------------------- Swiper main page ------------------------
 if (document.querySelector(".swiper-container") !== null) {
@@ -1568,7 +1643,7 @@ if (document.querySelector(".swiper-container") !== null) {
     slidesPerView: 1,
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true
     },
     speed: 1500,
@@ -1576,27 +1651,27 @@ if (document.querySelector(".swiper-container") !== null) {
       delay: 3000
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
     },
     on: {
       init() {
-        this.el.addEventListener('mouseover', () => {
+        this.el.addEventListener("mouseover", () => {
           this.autoplay.stop();
         });
-        this.el.addEventListener('mouseout', () => {
+        this.el.addEventListener("mouseout", () => {
           this.autoplay.start();
         });
       }
     }
   });
   document.getElementsByClassName("swiper-container")[0].addEventListener("mouseover", function () {
-    document.querySelector('.swiper-button-prev').style.display = 'block';
-    document.querySelector('.swiper-button-next').style.display = 'block';
+    document.querySelector(".swiper-button-prev").style.display = "block";
+    document.querySelector(".swiper-button-next").style.display = "block";
   });
   document.getElementsByClassName("swiper-container")[0].addEventListener("mouseout", function () {
-    document.querySelector('.swiper-button-prev').style.display = 'none';
-    document.querySelector('.swiper-button-next').style.display = 'none';
+    document.querySelector(".swiper-button-prev").style.display = "none";
+    document.querySelector(".swiper-button-next").style.display = "none";
   });
 }
 
@@ -1605,8 +1680,8 @@ const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestF
   slidesPerView: 1,
   loop: true,
   navigation: {
-    nextEl: '.best-fares__next ',
-    prevEl: '.best-fares__prev'
+    nextEl: ".best-fares__next ",
+    prevEl: ".best-fares__prev"
   },
   breakpoints: {
     576: {
@@ -1643,6 +1718,47 @@ const hotelGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwip
     swiper: thumbsGallery
   }
 });
+
+//-------------------------- Room Preview ---------------------------
+window.addEventListener("load", () => {
+  const roomPreview = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".rooms-preview", {
+    spaceBetween: 10,
+    zoom: true,
+    pagination: {
+      el: ".rooms-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-btn-next",
+      prevEl: ".swiper-btn-prev"
+    }
+  });
+});
+
+//------------------------- Room thumbs Modal --------------------------
+const thumbsRoom = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".thumbs-room", {
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true
+});
+//------------------------- Room Modal --------------------------
+const roomSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".room-slider", {
+  spaceBetween: 10,
+  zoom: true,
+  pagination: {
+    el: ".room-pagination",
+    type: "fraction"
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev"
+  },
+  thumbs: {
+    swiper: thumbsRoom
+  }
+});
+// --------------------------------------------------
 
 /***/ }),
 

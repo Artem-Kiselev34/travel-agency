@@ -19,6 +19,7 @@ import './components/cards-data';
 import './components/offices-mobile';
 import './components/tour-filter';
 import './components/hotel-tour';
+import './components/btn-info';
 
 
 // import './components/just-validate';

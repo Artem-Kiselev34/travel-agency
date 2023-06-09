@@ -10,6 +10,12 @@ if (document.querySelector(".hotel-tour") !== null) {
       const gallery = document.querySelector("#gallery");
       const thumbsGallery = document.querySelector("#thumbs-gallery");
 
+      const roomsPreview = document.querySelector("#rooms-preview");
+      const roomsPreview2 = document.querySelector("#rooms-preview2");
+      const roomsPreview3 = document.querySelector("#rooms-preview3");
+      const roomSlider = document.querySelector("#room-slider");
+      const thumbsRoom = document.querySelector("#thumbs-room");
+
     // ------------------------------- Hotel cards ------------------------------------
       hotel.innerHTML += `
         <section class="hotel-descr">
@@ -27,7 +33,7 @@ if (document.querySelector(".hotel-tour") !== null) {
          </div>
         </section>
         `;
-    // ------------------------------- Modal swiper image ------------------------------------
+    // ---------------------------- Modal swiper image --------------------------------
       gallery.innerHTML += `
        <div class="swiper-slide"><img src="${data[id].img1}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img2}" alt="${data[id].alt}"></div>
@@ -42,6 +48,44 @@ if (document.querySelector(".hotel-tour") !== null) {
        <div class="swiper-slide"><img src="${data[id].img4}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img5}" alt="${data[id].alt}"></div>
        `;
+    // -------------------------------- Room Slider Preview ------------------------------
+      roomsPreview.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+      roomsPreview2.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+      roomsPreview3.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+      `;
+          //------------------------- Room Slider Modal --------------------------
+      roomSlider.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+          //------------------------- Room Slider thumbs Modal --------------------------
+      thumbsRoom.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
     }
   })();
 };

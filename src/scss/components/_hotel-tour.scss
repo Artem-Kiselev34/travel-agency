@@ -8,6 +8,7 @@
   background-color: var(--color-aliceblue);
 }
 .hotel-preview {
+  margin-bottom: 60px;
   border-radius: 8px;
   background-color: var(--color-aliceblue);
 }
@@ -82,7 +83,7 @@
   border-radius: 8px;
   max-height: 520px;
   width: 100%;
-  cursor: grab;
+  cursor: pointer;
 }
 .mySwiper2 .swiper-slide {
   height: auto;
@@ -152,9 +153,5 @@
 .swiper-pagination-fraction {
   top: -27px;
   bottom: auto;
-  z-index: -1;
   color: var(--color-light);
-
 }
-
-
