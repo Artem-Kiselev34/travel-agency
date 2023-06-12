@@ -1,74 +1,74 @@
 [
   {
-    "image": "../img/tour-selection/dominic1.jpg",
-    "image2": "../img/tour-selection/dominic2.jpg",
-    "image3": "../img/tour-selection/dominic3.jpg",
+    "image": "./img/tour-selection/dominic1.jpg",
+    "image2": "./img/tour-selection/dominic2.jpg",
+    "image3": "./img/tour-selection/dominic3.jpg",
     "title": "Доминикана"
   },
   {
-    "image": "../img/tour-selection/Bulgaria1.jpg",
-    "image2": "../img/tour-selection/Bulgaria2.jpg",
-    "image3": "../img/tour-selection/Bulgaria3.jpg",
+    "image": "./img/tour-selection/Bulgaria1.jpg",
+    "image2": "./img/tour-selection/Bulgaria2.jpg",
+    "image3": "./img/tour-selection/Bulgaria3.jpg",
     "title": "Болгария"
   },
   {
-    "image": "../img/tour-selection/Cuba1.jpg",
-    "image2": "../img/tour-selection/Cuba2.jpg",
-    "image3": "../img/tour-selection/Cuba3.jpg",
+    "image": "./img/tour-selection/Cuba1.jpg",
+    "image2": "./img/tour-selection/Cuba2.jpg",
+    "image3": "./img/tour-selection/Cuba3.jpg",
     "title": "Куба"
   },
   {
-    "image": "../img/tour-selection/Cyprus1.jpg",
-    "image2": "../img/tour-selection/Cyprus2.jpg",
-    "image3": "../img/tour-selection/Cyprus3.jpg",
+    "image": "./img/tour-selection/Cyprus1.jpg",
+    "image2": "./img/tour-selection/Cyprus2.jpg",
+    "image3": "./img/tour-selection/Cyprus3.jpg",
     "title": "Кипр"
   },
   {
-    "image": "../img/tour-selection/Greece1.jpg",
-    "image2": "../img/tour-selection/Greece2.jpg",
-    "image3": "../img/tour-selection/Greece3.jpg",
+    "image": "./img/tour-selection/Greece1.jpg",
+    "image2": "./img/tour-selection/Greece2.jpg",
+    "image3": "./img/tour-selection/Greece3.jpg",
     "title": "Греция"
   },
   {
-    "image": "../img/tour-selection/India1.jpg",
-    "image2": "../img/tour-selection/India2.jpg",
-    "image3": "../img/tour-selection/India3.jpg",
+    "image": "./img/tour-selection/India1.jpg",
+    "image2": "./img/tour-selection/India2.jpg",
+    "image3": "./img/tour-selection/India3.jpg",
     "title": "Индия"
   },
   {
-    "image": "../img/tour-selection/Maldives1.jpg",
-    "image2": "../img/tour-selection/Maldives2.jpg",
-    "image3": "../img/tour-selection/Maldives3.jpg",
+    "image": "./img/tour-selection/Maldives1.jpg",
+    "image2": "./img/tour-selection/Maldives2.jpg",
+    "image3": "./img/tour-selection/Maldives3.jpg",
     "title": "Мальдивы"
   },
   {
-    "image": "../img/tour-selection/Morocco1.jpg",
-    "image2": "../img/tour-selection/Morocco2.jpg",
-    "image3": "../img/tour-selection/Morocco3.jpg",
+    "image": "./img/tour-selection/Morocco1.jpg",
+    "image2": "./img/tour-selection/Morocco2.jpg",
+    "image3": "./img/tour-selection/Morocco3.jpg",
     "title": "Морокко"
   },
   {
-    "image": "../img/tour-selection/Spain1.jpg",
-    "image2": "../img/tour-selection/Spain2.jpg",
-    "image3": "../img/tour-selection/Spain3.jpg",
+    "image": "./img/tour-selection/Spain1.jpg",
+    "image2": "./img/tour-selection/Spain2.jpg",
+    "image3": "./img/tour-selection/Spain3.jpg",
     "title": "Испания"
   },
   {
-    "image": "../img/tour-selection/Tanzania1.jpg",
-    "image2": "../img/tour-selection/Tanzania2.jpg",
-    "image3": "../img/tour-selection/Tanzania3.jpg",
+    "image": "./img/tour-selection/Tanzania1.jpg",
+    "image2": "./img/tour-selection/Tanzania2.jpg",
+    "image3": "./img/tour-selection/Tanzania3.jpg",
     "title": "Танзания"
   },
   {
-    "image": "../img/tour-selection/Tunisia1.jpg",
-    "image2": "../img/tour-selection/Tunisia2.jpg",
-    "image3": "../img/tour-selection/Tunisia3.jpg",
+    "image": "./img/tour-selection/Tunisia1.jpg",
+    "image2": "./img/tour-selection/Tunisia2.jpg",
+    "image3": "./img/tour-selection/Tunisia3.jpg",
     "title": "Тунис"
   },
   {
-    "image": "../img/tour-selection/THailand1.jpg",
-    "image2": "../img/tour-selection/THailand2.jpg",
-    "image3": "../img/tour-selection/THailand3.jpg",
+    "image": "./img/tour-selection/THailand1.jpg",
+    "image2": "./img/tour-selection/THailand2.jpg",
+    "image3": "./img/tour-selection/THailand3.jpg",
     "title": "Тайланд"
   }
 ]
