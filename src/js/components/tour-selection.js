@@ -4,17 +4,18 @@ let quantityProducts = 8;
 let dataLength = "";
 
 if (products) {
-  const fetchProducts = (quantity = 8) => {
-    fetch("../product-cards.json")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        dataLength = data.length;
-        products.innerHTML = "";
-        for (let i = 0; i < data.length; i++) {
-          if (i < quantity) {
-            products.innerHTML += `
+  document.addEventListener('DOMContentLoaded', () => {
+    const fetchProducts = (quantity = 8) => {
+      fetch("../product-cards.json")
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          dataLength = data.length;
+          products.innerHTML = "";
+          for (let i = 0; i < data.length; i++) {
+            if (i < quantity) {
+              products.innerHTML += `
               <li class="product-card">
                 <div class="product-card__slider">
                   <div class="product-card__slides">
@@ -42,36 +43,37 @@ if (products) {
                 </div>
               </li>
            `;
-          }
+            }
 
-          const sliders = document.querySelectorAll(".product-card__slider");
-          sliders.forEach((el) => {
-            let line = el.querySelector(".product-card__slides");
-            markers = el.querySelector(".slideshow");
-            marker = markers.querySelectorAll(".slideshow__item");
+            const sliders = document.querySelectorAll(".product-card__slider");
+            sliders.forEach((el) => {
+              let line = el.querySelector(".product-card__slides");
+              markers = el.querySelector(".slideshow");
+              marker = markers.querySelectorAll(".slideshow__item");
 
-            marker.forEach(function (mark) {
-              mark.onmousemove = function () {
-                let data = this.dataset.position;
-                line.style.left = `${data}px`;
-              };
+              marker.forEach(function (mark) {
+                mark.onmousemove = function () {
+                  let data = this.dataset.position;
+                  line.style.left = `${data}px`;
+                };
+              });
             });
-          });
-        }
-      });
-  };
-
-  fetchProducts(quantityProducts);
-
-  loadMore.addEventListener('click', (e) => {
-    quantityProducts = quantityProducts + 4;
+          }
+        });
+    };
 
     fetchProducts(quantityProducts);
 
-    if (quantityProducts == dataLength) {
-      loadMore.style.display = 'none';
-    } else {
-      loadMore.style.display = 'inline-flex';
-    }
+    loadMore.addEventListener('click', (e) => {
+      quantityProducts = quantityProducts + 4;
+
+      fetchProducts(quantityProducts);
+
+      if (quantityProducts == dataLength) {
+        loadMore.style.display = 'none';
+      } else {
+        loadMore.style.display = 'inline-flex';
+      }
+    });
   });
-}
+};
