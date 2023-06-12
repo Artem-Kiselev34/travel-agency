@@ -6,7 +6,7 @@ let dataLength = "";
 if (products) {
   document.addEventListener('DOMContentLoaded', () => {
     const fetchProducts = (quantity = 8) => {
-      fetch("../product-cards.json")
+      fetch("./product-cards.json")
         .then((response) => {
           return response.json();
         })

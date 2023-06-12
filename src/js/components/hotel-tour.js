@@ -3,7 +3,7 @@ if (document.querySelector(".hotel-tour") !== null) {
     (async () => {
       const searchPrams = new URLSearchParams(location.search);
       const id = searchPrams.get("id");
-      let response = await fetch("../data.json");
+      let response = await fetch("./data.json");
       if (response.ok) {
         // получаем ответ в формате JSON и сохраняем его в data
         let data = await response.json();
