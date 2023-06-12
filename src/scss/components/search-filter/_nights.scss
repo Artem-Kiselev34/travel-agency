@@ -1,0 +1,73 @@
+.nights-wrapper {
+  position: relative;
+}
+
+.nights-main {
+  border: 1px solid var(--color-rinse);
+  height: 64px;
+  background-color: var(--color-light);
+  transition: 0.3s;
+  user-select: none;
+
+  &:hover {
+    border: 1px solid #7e8389;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  @include tablet {
+    border-radius: 8px 0 0 8px;
+    width: 100%;
+  }
+
+  @include mobile {
+    border-radius: 0;
+  }
+}
+
+.nights-title {
+  position: absolute;
+  left: 16px;
+  top: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-great);
+}
+
+.nights-pinput {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 19px 10px 10px 16px;
+  width: 140px;
+  height: 100%;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-ebony);
+  transition: 0.3s;
+}
+
+.nights-body {
+  position: absolute;
+  left: 0;
+  top: 76px;
+  z-index: 100;
+  border-radius: 8px;
+  padding: 15px 20px 15px;
+  width: 244px;
+  height: 136px;
+  box-shadow: 0 8px 22px rgb(0 0 0 / 7%);
+  background-color: var(--color-light);
+}
+
+.nights-elem {
+  @include flex-all-sb;
+
+  padding: 10px 0;
+  width: 100%;
+  min-width: 90px;
+}
+

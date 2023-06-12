@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-standard-scss",
+  "extends": "stylelint-config-standard-scss stylelint-config-sass-guidelines",
   "plugins": [
     "stylelint-order"
   ],
@@ -561,7 +561,7 @@
       }
     ],
     "declaration-no-important": [
-      null,
+      false,
       {
         "severity": "warning"
       }

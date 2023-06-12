@@ -6,209 +6,181 @@
     <h3 class="main-descr descr--center">
       Купить тур легче, чем вы думаете
     </h3>
-    <!-- --------------------------------- Search-form ----------------------------------- -->
-    <section class="search-form">
-      <!-- -------------------------------- From ------------------------------------- -->
-      <div class="search-form__item">
-        <div class="search-form__inner">
-          <div class="departure departure__main">
-            <div class="departure__pinput">
-              <input type="text" class="departure-input" readonly value="Москва" />
-              <div class="departure__title">Откуда</div>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown dropdown__content">
-          <div class="departure__body">
-            <ul class="departure-drop">
-              <li class="departure-drop__item">Москва</li>
-              <li class="departure-drop__item">Санкт-петербург</li>
-              <li class="departure-drop__item">Анапа</li>
-              <li class="departure-drop__item">Архангельск</li>
-              <li class="departure-drop__item">Астрахань</li>
-              <li class="departure-drop__item">Барнаул</li>
-              <li class="departure-drop__item">Белгород</li>
-              <li class="departure-drop__item">Благовещенск</li>
-              <li class="departure-drop__item">Брянск</li>
-              <li class="departure-drop__item">Владивосток</li>
-              <li class="departure-drop__item">Владикавказ</li>
-              <li class="departure-drop__item">Волгоград</li>
-              <li class="departure-drop__item">Воронеж</li>
-              <li class="departure-drop__item">Горно-Алтайск</li>
-              <li class="departure-drop__item">Грозный</li>
-              <li class="departure-drop__item">Екатеринбург</li>
-              <li class="departure-drop__item">Иваново</li>
-              <li class="departure-drop__item">Иркутск</li>
-              <li class="departure-drop__item">Казань</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- -------------------------------- Where ------------------------------------ -->
-      <div class="search-form__item">
-        <div class="search-form__inner">
-          <div class="where">
-            <div class="where__input">
-              <div class="input__name">Куда</div>
-              <div class="where__input-wrap">
-                <input type="text" class="where-input" readonly value="Тайланд" />
+    <section id="filters" class="container">
+      <form class="search-form search-form--mod">
+        <!----------- From -------------->
+        <div class="search-form__item">
+          <div class="search-form__inner">
+            <div class="departure">
+              <div class="departure__input">
+                <span class="departure__title">Откуда</span>
+                <input id="city" type="text" class="departure-input" readonly/>
               </div>
             </div>
           </div>
-        </div>
-        <div class="dropdown dropdown__content">
-          <div class="where__body">
-            <ul class="where-drop">
-              <li class="where-drop__item">Абхазия</li>
-              <li class="where-drop__item">Азербайджан</li>
-              <li class="where-drop__item">Албания</li>
-              <li class="where-drop__item">Армения</li>
-              <li class="where-drop__item">Бахрейн</li>
-              <li class="where-drop__item">Беларусь</li>
-              <li class="where-drop__item">Египет</li>
-              <li class="where-drop__item">Казахстан</li>
-              <li class="where-drop__item">Катар</li>
-              <li class="where-drop__item">Киргизия</li>
-              <li class="where-drop__item">Куба</li>
-              <li class="where-drop__item">Мальдивы</li>
-              <li class="where-drop__item">Португалия</li>
-              <li class="where-drop__item">Сейшелы</li>
-              <li class="where-drop__item">Сербия</li>
-              <li class="where-drop__item">Тайланд</li>
-              <li class="where-drop__item">Черногория</li>
-              <li class="where-drop__item">Шри-Ланка</li>
-              <li class="where-drop__item">Хорватия</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- ------------------------------- Calendar ---------------------------------- -->
-      <div class="search-form__item search-form__item--calendar">
-        <div class="search-form__inner">
-          <!-- <div class="dropdown"></div> -->
-          <div class="calendar">
-            <div class="calendar__field">
-              <div class="calendar__field-title">Дата вылета</div>
-              <div class="calendar__field-dates">
-                <div class="air-datepicker-global-container">
-                  <span id="dateField"></span>
-                  <span class="dataField"></span>&nbsp;&nbsp;&nbsp;
-                  <input id="airdatepicker" type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="calendar__field-button"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ------------------------------- Duration ---------------------------------- -->
-      <div class="counter-wrapper search-form__item search-form__item--nights">
-        <div class="search-form__inner">
-          <div class="nights-wrapper">
-            <div class="nights__main pointer">
-              <div class="nights__title">Длительность</div>
-              <div class="nights__pinput">
-                <span data-counter2>7</span>&nbsp;
-                <span class="counter"><span>-</span> <span data-counter4>7</span></span>
-                <span class="nights">&nbsp;ночей</span>
-                <span class="night">&nbsp;ночь</span>
-                <span class="nights-time">&nbsp;ночи</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="nights__body dropdown">
-          <div class="nights__elem">
-            <span data-action="minus" class="minus"></span>
-            <p class="counter-nights-box">
-              от &nbsp;<span data-counter>7</span>
-              <span class="counter-nights">&nbsp; ночей</span>
-              <span class="counter-nights-time">&nbsp; ночи</span>
-            </p>
-            <span data-action="plus" class="plus"></span>
-          </div>
-
-          <div class="nights__elem">
-            <span data-action="minus1" class="minus"></span>
-            <p class="counter-nights-box">
-              до &nbsp;<span data-counter3>7</span>
-              <span class="counter-nights3">&nbsp; ночей</span>
-              <span class="counter-nights-time3">&nbsp; ночи</span>
-            </p>
-            <span data-action="plus1" class="plus"></span>
-          </div>
-        </div>
-      </div>
-      <!-- ------------------------------- Tourists ---------------------------------- -->
-      <div class="counter-wrapper search-form__item search-form__item--tourists">
-        <div class="search-form__inner">
-          <div class="tourists pointer">
-            <div class="tourists__title">Туристы</div>
-            <div class="tourists__pinput">
-              <span data-counter="1">2</span> &nbsp;
-              <span class="counter-text-1" data-text="1">взрослый</span>
-              <span data-text="2">взрослых</span>
-              <span class="child-counter">
-                <span>
-                  ,&nbsp;<span data-count>1</span>&nbsp;
-                  <span class="kid">ребёнок</span>
-                </span>
-              </span>
-              <span class="kids">ребёнка</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tourists__body dropdown">
-          <div class="tourists__elem">
-            <span data-action="minus2" class="minus"></span>
-            <div>
-              <p  class="tourists__item-adults">
-                <span data-counter="2">2</span>&nbsp
-                <span class="tourists-text" data-text="3">взрослый</span>
-                <span data-text="4">взрослых</span>
-              </p>
-              <p class="small-text">Старше 12 лет</p>
-            </div>
-            <span data-action="plus2" class="plus"></span>
-          </div>
-
-          <div class="wrapper-children"></div>
-
-          <p class="tourists-add-child">
-            Добавить ребёнка
-            <span class="tourists-add-child__chevron"></span>
-          </p>
-
-          <div class="children-wrap is-hidden">
-            <div class="children-container">
-
-              <ul class="children-ages-list">
-                <li class="children-ages-list__item">
-                  до 2-х лет
-                </li>
-                <li class="children-ages-list__item">2 года</li>
-                <li class="children-ages-list__item">3 года</li>
-                <li class="children-ages-list__item">4 года</li>
-                <li class="children-ages-list__item">5 лет</li>
-                <li class="children-ages-list__item">6 лет</li>
-                <li class="children-ages-list__item">7 лет</li>
-                <li class="children-ages-list__item">8 лет</li>
-                <li class="children-ages-list__item">9 лет</li>
-                <li class="children-ages-list__item">10 лет</li>
-                <li class="children-ages-list__item">11 лет</li>
-                <li class="children-ages-list__item">12 лет</li>
+          <div class="dropdown dropdown-content">
+            <div class="departure-body">
+              <ul class="departure-drop list-reset">
+                <li class="departure-drop__item">Москва</li>
+                <li class="departure-drop__item">Санкт-петербург</li>
+                <li class="departure-drop__item">Анапа</li>
+                <li class="departure-drop__item">Архангельск</li>
+                <li class="departure-drop__item">Астрахань</li>
+                <li class="departure-drop__item">Барнаул</li>
+                <li class="departure-drop__item">Белгород</li>
+                <li class="departure-drop__item">Благовещенск</li>
+                <li class="departure-drop__item">Брянск</li>
+                <li class="departure-drop__item">Владивосток</li>
+                <li class="departure-drop__item">Владикавказ</li>
+                <li class="departure-drop__item">Волгоград</li>
+                <li class="departure-drop__item">Воронеж</li>
+                <li class="departure-drop__item">Горно-Алтайск</li>
+                <li class="departure-drop__item">Грозный</li>
+                <li class="departure-drop__item">Екатеринбург</li>
+                <li class="departure-drop__item">Иваново</li>
+                <li class="departure-drop__item">Иркутск</li>
+                <li class="departure-drop__item">Казань</li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
+        <!----------- Where ------------->
+        <div class="search-form__item">
+          <div class="search-form__inner">
+            <div class="where">
+              <div class="where__input country">
+                <span class="where__title">Куда</span>
+                  <input id="country"  type="text" class="where-input" readonly/>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-content">
+            <div class="where-body">
+              <ul class="where-drop list-reset">
+                <li class="where-drop__item">Турция</li>
+                <li class="where-drop__item">Тайланд</li>
+                <li class="where-drop__item">Египет</li>
+                <li class="where-drop__item">ОАЭ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!---------- Calendar ----------->
+        <div class="search-form__item search-form__item--calendar">
+            <div class="calendar">
+              <div class="calendar__field">
+                <span class="calendar__field-title">Дата вылета</span>
+                <div class="calendar__field-dates">
+                  <div class="air-datepicker-global-container">
+                    <span class="dataField"></span>&nbsp;&nbsp;&nbsp;
+                    <input id="airdatepicker" type="text" class="form-control" autocomplete="off" readonly/>
+                  </div>
+                </div>
+                <div class="calendar__field-button"></div>
+              </div>
+            </div>
+        </div>
+        <!---------- Duration ----------->
+        <div class="counter-wrapper search-form__item search-form__item--nights">
+          <div class="search-form__inner">
+            <div class="nights-wrapper">
+              <div class="nights-main">
+                <span class="nights-title">Длительность</span>
+                <div class="nights-pinput">
+                  <span data-counter="2">7</span>&nbsp;
+                  <span data-digit class="is-hidden"><span>-</span>&nbsp;<span data-counter="4">7</span></span>
+                  <span data-nights>&nbsp;ночей</span>
+                  <span data-night class="is-hidden">&nbsp;ночь</span>
+                  <span data-nights2 class="is-hidden">&nbsp;ночи</span>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="nights-body dropdown">
+              <div class="nights-elem">
+                <span data-action="minus" class="minus"></span>
+                <div>
+                  от &nbsp;<span data-counter="1">7</span>
+                  <span data-nights3>ночей</span>
+                  <span data-nights4 class="is-hidden">ночи</span>
+                </div>
+                <span data-action="plus" class="plus opacity"></span>
+              </div>
 
-      <button class="search-button">Найти</button>
+              <div class="nights-elem">
+                <span data-action="minus2" class="minus opacity"></span>
+                <div>
+                  до &nbsp;<span data-counter="3">7</span>
+                  <span data-nights5>ночей</span>
+                  <span data-nights6 class="is-hidden">ночи</span>
+                </div>
+                <span data-action="plus2" class="plus"></span>
+              </div>
+            </div>
+        </div>
+        <!---------- Tourists ----------->
+        <div class="counter-wrapper search-form__item search-form__item--tourists">
+          <div class="search-form__inner">
+            <div class="tourists">
+              <span class="tourists__title">Туристы</span>
+              <div class="tourists__pinput">
+                <span data-counter1>2</span> &nbsp;
+                <span class="is-hidden" data-text="1">взрослый</span>
+                <span data-text="2">взрослых</span>
+                <span class="child-counter is-hidden">
+                  <span>
+                    ,&nbsp;<span data-count>1</span>&nbsp;
+                    <span class="kid">ребёнок</span>
+                  </span>
+                </span>
+                <span class="kids is-hidden">ребёнка</span>
+              </div>
+            </div>
+          </div>
+            <div class="tourists-body dropdown">
+              <div class="tourists-elem">
+                <span data-action="btn-minus" class="minus"></span>
+                <div>
+                  <div class="tourists-item-adults">
+                    <span data-counter2>2</span>&nbsp
+                    <span class="is-hidden" data-text="3">взрослый</span>
+                    <span data-text="4">взрослых</span>
+                  </div>
+                </div>
+                <span data-action="btn-plus" class="plus"></span>
+              </div>
+
+              <div class="wrapper-children"></div>
+              <div class="tourists-add-child">
+                Добавить ребёнка
+                <span class="tourists-add-child__chevron"></span>
+              </div>
+
+              <div class="children-wrap is-hidden">
+                <div class="children-container">
+
+                  <ul class="children-ages-list">
+                    <li class="children-ages-list__item">
+                      до 2-х лет
+                    </li>
+                    <li class="children-ages-list__item">2 года</li>
+                    <li class="children-ages-list__item">3 года</li>
+                    <li class="children-ages-list__item">4 года</li>
+                    <li class="children-ages-list__item">5 лет</li>
+                    <li class="children-ages-list__item">6 лет</li>
+                    <li class="children-ages-list__item">7 лет</li>
+                    <li class="children-ages-list__item">8 лет</li>
+                    <li class="children-ages-list__item">9 лет</li>
+                    <li class="children-ages-list__item">10 лет</li>
+                    <li class="children-ages-list__item">11 лет</li>
+                    <li class="children-ages-list__item">12 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <a href="tour-search.html" id="search-btn" class="search-button">Найти</a>
+      </form>
     </section>
-
   </div>
 </section>

@@ -1,0 +1,112 @@
+.room {
+  display: flex;
+  margin-bottom: 50px;
+  max-width: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgb(0 0 0/8%), 0 4px 16px rgb(0 0 0/8%);
+
+  &__container {
+    width: 270px;
+
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  @include small-tablet {
+    display: block;
+  }
+}
+.room-descr {
+  padding: 8px 15px;
+
+  &__type {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  @include small-tablet {
+    padding: 15px;
+  }
+}
+.area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  &__container {
+    border-radius: 3px;
+    padding: 0 2px;
+    background-color: var(--color-aliceblue);
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.short-info {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    margin-bottom: 7px;
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    width: 30%;
+
+    &--none {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &:not(:last-child) {
+      padding-right: 20px;
+    }
+
+    @include mobile {
+      width: auto;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.more {
+  margin-bottom: 20px;
+  color: var(--color-sapphire);
+  cursor: pointer;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+.btn-book {
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 14px;
+}

@@ -1,5 +1,6 @@
 .nav {
   width: 100%;
+  max-width: 1200px;
 
   &__items {
     display: flex;
@@ -7,9 +8,9 @@
     justify-content: space-between;
 
     @include small-tablet {
-      display: block;
+      display: none;
       flex-direction: column;
-      padding: 8px 30px;
+      padding: 16px 12px;
     }
 
     @include mobile {
@@ -17,8 +18,8 @@
     }
   }
 
-  &__item {
-    padding: 10px 0 0 10px;
+  &__list {
+    padding-top: 8px;
   }
 
   &__link {
@@ -40,61 +41,12 @@
       transition-duration: 0.3s ease-in-out;
     }
 
-    &--top {
-      padding: 0;
-      font-weight: 400;
+    @include minidesk {
       font-size: 16px;
-      line-height: 160%;
-      color: var(--color-light);
-      transition: color 0.3s ease-in-out;
-
-      &:not(:last-child) {
-        margin-right: 20px;
-
-        @include tablet {
-          margin-right: 15px;
-        }
-      }
-
-      &:hover {
-        color: var(--color-primary);
-      }
-
-      @include small-tablet {
-        color: var(--color-ebony);
-      }
-    }
-
-    &--current {
-      color: var(--color-primary);
-    }
-
-    &--chevron {
-      padding-right: 20px;
-      background-image: url("../img/chevron.svg");
-      background-position: right center;
-      background-size: 16px 21px;
-      background-repeat: no-repeat;
-
-      @include small-tablet {
-        display: none;
-      }
     }
 
     @include small-tablet {
       color: var(--color-ebony);
     }
-
-    @include minidesk {
-      font-size: 16px;
-    }
-  }
-
-  @include small-tablet {
-    width: 70%;
-  }
-
-  @include mobile {
-    width: 82%;
   }
 }

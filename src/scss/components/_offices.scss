@@ -1,0 +1,128 @@
+.offices {
+  margin-bottom: 15px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__info {
+    width: 350px;
+
+    @include tablet {
+      margin-bottom: 20px;
+      width: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  &__address {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  &__phone {
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+
+    &:after {
+      background-image: url(../img/phone2.svg);
+      content: "";
+      height: 21px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 21px;
+    }
+  }
+
+  &__email {
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 120%;
+
+    &:after {
+      background-image: url(../img/email-icon.svg);
+      content: "";
+      height: 19px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 24px;
+    }
+  }
+
+  &__hours {
+    position: relative;
+    padding-left: 40px;
+
+    &:after {
+      background-image: url(../img/time.svg);
+      content: "";
+      height: 23px;
+      left: 0;
+      position: absolute;
+      top: -3px;
+      width: 26px;
+    }
+  }
+}
+
+.office-hours {
+
+  @include mobile {
+    width: 240px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  &__weekday {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__time {
+    width: 50%;
+  }
+
+  &__saturday {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__sunday {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <path id="a" d="M0 0h60v60H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <path fill="#FFF" fill-rule="nonzero" d="M49 53H19V15l15-8 15 8zM7 53h12V23L7 31z" mask="url(#b)"/>
+        <path fill="#979797" fill-rule="nonzero" d="M48 52V15.6L34 8.133 20 15.6V52h28zm-30 2V14.4l16-8.533L50 14.4V54H18z" mask="url(#b)"/>
+        <path fill="#979797" fill-rule="nonzero" d="M6 54V30.465l14-9.334V54H6zm2-2h10V24.869L8 31.535V52zM26 19a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3zM34 19a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3zM42 19a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3zM26 31a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3zM34 31a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3zM26 43a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3zM34 43a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3zM42 43a1 1 0 0 1 1 1v3h-2v-3a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v5h6v-5a3 3 0 0 0-3-3z" mask="url(#b)"/>
+        <path fill="#979797" fill-rule="nonzero" d="M13 35a1 1 0 0 1 1 1v1h-2v-1a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v3h6v-3a3 3 0 0 0-3-3zM13 45a1 1 0 0 1 1 1v1h-2v-1a1 1 0 0 1 1-1zm0-2a3 3 0 0 0-3 3v3h6v-3a3 3 0 0 0-3-3z" mask="url(#b)"/>
+        <path fill="#00AC00" fill-rule="nonzero" d="M45 39v13h3V39h-3zm5-2v17h-7V37h7z" mask="url(#b)"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M54.5 38v1c0 4.42-3.58 6-8 6s-8-.61-8-6c0-4 3-16 8-16 2.14 0 4.08 2.72 5.52 6" mask="url(#b)"/>
+        <path fill="#00AC00" fill-rule="nonzero" d="M53.5 38a1 1 0 0 1 2 0v1c0 4.702-3.511 7-9 7-6.155 0-9-1.624-9-7 0-2.373.887-6.538 2.194-9.866C41.427 24.723 43.684 22 46.5 22c2.493 0 4.641 2.511 6.436 6.598a1 1 0 1 1-1.832.804C49.611 26 47.9 24 46.5 24c-3.335 0-7 9.328-7 15 0 3.97 1.803 5 7 5 4.518 0 7-1.625 7-5v-1z" mask="url(#b)"/>
+        <path fill="#00AC00" fill-rule="nonzero" d="M52.294 32.642a1 1 0 1 1 1.913-.584c.208.684.371 1.262.504 1.803a1 1 0 1 1-1.942.478c-.123-.5-.276-1.045-.475-1.697z" mask="url(#b)"/>
+    </g>
+</svg>

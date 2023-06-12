@@ -1,0 +1,59 @@
+.section-help-form {
+  &__container {
+    @include bg-cover;
+
+    border-radius: 16px;
+    padding: 50px 65px 45px;
+    background-image: url(../img/pinboard.png);
+
+    @include tablet {
+      padding: 50px 58px 45px;
+    }
+
+    @include mobile {
+      @include flex-column-center;
+
+      padding: 50px 18px 45px;
+    }
+  }
+}
+
+.help-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 670px;
+
+  &__field {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 33px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-ebony);
+  }
+
+  &__btn {
+    margin-top: 15px;
+    padding: 11px 29px;
+
+    @include minidesk {
+      padding: 11px 8px;
+    }
+  }
+
+  @include small-tablet {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  @include mobile {
+    padding: 10px 15px;
+    width: 100%;
+  }
+}

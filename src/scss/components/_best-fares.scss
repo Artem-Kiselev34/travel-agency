@@ -1,0 +1,88 @@
+.best-fares {
+  padding-bottom: 30px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__slide {
+    padding: 0 10px 15px;
+    height: 100%;
+  }
+}
+
+.best-fares-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  height: 100%;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  cursor: pointer;
+
+  &__image {
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-radius: 0 0 3px 3px;
+    padding: 15px;
+    background: var(--color-light);
+  }
+
+  &__rating {
+    display: flex;
+    margin-bottom: 4px;
+  }
+
+  &__descr {
+    flex: 1;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-ebony);
+  }
+
+  &__bottom {
+    @include flex-all-sb;
+  }
+
+  &__price {
+    padding: 12px;
+    color: var(--color-ebony);
+  }
+
+  &__price-descr {
+    padding: 12px;
+  }
+
+  &__price-text {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-ebony);
+  }
+
+  &:hover {
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+    transition: 0.2s linear;
+  }
+}
