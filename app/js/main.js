@@ -601,7 +601,7 @@ if (document.querySelector(".hotel-tour") !== null) {
     (async () => {
       const searchPrams = new URLSearchParams(location.search);
       const id = searchPrams.get("id");
-      let response = await fetch("../data.json");
+      let response = await fetch("./data.json");
       if (response.ok) {
         // получаем ответ в формате JSON и сохраняем его в data
         let data = await response.json();
@@ -1882,7 +1882,7 @@ if (products) {
   document.addEventListener('DOMContentLoaded', () => {
     const fetchProducts = function () {
       let quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 8;
-      fetch("../product-cards.json").then(response => {
+      fetch("./product-cards.json").then(response => {
         return response.json();
       }).then(data => {
         dataLength = data.length;
