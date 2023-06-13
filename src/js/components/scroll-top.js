@@ -30,9 +30,9 @@
   document.addEventListener("DOMContentLoaded", function () {
     const scrollBtn = document.querySelector(".to-top");
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 4000) {
+      if (window.scrollY > 2500) {
         scrollBtn.classList.add("to-top--active");
-      } else if (window.scrollY < 4000) {
+      } else if (window.scrollY < 2500) {
         scrollBtn.classList.remove("to-top--active");
       }
     });

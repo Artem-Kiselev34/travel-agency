@@ -1136,9 +1136,9 @@ function scrollTo(to) {
 document.addEventListener("DOMContentLoaded", function () {
   const scrollBtn = document.querySelector(".to-top");
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 4000) {
+    if (window.scrollY > 2500) {
       scrollBtn.classList.add("to-top--active");
-    } else if (window.scrollY < 4000) {
+    } else if (window.scrollY < 2500) {
       scrollBtn.classList.remove("to-top--active");
     }
   });
@@ -1912,7 +1912,7 @@ if (products) {
                 <div class="product-card__footer">
                   <div class="product-card__foofer-inner">
                     <span class="product-card__title">${data[i].title}</span>
-                    <a class="btn-product-card btn btn-reset" href="#">Туры</a>
+                    <a class="btn-product-card btn btn-reset" href="tour-search.html">Туры</a>
                   </div>
                 </div>
               </li>
@@ -2281,7 +2281,7 @@ function init() {
         balloonContent: item.name
       }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/marker.svg',
+        iconImageHref: './img/marker.svg',
         iconImageSize: [30, 40]
       });
       collection.add(placemark);

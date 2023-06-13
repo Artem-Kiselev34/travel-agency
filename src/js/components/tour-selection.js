@@ -38,7 +38,7 @@ if (products) {
                 <div class="product-card__footer">
                   <div class="product-card__foofer-inner">
                     <span class="product-card__title">${data[i].title}</span>
-                    <a class="btn-product-card btn btn-reset" href="#">Туры</a>
+                    <a class="btn-product-card btn btn-reset" href="tour-search.html">Туры</a>
                   </div>
                 </div>
               </li>
