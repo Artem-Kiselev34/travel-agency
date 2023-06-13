@@ -364,7 +364,7 @@ const groups = [
     function createSubMenu(item, collection, j) {
       const placemark = new ymaps.Placemark(item.center, { balloonContent: item.name }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/marker.svg',
+        iconImageHref: './img/marker.svg',
         iconImageSize: [30, 40],
       });
 

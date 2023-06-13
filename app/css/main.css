@@ -641,7 +641,7 @@ input[type=range]::-moz-range-thumb {
   justify-content: space-between;
   margin: 0 auto;
   border-bottom: 1px solid #649ed8;
-  padding: 5px 0 3px;
+  padding: 6px 0 3px;
   width: 100%;
   max-width: 1440px;
   max-height: 65px;
@@ -1950,6 +1950,7 @@ input[type=range]::-moz-range-thumb {
 .swiper-container {
   overflow: hidden;
   height: inherit;
+  border-radius: 10px;
 }
 
 .swiper-slide {
@@ -1958,7 +1959,7 @@ input[type=range]::-moz-range-thumb {
 
 .swiper-button-prev {
   left: 14px;
-  top: 4.7%;
+  top: 4.3%;
   display: none;
   border: none;
   padding: 0;
@@ -1981,7 +1982,7 @@ input[type=range]::-moz-range-thumb {
 
 .swiper-button-next {
   right: 14px;
-  top: 4.7%;
+  top: 4.3%;
   display: none;
   border: none;
   padding: 0;
@@ -2016,10 +2017,11 @@ input[type=range]::-moz-range-thumb {
 }
 
 .slide {
+  border-radius: 10px;
+  background-color: var(--color-gray);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--color-gray);
 }
 .slide__content {
   padding: 110px 15px 0 80px;
@@ -3488,7 +3490,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .booking {
-  padding: 100px 0 40px;
+  padding: 30px 0 0;
 }
 
 .tour-search {
@@ -4136,6 +4138,10 @@ input[type=range]::-moz-range-thumb {
 
 .rooms-preview .swiper-btn-prev {
   left: 12px;
+}
+
+.room-slider {
+  border-radius: 10px;
 }
 
 .room-slider .swiper-slide img {
