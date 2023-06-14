@@ -597,25 +597,48 @@ getUserCity().then(_ref2 => {
 /***/ (() => {
 
 if (document.querySelector(".hotel-tour") !== null) {
-  document.addEventListener("DOMContentLoaded", () => {
-    (async () => {
-      const searchPrams = new URLSearchParams(location.search);
-      const id = searchPrams.get("id");
-      let response = await fetch("./data.json");
-      if (response.ok) {
-        // получаем ответ в формате JSON и сохраняем его в data
-        let data = await response.json();
-        const hotel = document.querySelector("#hotel");
-        const gallery = document.querySelector("#gallery");
-        const thumbsGallery = document.querySelector("#thumbs-gallery");
-        const roomsPreview = document.querySelector("#rooms-preview");
-        const roomsPreview2 = document.querySelector("#rooms-preview2");
-        const roomsPreview3 = document.querySelector("#rooms-preview3");
-        const roomSlider = document.querySelector("#room-slider");
-        const thumbsRoom = document.querySelector("#thumbs-room");
+  // document.addEventListener("DOMContentLoaded", () => {
 
-        // ------------------------------- Hotel cards ------------------------------------
-        hotel.innerHTML += `
+  (async () => {
+    const searchPrams = new URLSearchParams(location.search);
+    const id = searchPrams.get("id");
+    let response = await fetch("./data.json");
+    if (response.ok) {
+      // получаем ответ в формате JSON и сохраняем его в data
+      let data = await response.json();
+      const roomsPreview = document.querySelector("#rooms-preview");
+      const roomsPreview2 = document.querySelector("#rooms-preview2");
+      const roomsPreview3 = document.querySelector("#rooms-preview3");
+      const roomSlider = document.querySelector("#room-slider");
+      const thumbsRoom = document.querySelector("#thumbs-room");
+      const hotel = document.querySelector("#hotel");
+      const gallery = document.querySelector("#gallery");
+      const thumbsGallery = document.querySelector("#thumbs-gallery");
+
+      // -------------------------------- Room Slider Preview ------------------------------
+      roomsPreview.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+      roomsPreview2.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+      `;
+      roomsPreview3.innerHTML += `
+        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
+        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
+      `;
+      // ------------------------------- Hotel cards ------------------------------------
+      hotel.innerHTML += `
         <section class="hotel-descr">
           <div class="hotel-descr__rating ${data[id].rating}"></div>
           <h2 class="hotel-descr__title">${data[id].title}</h2>
@@ -631,62 +654,40 @@ if (document.querySelector(".hotel-tour") !== null) {
          </div>
         </section>
         `;
-        // ---------------------------- Modal swiper image --------------------------------
-        gallery.innerHTML += `
+      // ---------------------------- Modal swiper image --------------------------------
+      gallery.innerHTML += `
        <div class="swiper-slide"><img src="${data[id].img1}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img2}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img3}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img4}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img5}" alt="${data[id].alt}"></div>
        `;
-        thumbsGallery.innerHTML += `
+      thumbsGallery.innerHTML += `
        <div class="swiper-slide"><img src="${data[id].img1}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img2}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img3}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img4}" alt="${data[id].alt}"></div>
        <div class="swiper-slide"><img src="${data[id].img5}" alt="${data[id].alt}"></div>
        `;
-        // -------------------------------- Room Slider Preview ------------------------------
-        roomsPreview.innerHTML += `
+      //------------------------- Room Slider Modal --------------------------
+      roomSlider.innerHTML += `
         <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
       `;
-        roomsPreview2.innerHTML += `
-        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
-      `;
-        roomsPreview3.innerHTML += `
-        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
-      `;
-        //------------------------- Room Slider Modal --------------------------
-        roomSlider.innerHTML += `
+      //------------------------- Room Slider thumbs Modal --------------------------
+      thumbsRoom.innerHTML += `
         <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
         <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
       `;
-        //------------------------- Room Slider thumbs Modal --------------------------
-        thumbsRoom.innerHTML += `
-        <div class="swiper-slide"><img src="${data[id].img6}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img7}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img8}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img9}" alt="${data[id].alt}"></div>
-        <div class="swiper-slide"><img src="${data[id].img10}" alt="${data[id].alt}"></div>
-      `;
-      }
-    })();
-  });
+    }
+  })();
+  // });
 }
 
 /***/ }),
@@ -823,7 +824,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(mskCenter, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -861,7 +862,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(mskCenter3, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -880,7 +881,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(mskCenter4, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -899,7 +900,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(mskCenter5, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -918,7 +919,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(mskCenter6, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -937,7 +938,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(mskCenter7, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -955,7 +956,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(spbCenter, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -974,7 +975,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(spbCenter2, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -993,7 +994,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(spbCenter3, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -1012,7 +1013,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(spbCenter4, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -1031,7 +1032,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(kznCenter, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
@@ -1050,7 +1051,7 @@ function init() {
     });
     let placemark = new ymaps.Placemark(vlgCenter, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/marker.svg",
+      iconImageHref: "./img/marker.svg",
       iconImageSize: [30, 40]
     });
     map.geoObjects.add(placemark);
