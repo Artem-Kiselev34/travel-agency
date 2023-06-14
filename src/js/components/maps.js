@@ -36,7 +36,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -88,7 +88,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -114,7 +114,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -140,7 +140,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -166,7 +166,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -192,7 +192,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -218,7 +218,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -244,7 +244,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -270,7 +270,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -296,7 +296,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -322,7 +322,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
@@ -348,7 +348,7 @@ function init() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/marker.svg",
+        iconImageHref: "./img/marker.svg",
         iconImageSize: [30, 40],
       }
     );
