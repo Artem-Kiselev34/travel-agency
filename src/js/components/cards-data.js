@@ -11,7 +11,7 @@ export const cardsData = [
     holiday: "beach",
     distance: "1st-line",
     beach: "pebble",
-    price: "99 700",
+    price: "96 700",
     href: "hotel-tour.html?id=1",
   },
   {
