@@ -14,7 +14,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Utopia World Hotel"
+    "alt": "Utopia World Hotel",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "96 700 ₽",
+    "price2": "97 800 ₽",
+    "price3": "98 500 ₽",
+    "href": "basket.html?id=1"
   },
   "2": {
     "id": 2,
@@ -31,7 +38,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Club Hotel Anjeliq"
+    "alt": "Club Hotel Anjeliq",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "72 700 ₽",
+    "price2": "73 800 ₽",
+    "price3": "75 500 ₽",
+    "href": "basket.html?id=2"
   },
   "3": {
     "id": 3,
@@ -48,7 +62,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Rubi Hotel"
+    "alt": "Rubi Hotel",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "71 600 ₽",
+    "price2": "72 800 ₽",
+    "price3": "74 500 ₽",
+    "href": "basket.html?id=3"
   },
   "4": {
     "id": 4,
@@ -65,7 +86,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Throne Beach Resort & Spa"
+    "alt": "Throne Beach Resort & Spa",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "80 400 ₽",
+    "price2": "81 800 ₽",
+    "price3": "83 500 ₽",
+    "href": "basket.html?id=4"
   },
   "5": {
     "id": 5,
@@ -82,7 +110,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Kleopatra Smile"
+    "alt": "Kleopatra Smile",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "55 900 ₽",
+    "price2": "56 800 ₽",
+    "price3": "58 500 ₽",
+    "href": "basket.html?id=5"
   },
   "6": {
     "id": 6,
@@ -99,7 +134,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Asena Hotel"
+    "alt": "Asena Hotel",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "57 400 ₽",
+    "price2": "58 800 ₽",
+    "price3": "60 500 ₽",
+    "href": "basket.html?id=6"
   },
   "7": {
     "id": 7,
@@ -116,7 +158,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Belport Beach"
+    "alt": "Belport Beach",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "62 000 ₽",
+    "price2": "63 800 ₽",
+    "price3": "65 500 ₽",
+    "href": "basket.html?id=7"
   },
   "8": {
     "id": 8,
@@ -133,7 +182,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Holiday Garden Resort"
+    "alt": "Holiday Garden Resort",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "69 700 ₽",
+    "price2": "70 800 ₽",
+    "price3": "72 500 ₽",
+    "href": "basket.html?id=8"
   },
   "9": {
     "id": 9,
@@ -150,7 +206,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Kaliptus"
+    "alt": "Kaliptus",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "55 700 ₽",
+    "price2": "56 800 ₽",
+    "price3": "58 500 ₽",
+    "href": "basket.html?id=9"
   },
   "10": {
     "id": 10,
@@ -167,7 +230,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Kata Sea Breeze Resort"
+    "alt": "Kata Sea Breeze Resort",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "95 700 ₽",
+    "price2": "96 800 ₽",
+    "price3": "98 500 ₽",
+    "href": "basket.html?id=10"
   },
   "11": {
     "id": 11,
@@ -184,7 +254,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Faraana Heights Resort"
+    "alt": "Faraana Heights Resort",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "90 700 ₽",
+    "price2": "91 800 ₽",
+    "price3": "93 500 ₽",
+    "href": "basket.html?id=11"
   },
   "12": {
     "id": 12,
@@ -201,7 +278,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Fujairah Rotana Resort And Spa"
+    "alt": "Fujairah Rotana Resort And Spa",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "90 700 ₽",
+    "price2": "91 800 ₽",
+    "price3": "93 500 ₽",
+    "href": "basket.html?id=12"
   },
   "13": {
     "id": 13,
@@ -218,7 +302,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Ibis Phuket Patong"
+    "alt": "Ibis Phuket Patong",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "96 900 ₽",
+    "price2": "97 800 ₽",
+    "price3": "98 500 ₽",
+    "href": "basket.html?id=13"
   },
   "14": {
     "id": 14,
@@ -235,6 +326,14 @@
     "img8": "https://i.yapx.ru/WHncf.jpg",
     "img9": "https://i.yapx.ru/WHndv.jpg",
     "img10": "https://i.yapx.ru/WHneC.jpg",
-    "alt": "Naithonburi Beach Resort"
+    "img11": "https://i.yapx.ru/WIJMD.jpg",
+    "alt": "Naithonburi Beach Resort",
+    "room": "Номер стандарт",
+    "room2": "Номер стандарт улучшенный",
+    "room3": "Номер делюкс",
+    "price": "98 700 ₽",
+    "price2": "98 800 ₽",
+    "price3": "99 500 ₽",
+    "href": "basket.html?id=14"
   }
 }

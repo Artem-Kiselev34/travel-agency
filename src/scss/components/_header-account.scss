@@ -6,6 +6,8 @@
   &__link {
     @include flex-column-start;
 
+    position: relative;
+
     &:not(:last-child) {
       margin-right: 16px;
     }
@@ -25,10 +27,22 @@
     &:hover {
       fill: var(--color-primary);
     }
+  }
 
-    // @include small-tablet {
-    //   fill: var(--color-ebony);
-    // }
+  &__count {
+    position: absolute;
+    top: -4px;
+    left: 18px;
+    z-index: 10;
+    margin: 0px 3px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    min-width: 9px;
+    height: 9px;
+    color: var(--color-light);
+    background-color: #e73c3e;
+    cursor: pointer;
   }
 }
 

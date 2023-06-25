@@ -95,21 +95,6 @@ const hotelGallery = new Swiper(".mySwiper2", {
   },
 });
 
-//-------------------------- Room Preview ---------------------------
-window.addEventListener("load", () => {
-  const roomPreview = new Swiper(".rooms-preview", {
-    spaceBetween: 10,
-    zoom: true,
-    pagination: {
-      el: ".rooms-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-btn-next",
-      prevEl: ".swiper-btn-prev",
-    },
-  });
-});
 
 //------------------------- Room thumbs Modal --------------------------
 const thumbsRoom = new Swiper(".thumbs-room", {
@@ -134,4 +119,22 @@ const roomSlider = new Swiper(".room-slider", {
     swiper: thumbsRoom,
   },
 });
-// --------------------------------------------------
+//-------------------------- Room Preview ---------------------------
+if (document.querySelector(".hotel-tour") !== null) {
+  window.addEventListener("load", () => {
+    const roomPreview = new Swiper(".rooms-preview", {
+      spaceBetween: 10,
+      zoom: true,
+      pagination: {
+        el: ".rooms-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev",
+      },
+    });
+  });
+}
+
+

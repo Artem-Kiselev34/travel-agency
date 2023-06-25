@@ -1,7 +1,50 @@
 <section class="basket">
   <div class="container">
     <div class="booking">
-      <img src="./img/develop.jpg" alt="develop">
+      <div id="hotel-card"></div>
+      <form id="buyer" class="buyer">
+        <div class="buyer__container">
+          <h3 class="buyer__title">Гость, на которого оформляется бронь</h3>
+
+          <div class="buyer__check">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="switch__slider round"></span>
+              </label>
+              <span class="buyer__info">Является покупателем</span>
+          </div>
+
+          <div class="buyer-data">
+            <label class="form-field form-field--gray">
+              <input type="text" name="name" required placeholder="Имя" class="form-field__input checkup"
+                data-validate-field="name"/>
+            </label>
+            <label class="form-field form-field--gray">
+              <input type="text" name="name2" required placeholder="Фамилия" class="form-field__input checkup"
+                data-validate-field="name2"/>
+            </label>
+          </div>
+          <span class="buyer__info">Данные нужны, если для поездки вы оформляете визу или гости будут заселяться в разное время</span>
+        </div>
+
+        <div class="buyer__container">
+          <h3 class="buyer__title buyer__title--mb">Контактная информация покупателя</h3>
+          <span class="buyer__descr">Куда отправить информацию о бронировании</span>
+          <div class="buyer-data">
+            <label class="form-field form-field--gray">
+              <input type="email" name="email" required placeholder="Электронная почта" class="form-field__input"
+                data-validate-field="email"/>
+            </label>
+
+            <label class="form-field form-field--gray">
+              <input type="tel" name="tel" required placeholder="Телефон" class="form-field__input"
+                data-validate-field="tel"/>
+            </label>
+          </div>
+        </div>
+
+      <div id="payment"></div>
+      </form>
     </div>
   </div>
 </section>

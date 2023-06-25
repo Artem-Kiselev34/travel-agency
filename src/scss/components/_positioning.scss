@@ -3,10 +3,9 @@
   display: flex;
   align-items: center;
   border-radius: 8px;
-  margin-bottom: 30px;
   padding: 34px 0 34px;
   width: 100%;
-  background-color: aliceblue;
+  background-color: var(--color-aliceblue);
 
   &__info {
     display: flex;
@@ -154,7 +153,7 @@
     position: relative;
 
     &--color {
-      color: #5ac82c;
+      color: var(--color-atlantis);
 
       &:after {
         content: "";
