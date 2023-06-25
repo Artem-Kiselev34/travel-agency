@@ -1,7 +1,6 @@
 if (document.querySelector(".positioning__info") !== null) {
   const btnInfo = document.querySelector('.positioning__info');
   const popup = document.querySelector('.popup');
-  const popupClose = document.querySelector('.popup__close');
 
   btnInfo.addEventListener('click', ()=> {
     popup.classList.toggle('active');

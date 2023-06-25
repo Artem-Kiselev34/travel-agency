@@ -134,6 +134,7 @@ if (document.querySelector(".hotel-tour") !== null) {
         prevEl: ".swiper-btn-prev",
       },
     });
-    console.log("swiper");
   });
 }
+
+

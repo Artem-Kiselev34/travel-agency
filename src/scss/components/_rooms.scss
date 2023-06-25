@@ -1,9 +1,16 @@
+.rooms-container { 
+  padding: 50px 0 20px;
+}
 .room {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   max-width: fit-content;
   border-radius: 8px;
   box-shadow: 0 0 16px rgb(0 0 0/8%), 0 4px 16px rgb(0 0 0/8%);
+
+  &:last-child {
+      margin-bottom: 0px;
+    }
 
   &__container {
     width: 270px;

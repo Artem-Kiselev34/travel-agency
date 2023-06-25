@@ -21,9 +21,7 @@ import './components/offices-mobile';
 import './components/tour-filter';
 import './components/hotel-tour';
 import './components/btn-info';
-
-
-
+import './components/basket';
 
 // import './components/just-validate';
 
