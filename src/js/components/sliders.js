@@ -3,11 +3,11 @@ import Swiper, { Navigation, Thumbs, Pagination, Autoplay } from "swiper";
 
 Swiper.use([Navigation, Thumbs, Pagination, Autoplay]);
 
-const slider = document.querySelector(".swiper-container");
-const bestFares = document.querySelector(".best-fares__items");
 
 // ----------------------- Swiper main page ------------------------
-if (document.querySelector(".swiper-container") !== null) {
+const slider = document.querySelector(".swiper-container");
+
+if (slider !== null) {
   const swiper = new Swiper(slider, {
     slidesPerView: 1,
     loop: true,
@@ -52,6 +52,8 @@ if (document.querySelector(".swiper-container") !== null) {
 }
 
 // ----------------------- Section Best Fares ----------------------
+const bestFares = document.querySelector(".best-fares__items");
+
 const bestfaresSlider = new Swiper(bestFares, {
   slidesPerView: 1,
   loop: true,
@@ -95,6 +97,31 @@ const hotelGallery = new Swiper(".mySwiper2", {
   },
 });
 
+//-------------------------- Room Preview ---------------------------
+
+window.addEventListener('load', () => {
+  const roomPreviews = document.querySelectorAll('.rooms-preview');
+  roomPreviews.forEach((roomPreview) => {
+    if (roomPreview) {
+      const pagination = roomPreview.querySelector('.rooms-pagination');
+      const nextBtn = roomPreview.querySelector('.swiper-btn-next');
+      const prevBtn = roomPreview.querySelector('.swiper-btn-prev');
+      const roomSwiper = new Swiper(roomPreview, {
+        spaceBetween: 10,
+        zoom: true,
+        pagination: {
+          el: pagination,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn,
+        },
+      });
+      window.dispatchEvent(new Event('resize'));
+    }
+  });
+});
 
 //------------------------- Room thumbs Modal --------------------------
 const thumbsRoom = new Swiper(".thumbs-room", {
@@ -103,6 +130,7 @@ const thumbsRoom = new Swiper(".thumbs-room", {
   freeMode: true,
   watchSlidesProgress: true,
 });
+
 //------------------------- Room Modal --------------------------
 const roomSlider = new Swiper(".room-slider", {
   spaceBetween: 10,
@@ -119,22 +147,5 @@ const roomSlider = new Swiper(".room-slider", {
     swiper: thumbsRoom,
   },
 });
-//-------------------------- Room Preview ---------------------------
-if (document.querySelector(".hotel-tour") !== null) {
-  window.addEventListener("load", () => {
-    const roomPreview = new Swiper(".rooms-preview", {
-      spaceBetween: 10,
-      zoom: true,
-      pagination: {
-        el: ".rooms-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-btn-next",
-        prevEl: ".swiper-btn-prev",
-      },
-    });
-  });
-}
 
 

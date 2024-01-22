@@ -1952,11 +1952,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
-const slider = document.querySelector(".swiper-container");
-const bestFares = document.querySelector(".best-fares__items");
 
 // ----------------------- Swiper main page ------------------------
-if (document.querySelector(".swiper-container") !== null) {
+const slider = document.querySelector(".swiper-container");
+if (slider !== null) {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
     slidesPerView: 1,
     loop: true,
@@ -1994,6 +1993,7 @@ if (document.querySelector(".swiper-container") !== null) {
 }
 
 // ----------------------- Section Best Fares ----------------------
+const bestFares = document.querySelector(".best-fares__items");
 const bestfaresSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](bestFares, {
   slidesPerView: 1,
   loop: true,
@@ -2037,6 +2037,32 @@ const hotelGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwip
   }
 });
 
+//-------------------------- Room Preview ---------------------------
+
+window.addEventListener('load', () => {
+  const roomPreviews = document.querySelectorAll('.rooms-preview');
+  roomPreviews.forEach(roomPreview => {
+    if (roomPreview) {
+      const pagination = roomPreview.querySelector('.rooms-pagination');
+      const nextBtn = roomPreview.querySelector('.swiper-btn-next');
+      const prevBtn = roomPreview.querySelector('.swiper-btn-prev');
+      const roomSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](roomPreview, {
+        spaceBetween: 10,
+        zoom: true,
+        pagination: {
+          el: pagination,
+          clickable: true
+        },
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn
+        }
+      });
+      window.dispatchEvent(new Event('resize'));
+    }
+  });
+});
+
 //------------------------- Room thumbs Modal --------------------------
 const thumbsRoom = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".thumbs-room", {
   spaceBetween: 10,
@@ -2044,6 +2070,7 @@ const thumbsRoom = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".thumbs-r
   freeMode: true,
   watchSlidesProgress: true
 });
+
 //------------------------- Room Modal --------------------------
 const roomSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".room-slider", {
   spaceBetween: 10,
@@ -2060,23 +2087,6 @@ const roomSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".room-sli
     swiper: thumbsRoom
   }
 });
-//-------------------------- Room Preview ---------------------------
-if (document.querySelector(".hotel-tour") !== null) {
-  window.addEventListener("load", () => {
-    const roomPreview = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".rooms-preview", {
-      spaceBetween: 10,
-      zoom: true,
-      pagination: {
-        el: ".rooms-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-btn-next",
-        prevEl: ".swiper-btn-prev"
-      }
-    });
-  });
-}
 
 /***/ }),
 
